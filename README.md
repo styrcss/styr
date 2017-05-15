@@ -24,7 +24,18 @@
 
 ## Development
 
+### Style check
+
 ```zsh
+: check gulpfile.js
+% npm install -g eslint
+% eslint gulpfile.js
+```
+
+### Build
+
+```zsh
+: build assets
 % npm install -g gulp-cli
 % gulp
 ```
