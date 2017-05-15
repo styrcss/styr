@@ -2,10 +2,13 @@
   "name": "styr",
   "version": "0.0.1",
   "description": "Minimal CSS framework",
-  "main": "dst/styr.css",
+  "main": "dst/styr.min.css",
   "author": "Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>",
   "license": "MIT",
   "homepage": "https://gitlab.com/grauwoelfchen/styr",
+  "keybords": [
+    "css"
+  ],
   "repository": {
     "type": "git",
     "url": "https://gitlab.com/grauwoelfchen/styr.git"
