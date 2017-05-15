@@ -2,7 +2,13 @@
 
 `/stɪ́əɾ/`
 
+[![build status](
+https://gitlab.com/grauwoelfchen/styr/badges/master/build.svg)](
+https://gitlab.com/grauwoelfchen/styr/commits/master)
+
 ![Screenshot](doc/img/screenshot.png)
+
+Yet another minimal CSS framework
 
 
 ## Dependencies
