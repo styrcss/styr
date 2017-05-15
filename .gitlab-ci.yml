@@ -28,6 +28,7 @@ build-assets:
   before_script:
     - node --version
     - npm --version
+    - npm install -g gulp-cli
     - npm install
   script:
     - gulp
