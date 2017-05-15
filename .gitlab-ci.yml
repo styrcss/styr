@@ -18,6 +18,8 @@ check-style:
     untracked: true
     paths:
       - node_modules
+  except:
+    - tags
 
 build-assets:
   stage: build
@@ -36,3 +38,5 @@ build-assets:
     untracked: true
     paths:
       - node_modules
+  except:
+    - tags
