@@ -1,5 +1,6 @@
 16 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
-	* Bump version 0.0.2
+	* Bump version 0.0.2, 0.0.3
+	* Add button
 	* Setup CI
 	* Create column offset `off-N`
 	* Add a screenshot into README.md
