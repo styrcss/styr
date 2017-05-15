@@ -1,7 +1,10 @@
 16 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Bump version 0.0.2
+	* Setup CI
 	* Create column offset `off-N`
 	* Add a screenshot into README.md
 	* Add eslint integration
+
 
 15 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Initial import
