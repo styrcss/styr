@@ -3,6 +3,7 @@
 var gulp = require('gulp')
   , concat = require('gulp-concat-css')
   , clean = require('gulp-clean')
+  , copy = require('gulp-copy')
   , minify = require('gulp-clean-css')
   , rename = require('gulp-rename')
   , run = require('run-sequence')
@@ -10,6 +11,7 @@ var gulp = require('gulp')
   , stylus = require('gulp-stylus')
   ;
 
+// extract normalize.css into reset.css
 gulp.task('concat', function() {
   return gulp.src('src/reset.styl')
   .pipe(stylus())
@@ -17,6 +19,7 @@ gulp.task('concat', function() {
   .pipe(gulp.dest('tmp/builds'));
 });
 
+// build stylus files into tmp/builds
 gulp.task('build', ['concat'], function() {
   return gulp.src(['src/**/*.styl', '!src/reset.styl'])
   .pipe(smap.init())
@@ -25,19 +28,28 @@ gulp.task('build', ['concat'], function() {
   .pipe(gulp.dest('tmp/builds'));
 });
 
+// merge all files into tmp/builds as dst/styr.css
 gulp.task('merge', ['build'], function() {
-  return gulp.src('tmp/**/*.css')
+  return gulp.src('tmp/builds/*.css')
   .pipe(concat('styr.css'))
-  .pipe(gulp.dest('dst'));
+  .pipe(gulp.dest('tmp/'));
 });
 
-gulp.task('compress', ['merge'], function() {
+// copy tmp/styr.css into dst
+gulp.task('distribute', ['merge'], function() {
+  return gulp.src('tmp/styr.css')
+  .pipe(copy('dst', {prefix: 2}));
+});
+
+// minify styr.css as styr.min.css
+gulp.task('compress', ['distribute'], function() {
   return gulp.src('dst/styr.css')
   .pipe(minify())
   .pipe(rename('styr.min.css'))
   .pipe(gulp.dest('dst'));
 });
 
+// remove all files into {dst|tmp}
 gulp.task('clean', function() {
   return gulp.src([
     'dst/*'
@@ -46,6 +58,19 @@ gulp.task('clean', function() {
     read: false
   })
   .pipe(clean());
+});
+
+// -- [development tasks]
+
+var paths = { // watch targets
+  styl: [
+    'src/*.styl'
+  ]
+};
+
+gulp.task('watch', function() {
+  gulp.watch('gulpfile.js', ['default']);
+  gulp.watch(paths.styl, ['distribute']);
 });
 
 // -- [main tasks]
