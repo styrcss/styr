@@ -1,0 +1,42 @@
+section .content {
+  padding: 0 9px;
+  margin: 9px 0;
+}
+
+.title {
+  color: #888888;
+  margin: 28px 0 9px 6px;
+}
+
+h1.title {
+  font-size: 3.21rem;
+}
+
+h2.title {
+  font-size: 2.08rem;
+}
+
+/* pre */
+pre {
+  background: #f6f6f6;
+  padding: 12px 9px;
+}
+
+/* grid */
+section .grid .row {
+  margin: 0.26rem 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+section .grid .row  {
+  border: 1px solid #d3d3d3
+}
+
+section .grid .row div::after {
+  box-shadow: 0px 0px 0px 1px rgba(89, 91, 124, 0.2) inset;
+  content: "";
+  display: block;
+  background-color: #e6e6e6;
+  min-height: 1.6rem;
+}

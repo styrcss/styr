@@ -1,0 +1,26 @@
+{
+  "name": "styr",
+  "version": "0.0.1",
+  "description": "Minimal CSS framework",
+  "main": "dst/styr.css",
+  "author": "Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>",
+  "license": "MIT",
+  "homepage": "https://gitlab.com/grauwoelfchen/styr",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/grauwoelfchen/styr.git"
+  },
+  "dependencies": {
+    "normalize.css": "7.0.0"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-clean": "0.3.2",
+    "gulp-clean-css": "3.2.0",
+    "gulp-concat-css": "2.3.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sourcemaps": "2.6.0",
+    "gulp-stylus": "2.6.0",
+    "run-sequence": "1.2.2"
+  }
+}

@@ -1,0 +1,33 @@
+.grid
+  display block
+  width 100%
+
+  .row
+    display inline-block
+    width 100%
+
+cols = {
+  'col-1': '6.25%',
+  'col-2': '12.5%',
+  'col-3': '18.75%',
+  'col-4': '25%',
+  'col-5': '31.25%',
+  'col-6': '37.5%',
+  'col-7': '43.75%',
+  'col-8': '50%',
+  'col-9': '56.25%',
+  'col-10': '62.5%',
+  'col-11': '68.75%',
+  'col-12': '75.0%',
+  'col-13': '81.25%',
+  'col-14': '87.5%',
+  'col-15': '93.75%',
+  'col-16': '100%',
+}
+for k, v in cols
+  .{k}
+    width: unquote(v)
+    display inline-block
+    box-sizing border-box
+    float left
+    padding 0.6rem
