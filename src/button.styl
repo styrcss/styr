@@ -1,0 +1,84 @@
+@require './_colour.styl'
+
+btn-style(c1, c2)
+  background-color c2
+  background-image -webkit-linear-gradient(260deg, c1 0%, c2 91%)
+  background-image linear-gradient(-180deg, c1 0%, c2 91%)
+
+a.btn,
+button.btn
+  margin 0.16rem 0.26rem
+  color #3d4448
+  font-weight 300
+  background-position 0 -0.08em
+  background-repeat repeat-x
+  padding 0.31rem 0.88rem
+  font-size 0.82em
+  line-height 1.37em
+  display inline-block
+  border-radius 0.16em
+  opacity 0.9
+  border 1px solid rgba(27, 31, 35, 0.2)
+  btn-style(#fbfbfc, $basic-colour)
+  &:hover
+    cursor pointer
+    color #151719
+    border 1px solid rgba(13, 31, 35, 0.35)
+
+a.primary.btn,
+button.primary.btn
+  btn-style(#f0f3f6, $primary-colour)
+  color rgba(91, 105, 142, 0.79)
+  &:hover
+    btn-style(#f0f3f6, #e2eaf4)
+  &.line
+    color darken($primary-colour, 58%)
+    border-color darken($primary-colour, 16%)
+    &:hover
+      border-color darken($primary-colour, 26%)
+
+a.secondary.btn,
+button.secondary.btn
+  border 1px solid rgba(182, 186, 183, 0.89)
+  color rgba(84, 85, 87, 0.86)
+  btn-style(#e9edf0, $secondary-colour)
+  &:hover
+    border 1px solid rgba(163, 165, 163, 0.98)
+    btn-style(#e1e7eb, #d4dadd)
+  &.line
+    color darken($secondary-colour, 58%)
+
+a.negative.btn,
+button.negative.btn
+  border 1px solid rgba(194, 128, 128, 0.68)
+  color rgba(140, 51, 51, 0.88)
+  btn-style(#f7cccc, $negative-colour)
+  &:hover
+    border 1px solid rgba(140, 51, 51, 0.72)
+    btn-style(#f4c1c1, #f2b3b3)
+  &.line
+    color darken($negative-colour, 58%)
+
+a.positive.btn,
+button.positive.btn
+  border 1px solid rgba(105, 165, 113, 0.76)
+  color rgba(41, 84, 60, 0.88)
+  btn-style(#c8f5d9, $positive-colour)
+  &:hover
+    border 1px solid rgba(76,144,84,0.86)
+    btn-style(#a6f4c2, #9debc1)
+  &.line
+    color darken($positive-colour, 62%)
+
+a.line.btn,
+button.line.btn
+  background-image none
+  background none
+  &:hover
+    background-image none
+    background none
+
+a.btn.disabled,
+button.btn.disabled
+  opacity 0.4
+  cursor not-allowed

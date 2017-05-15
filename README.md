@@ -6,7 +6,8 @@
 https://gitlab.com/grauwoelfchen/styr/badges/master/build.svg)](
 https://gitlab.com/grauwoelfchen/styr/commits/master)
 
-![Screenshot](doc/img/screenshot.png)
+[![Screenshot](doc/img/screenshot-thumb.png)](
+https://gitlab.com/grauwoelfchen/styr/raw/master/doc/img/screenshot.png)
 
 Yet another minimal CSS framework
 
@@ -25,6 +26,7 @@ Yet another minimal CSS framework
 
 ## Features
 
+* Button
 * Grid
 
 
