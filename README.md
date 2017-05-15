@@ -2,9 +2,13 @@
 
 `/stɪ́əɾ/`
 
+![Screenshot](doc/img/screenshot.png)
+
+
 ## Dependencies
 
 * [normalize.css](https://github.com/necolas/normalize.css)
+
 
 ## Install
 
@@ -12,9 +16,11 @@
 % npm install --save styr
 ```
 
+
 ## Features
 
 * Grid
+
 
 ## Development
 
@@ -22,6 +28,7 @@
 % npm install -g gulp-cli
 % gulp
 ```
+
 
 ## License
 
