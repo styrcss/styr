@@ -1,0 +1,46 @@
+@require './_colour.styl'
+
+table.tbl
+  border solid thin
+  border-width 0
+  border-collapse collapse
+  border-spacing 0
+  width 100%
+  tr
+    th,
+    td
+      text-align left
+      padding 0.57rem 0.94rem
+      border solid $gray-colour
+      border-width 0
+  thead th
+    vertical-align middle
+    border-bottom-width 0.16rem
+  tbody
+    th,
+    td
+      border-bottom-width 0.08rem
+    th
+      border-right-width 0.16rem
+    tr:last-child td,
+    tr:last-child th
+      border-bottom-width 0
+
+  &.bordered
+    thead th
+      border-width 0.08rem 0.08rem 0.16rem 0.08rem
+    tbody
+      th,
+      td
+        border-width 0.08rem 0.08rem 0 0.08rem
+    tbody
+      th
+        border-right-width 0.16rem
+    tbody
+      tr:last-child td,
+      tr:last-child th
+        border-bottom-width 0.08rem
+
+  &.y-axis
+    thead tr:first-child th:first-child
+      border-right-width 0.16rem

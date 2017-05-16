@@ -27,6 +27,7 @@ Yet another minimal CSS framework
 ## Features
 
 * Button
+* Table
 * Grid
 
 
