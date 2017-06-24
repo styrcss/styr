@@ -1,6 +1,6 @@
 {
   "name": "styr",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Yet another minimal CSS framework",
   "main": "dst/styr.min.css",
   "author": "Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>",
