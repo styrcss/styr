@@ -1,3 +1,7 @@
+body {
+  background: #ffffff;
+}
+
 section .content {
   padding: 0 9px;
   margin: 9px 0;
@@ -16,21 +20,48 @@ h2.title {
   font-size: 2.08rem;
 }
 
+/* nav */
+ul.nav li {
+  display: block;
+  padding-left: 0;
+  margin-left: 0;
+  line-height: 1.66rem;
+}
+
+ul.nav {
+  margin-left: 0.86rem;
+  padding-left: 0;
+}
+
+p.nav {
+  margin-left: 0.86rem;
+}
+
+p.desc {
+  margin: 0.09rem 0.19rem;
+}
+
 /* pre */
 pre {
   background: #f6f6f6;
   padding: 12px 9px;
 }
 
-/* grid */
-section .grid .row {
-  margin: 0.26rem 0;
-  text-align: center;
-  vertical-align: middle;
+code {
+  margin: 0.22rem 0.34rem;
+  padding: 0.11rem 0.29rem;
+  border: 2px solid pink;
+  border-radius: 2px;
+  color: red;
 }
 
-section .grid .row  {
-  border: 1px solid #d3d3d3
+/* grid */
+section .grid .row {
+  margin: 0.38rem 0;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #d3d3d3;
+  background-color: #f1f1f1;
 }
 
 section .grid .row div::after {

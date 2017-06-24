@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styr</title>
+  <link rel="stylesheet" href="../dst/styr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">Styr</h1>
+  <p class="nav"><a href="./index.html">&lt; Back</a></p>
+  <section>
+    <h2 class="title">Grid</h2>
+    <h3 class="title">col-N</h3>
+    <div class="content">
+      <div class="grid">
+        <div class="row">
+          <div class="col-16"></div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-15"></div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-14"></div>
+        </div>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-13"></div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-12"></div>
+        </div>
+      </div>
+      <pre>
+&lt;div class="grid"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-16"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-1"&gt;&lt;/div&gt;
+    &lt;div class="col-15"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  ...
+&lt;/div&gt;</pre>
+    </div>
+
+    <h3 class="title">off-N</h3>
+    <div class="content">
+      <div class="grid">
+        <div class="row">
+          <div class="col-12 off-4"></div>
+        </div>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8 off-6"></div>
+        </div>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-4 off-3"></div>
+        </div>
+      </div>
+      <pre>
+&lt;div class="grid"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-12 off-4"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-2"&gt;&lt;/div&gt;
+    &lt;div class="col-8 off-6"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  ...
+&lt;/div&gt;</pre>
+    </div>
+
+    <h3 class="title">col-l-N, col-m-N, col-s-N, col-t-N</h3>
+    <p class="desc"><code>large/max-width: 1280px</code>,<code>m(iddle|edium)/max-width: 920px</code>,<code>small/max-width: 640px</code>,<code>tiny/max-width: 480px</code></p>
+    <div class="content">
+      <div class="grid">
+        <div class="row">
+          <div class="col-4 col-l-8 col-m-16"></div>
+          <div class="col-4 col-l-8 col-m-16"></div>
+          <div class="col-4 col-l-8 col-m-16"></div>
+          <div class="col-4 col-l-8 col-m-16"></div>
+        </div>
+        <div class="row">
+          <div class="col-8 col-t-16"></div>
+          <div class="col-8 col-t-16"></div>
+          <div class="col-8 col-t-16"></div>
+          <div class="col-8 col-t-16"></div>
+        </div>
+        <div class="row">
+          <div class="col-16 col-l-8"></div>
+          <div class="col-16 col-l-8"></div>
+        </div>
+        <div class="row">
+          <div class="col-8 col-m-16"></div>
+          <div class="col-8 col-m-16"></div>
+        </div>
+      </div>
+      <pre>
+&lt;div class="grid"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-4 col-l-8 col-m-16"&gt;&lt;/div&gt;
+    &lt;div class="col-4 col-l-8 col-m-16"&gt;&lt;/div&gt;
+    &lt;div class="col-4 col-l-8 col-m-16"&gt;&lt;/div&gt;
+    &lt;div class="col-4 col-l-8 col-m-16"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-8 col-t-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-t-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-t-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-t-16"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-16 col-l-8"&gt;&lt;/div&gt;
+    &lt;div class="col-16 col-l-8"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-8 col-m-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-m-16"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    </div>
+  </section>
+</body>
+</html>
