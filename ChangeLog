@@ -1,3 +1,7 @@
+24 Jun 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Make grid responsive
+	* Add col-l-N, col-m-N, col-s-N and col-t-N
+
 17 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Add table
 
