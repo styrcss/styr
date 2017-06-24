@@ -4,7 +4,7 @@ stages:
 
 check-style:
   stage: check
-  image: node:7.6.0
+  image: node:7.8.0
   services:
   variables:
     ENV: development
@@ -23,7 +23,7 @@ check-style:
 
 build-assets:
   stage: build
-  image: node:7.6.0
+  image: node:7.8.0
   services:
   variables:
     ENV: development
