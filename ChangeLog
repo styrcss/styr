@@ -1,5 +1,6 @@
 24 Jun 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
-	* Release 0.0.4, 0.0.5
+	* Update Node.js 7.8.0 (for development)
+	* Bump version 0.0.4, 0.0.5
 	* Update button shadow
 	* Make grid responsive
 	* Add col-l-N, col-m-N, col-s-N and col-t-N
