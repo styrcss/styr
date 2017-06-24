@@ -1,4 +1,5 @@
 24 Jun 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Release 0.0.4
 	* Make grid responsive
 	* Add col-l-N, col-m-N, col-s-N and col-t-N
 
