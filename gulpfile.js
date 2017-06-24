@@ -53,7 +53,8 @@ gulp.task('compress', ['distribute'], function() {
 gulp.task('clean', function() {
   return gulp.src([
     'dst/*'
-  , 'tmp/**/*'
+  , 'tmp/builds/*'
+  , 'tmp/*'
   ], {
     read: false
   })
