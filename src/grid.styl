@@ -30,91 +30,90 @@ cols = {
  *   off-N works only range in media queries
  */
 
-.row
+for k, v in cols
+  .col-{k}
+    width unquote(v)
+    display inline-block
+    box-sizing border-box
+    float left
+    padding 0.6rem
+  .off-{k}
+    margin-left unquote(v)
+
+@media only screen and (max-width: 1280px)
+  /* v(ast|ery large) size */
+  [class*="col-v-"][class*="off-"]
+    margin-left unset
+  [class*="col-"]
+    padding 0.6rem 0.5rem
   for k, v in cols
-    .col-{k}
+    .col-v-{k},
+    .col-v-{k}[class*="col-"]
       width unquote(v)
-      display inline-block
-      box-sizing border-box
-      float left
-      padding 0.6rem
-    .off-{k}
+    .row .off-v-{k}
       margin-left unquote(v)
 
-  @media only screen and (max-width: 1280px)
-    /* v(ast|ery large) size device */
-    [class*="off-"]
-      margin-left unset
-    [class*="col-"]
-      padding 0.6rem 0.5rem
-    for k, v in cols
-      .col-v-{k},
-      .col-v-{k}[class*="col-"]
-        width unquote(v)
-      .off-v-{k}
-        margin-left unquote(v)
+@media only screen and (max-width: 980px)
+  /* large size */
+  [class*="col-l-"][class*="off-"]
+    margin-left unset
+  [class*="col-"]
+    padding 0.6rem 0.4rem
+  for k, v in cols
+    .col-l-{k},
+    .col-l-{k}[class*="col-"]
+      width unquote(v)
+    .row .off-l-{k}
+      margin-left unquote(v)
 
-  @media only screen and (max-width: 980px)
-    /* large size */
-    [class*="off-"]
-      margin-left unset
-    [class*="col-"]
-      padding 0.6rem 0.4rem
-    for k, v in cols
-      .col-l-{k},
-      .col-l-{k}[class*="col-"]
-        width unquote(v)
-      .off-l-{k}
-        margin-left unquote(v)
+@media only screen and (max-width: 768px)
+  /* normal size */
+  [class*="col-n-"][class*="off-"]
+    margin-left unset
+  [class*="col-"]
+    padding 0.6rem 0.35rem
+  for k, v in cols
+    .col-n-{k},
+    .col-n-{k}[class*="col-"]
+      width unquote(v)
+    .row .off-n-{k}
+      margin-left unquote(v)
 
-  @media only screen and (max-width: 768px)
-    /* normal size */
-    [class*="off-"]
-      margin-left unset
-    [class*="col-"]
-      padding 0.6rem 0.3rem
-    for k, v in cols
-      .col-n-{k},
-      .col-n-{k}[class*="col-"]
-        width unquote(v)
-      .off-n-{k}
-        margin-left unquote(v)
+@media only screen and (max-width: 640px)
+  /* m(iddle|edium) size */
+  [class*="col-m-"][class*="off-"]
+    margin-left unset
+  [class*="col-"]
+    padding 0.6rem 0.3rem
+  for k, v in cols
+    .col-m-{k},
+    .col-m-{k}[class*="col-"]
+      width unquote(v)
+    .row .off-m-{k}
+      margin-left unquote(v)
 
-  @media only screen and (max-width: 640px)
-    /* m(iddle|edium) size */
-    [class*="off-"]
-      margin-left unset
-    [class*="col-"]
-      padding 0.6rem 0.3rem
-    for k, v in cols
-      .col-m-{k},
-      .col-m-{k}[class*="col-"]
-        width unquote(v)
-      .off-m-{k}
-        margin-left unquote(v)
+@media only screen and (max-width: 480px)
+  /* small size */
+  [class*="col-s-"][class*="off-"]
+    margin-left unset
+  [class*="col-"]
+    padding 0.6rem 0.2rem
+  for k, v in cols
+    .col-s-{k},
+    .col-s-{k}[class*="col-"]
+      width unquote(v)
+    .row .off-s-{k}
+      margin-left unquote(v)
 
-  @media only screen and (max-width: 480px)
-    /* small size */
-    [class*="off-"]
-      margin-left unset
-    [class*="col-"]
-      padding 0.6rem 0.2rem
-    for k, v in cols
-      .col-s-{k},
-      .col-s-{k}[class*="col-"]
-        width unquote(v)
-      .off-s-{k}
-        margin-left unquote(v)
-
-  @media only screen and (max-width: 320px)
-    /* tiny size */
-    [class*="off-"]
-      margin-left unset
-    [class*="col-"]
-      padding 0.6rem 0.1rem
-    for k, v in cols
-      .col-t-{k},
-      .col-t-{k}[class*="col-"]
-        width unquote(v)
-      .off-t-{k}
-        margin-left unquote(v)
+@media only screen and (max-width: 320px)
+  /* tiny size */
+  [class*="col-t-"][class*="off-"]
+    margin-left unset
+  [class*="col-"]
+    padding 0.6rem 0.1rem
+  for k, v in cols
+    .col-t-{k},
+    .col-t-{k}[class*="col-"]
+      width unquote(v)
+    .row .off-t-{k}
+      margin-left unquote(v)
