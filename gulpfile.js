@@ -79,5 +79,5 @@ gulp.task('default', function() {
   var nodeEnv = process.env.NODE_ENV || 'production';
   console.log('» gulp:', nodeEnv);
 
-  return run('clean', ['compress'])
+  return run('clean', 'compress');
 });
