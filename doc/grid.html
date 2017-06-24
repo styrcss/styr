@@ -48,18 +48,19 @@
     </div>
 
     <h3 class="title">off-N</h3>
+    <p class="desc"><code>off-N</code> works only for size range in media queries.</p>
     <div class="content">
       <div class="grid">
         <div class="row">
-          <div class="col-12 off-4"></div>
+          <div class="col-12 off-4 col-v-16"></div>
+        </div>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-4 off-3 col-v-13"></div>
         </div>
         <div class="row">
           <div class="col-2"></div>
           <div class="col-8 off-6"></div>
-        </div>
-        <div class="row">
-          <div class="col-3"></div>
-          <div class="col-4 off-3"></div>
         </div>
       </div>
       <pre>
@@ -68,60 +69,117 @@
     &lt;div class="col-12 off-4"&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="row"&gt;
-    &lt;div class="col-2"&gt;&lt;/div&gt;
-    &lt;div class="col-8 off-6"&gt;&lt;/div&gt;
+    &lt;div class="col-3"&gt;&lt;/div&gt;
+    &lt;div class="col-4 off-3 col-l-13"&gt;&lt;/div&gt;
   &lt;/div&gt;
   ...
 &lt;/div&gt;</pre>
     </div>
 
     <h3 class="title">col-l-N, col-m-N, col-s-N, col-t-N</h3>
-    <p class="desc"><code>large/max-width: 1280px</code>,<code>m(iddle|edium)/max-width: 920px</code>,<code>small/max-width: 640px</code>,<code>tiny/max-width: 480px</code></p>
+    <p class="desc">
+      <code>v(ast|ery-large)/max-width: 1280px</code>,
+      <code>large/max-width: 980px</code>,
+      <code>normal/max-width: 768px</code>
+      <code>m(iddle|edium)/max-width: 640px</code>
+      <code>small/max-width: 480px</code>,
+      <code>tiny/max-width: 320px</code>
+    </p>
     <div class="content">
       <div class="grid">
         <div class="row">
-          <div class="col-4 col-l-8 col-m-16"></div>
-          <div class="col-4 col-l-8 col-m-16"></div>
-          <div class="col-4 col-l-8 col-m-16"></div>
-          <div class="col-4 col-l-8 col-m-16"></div>
+          <div class="col-4 col-v-8 col-m-16"></div>
+          <div class="col-4 col-v-8 col-m-16"></div>
+          <div class="col-4 col-v-8 col-m-16"></div>
+          <div class="col-4 col-v-8 col-m-16"></div>
         </div>
         <div class="row">
-          <div class="col-8 col-t-16"></div>
-          <div class="col-8 col-t-16"></div>
-          <div class="col-8 col-t-16"></div>
-          <div class="col-8 col-t-16"></div>
+          <div class="col-8 col-s-16"></div>
+          <div class="col-8 col-s-16"></div>
+          <div class="col-8 col-s-16"></div>
+          <div class="col-8 col-s-16"></div>
         </div>
         <div class="row">
-          <div class="col-16 col-l-8"></div>
-          <div class="col-16 col-l-8"></div>
+          <div class="col-16 col-n-8"></div>
+          <div class="col-16 col-n-8"></div>
         </div>
         <div class="row">
-          <div class="col-8 col-m-16"></div>
-          <div class="col-8 col-m-16"></div>
+          <div class="col-8 col-s-16"></div>
+          <div class="col-8 col-s-16"></div>
+        </div>
+        <div class="row">
+          <div class="col-8 off-4 col-m-16"></div>
+          <div class="col-8 off-4 col-m-16"></div>
+        </div>
+        <div class="row">
+          <div class="col-8 off-4 col-v-16 col-m-8 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-m-8 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-m-8 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-m-8 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-n-4 off-n-4 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-n-4 off-n-4 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-n-4 off-n-4 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-n-4 off-n-4 col-t-1"></div>
+          <div class="col-16 col-v-12 off-v-4 col-m-8 off-m-8 col-t-1"></div>
+          <div class="col-16 col-v-12 off-v-4 col-m-8 off-m-8 col-t-1"></div>
+          <div class="col-16 col-v-12 off-v-4 col-m-8 off-m-8 col-t-1"></div>
+          <div class="col-16 col-v-12 off-v-4 col-m-8 off-m-8 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-m-8 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-m-8 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-m-8 col-t-1"></div>
+          <div class="col-8 off-4 col-v-16 col-m-8 col-t-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+          <div class="col-1 col-t-16"></div>
+        </div>
+        <div class="row">
+          <div class="col-16"></div>
+          <div class="col-8"></div>
+          <div class="col-8"></div>
+        </div>
+        <div class="row">
+          <div class="col-1 off-15 col-v-2 off-v-14 col-l-3 off-l-13 col-m-4 off-m-12 col-s-5 off-s-11 col-t-6 off-t-10"></div>
+          <div class="col-1 off-15"></div>
         </div>
       </div>
       <pre>
 &lt;div class="grid"&gt;
   &lt;div class="row"&gt;
-    &lt;div class="col-4 col-l-8 col-m-16"&gt;&lt;/div&gt;
-    &lt;div class="col-4 col-l-8 col-m-16"&gt;&lt;/div&gt;
-    &lt;div class="col-4 col-l-8 col-m-16"&gt;&lt;/div&gt;
-    &lt;div class="col-4 col-l-8 col-m-16"&gt;&lt;/div&gt;
+    &lt;div class="col-4 col-v-8 col-m-16"&gt;&lt;/div&gt;
+    &lt;div class="col-4 col-v-8 col-m-16"&gt;&lt;/div&gt;
+    &lt;div class="col-4 col-v-8 col-m-16"&gt;&lt;/div&gt;
+    &lt;div class="col-4 col-v-8 col-m-16"&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="row"&gt;
-    &lt;div class="col-8 col-t-16"&gt;&lt;/div&gt;
-    &lt;div class="col-8 col-t-16"&gt;&lt;/div&gt;
-    &lt;div class="col-8 col-t-16"&gt;&lt;/div&gt;
-    &lt;div class="col-8 col-t-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-s-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-s-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-s-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-s-16"&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="row"&gt;
-    &lt;div class="col-16 col-l-8"&gt;&lt;/div&gt;
-    &lt;div class="col-16 col-l-8"&gt;&lt;/div&gt;
+    &lt;div class="col-16 col-n-8"&gt;&lt;/div&gt;
+    &lt;div class="col-16 col-n-8"&gt;&lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="row"&gt;
-    &lt;div class="col-8 col-m-16"&gt;&lt;/div&gt;
-    &lt;div class="col-8 col-m-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-s-16"&gt;&lt;/div&gt;
+    &lt;div class="col-8 col-s-16"&gt;&lt;/div&gt;
   &lt;/div&gt;
+  ...
 &lt;/div&gt;</pre>
     </div>
   </section>
