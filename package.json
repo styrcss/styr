@@ -1,7 +1,7 @@
 {
   "name": "styr",
   "version": "0.0.8",
-  "description": "Yet another minimal CSS framework",
+  "description": "STYlish css libRary",
   "main": "dst/styr.min.css",
   "author": "Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>",
   "license": "MIT",
