@@ -9,7 +9,20 @@ https://gitlab.com/grauwoelfchen/styr/commits/master)
 [![Screenshot](doc/img/screenshot-thumb.png)](
 https://gitlab.com/grauwoelfchen/styr/raw/master/doc/img/screenshot.png)
 
-Yet another minimal CSS framework
+```txt
+  ()
+  /\_|_        ,_
+ /  \|  |   | /  |
+/(__/|_/ \_/|/   |_/
+           /|
+           \|
+
+Styr; STYlish css libRary
+```
+
+## Repository
+
+https://gitlab.com/grauwoelfchen/styr
 
 
 ## Dependencies
@@ -32,6 +45,20 @@ Yet another minimal CSS framework
 
 
 ## Development
+
+### Setup
+
+```zsh
+: e.g. use nodeenv
+% python3.5 -m venv venv
+% source venv/bin/activate
+(venv) % pip install --upgrade pip setuptools
+(venv) % pip install nodeenv
+(venv) % nodeenv -p --node=7.10.1
+
+(venv) % npm i -g npm
+(venv) % npm i
+```
 
 ### Style check
 
