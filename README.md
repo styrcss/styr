@@ -39,9 +39,12 @@ https://gitlab.com/grauwoelfchen/styr
 
 ## Features
 
+* Box
 * Button
-* Table
+* Form
 * Grid
+* Menu
+* Table
 
 
 ## Development
