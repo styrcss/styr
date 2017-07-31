@@ -80,3 +80,23 @@
 .item
   input[type="text"]
     input-text()
+
+// y-axis
+.menu.y-axis
+  width 12.345rem
+  display block
+  flex-direction column
+  .item
+    padding 0.66rem 0.864rem
+    display block
+  &.bordered
+    .item
+      margin 0
+      border 1px solid lighten($gray1, 46%)
+      border-radius 0
+      border-top none
+      &:first-child
+        border-top 1px solid lighten($gray1, 46%)
+        border-radius 0.133rem 0.133rem 0 0
+      &:last-child
+        border-radius 0 0 0.133rem 0.133rem
