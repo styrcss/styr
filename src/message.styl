@@ -1,0 +1,66 @@
+@require './_colour.styl'
+
+div.message
+  width 100%
+  border 1px solid $gray1
+  border-radius 0.133rem
+  background $white0
+  margin 0.48rem 0
+  padding 0.13rem 0.98rem
+  box-shadow none
+  color $gray2
+  font-size 0.91em
+  .header
+    font-size 0.98em
+    margin 0.49rem 0 0.013rem 0
+    padding 0
+  p
+    margin 0.49rem 0 0.53rem 0
+
+div.mini.message
+  width auto
+  margin 0
+  padding 0.06rem 0.83rem
+  font-size 0.88em
+  display inline-block
+  .header
+    font-size 0.91em
+    margin 0.34rem 0 0.013rem 0
+    padding 0
+  p
+    margin 0.33rem 0 0.43rem 0
+
+div.primary.message
+  color darken($primary-colour, 48%)
+  background lighten($primary-colour, 16%)
+
+div.secondary.message
+  color darken($secondary-colour, 48%)
+  background lighten($secondary-colour, 16%)
+
+div.negative.message
+  color darken($negative-colour, 55%)
+  background lighten($negative-colour, 18%)
+
+div.positive.message
+  color darken($positive-colour, 68%)
+  background lighten($positive-colour, 3%)
+
+// level
+div.warn.message,
+div.warning.message
+  border 1px solid darken($warning-colour, 46%)
+  color darken($warning-colour, 60%)
+  background lighten($warning-colour, 9%)
+
+div.erro.message,
+div.error.message
+  border 1px solid darken($error-colour, 53%)
+  color darken($error-colour, 63%)
+  background lighten($error-colour, 21%)
+
+div.info.message,
+div.information.message
+  border 1px solid darken($information-colour, 61%)
+  color darken($information-colour, 58%)
+  background lighten($information-colour, 19%)
