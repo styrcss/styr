@@ -58,7 +58,7 @@ form.frm
     input[type="checkbox"]:checked + label:before
       background #ffffff
       color #666666
-      content "\2713"
+      content "\25a0"
       text-align center
     input[type="checkbox"]:checked + label:after
       font-weight bold
@@ -100,3 +100,12 @@ form.frm
     margin 1.23rem 0.13rem
     padding 0 0 0.37rem 0
     border-bottom 1px solid lighten($gray1, 36%)
+
+// error
+form.frm
+  .field.error
+    input[type="text"],
+    input[type="checkbox"] + label:before
+      border 1px solid $negative-colour
+    label.lbl
+      color darken($negative-colour, 36%)

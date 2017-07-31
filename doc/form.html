@@ -38,6 +38,32 @@
   </section>
 
   <section>
+    <h3 class="title">Error</h3>
+    <div class="content">
+      <form class="frm">
+        <div class="field error">
+          <label class="lbl">First Name</label>
+          <input type="text" name="first_name" placeholder="First Name">
+        </div>
+        <div class="field">
+          <label class="lbl">Last Name</label>
+          <input type="text" name="last_name" placeholder="Last Name" value="None">
+        </div>
+        <div class="field error">
+          <div class="checkbox">
+            <input tabindex=0 id="checkbox_1" type="checkbox">
+            <label for="checkbox_1" class="lbl">I'm not a robot</label>
+          </div>
+        </div>
+        <button class="primary btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <pre>&lt;form class="frm"&gt;
+...
+&lt;/form&gt;</pre>
+  </section>
+
+  <section>
     <h3 class="title">Form Header</h3>
     <div class="content">
       <form class="frm">
@@ -52,8 +78,8 @@
         </div>
         <div class="field">
           <div class="checkbox">
-            <input tabindex=0 id="checkbox_1" type="checkbox">
-            <label for="checkbox_1" class="lbl">I'm not a robot</label>
+            <input tabindex=0 id="checkbox_2" type="checkbox">
+            <label for="checkbox_2" class="lbl">I'm not a robot</label>
           </div>
         </div>
         <button class="primary btn" type="submit">Submit</button>
