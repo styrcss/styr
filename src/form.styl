@@ -1,0 +1,73 @@
+@require './_colour.styl'
+
+form.frm
+  max-width 100%
+  .field
+    margin-bottom 0.992rem
+
+form.frm
+  label.lbl
+    display block
+    margin 0 0 0.319rem 0.12rem
+    font-size 0.8282em
+    color $black0
+    font-weight 600
+    text-transform none
+
+  input[type="text"]
+    margin 0
+    outline 0
+    font-size 0.864em
+    line-height 1.338em
+    padding 0.394rem 0.592rem
+    background #ffffff
+    box-shadow none
+    border-radius 0.12rem
+    border 1px solid darken($gray0, 8%)
+    width 100%
+
+// checkbox
+form.frm
+  .checkbox
+    position relative
+    display inline-block
+    outline 0
+    vertical-align bottom
+    font-style normal
+    line-height 0.89em
+    min-width 2rem
+  .checkbox
+    label.lbl,
+    span.lbl
+      vertical-align baseline
+      cursor pointer
+      outline 0
+  .checkbox
+    input[type="checkbox"]
+      z-index -1
+      opacity 0
+      position absolute
+      top 0
+      left 0
+    input[type="checkbox"] + label:before
+      cursor pointer
+      top 0
+      left 0
+      outline 0
+      vertical-align baseline
+      margin-right 0.66rem
+      padding 0.11rem 0 0 0
+      border 1px solid darken($gray0, 8%)
+      border-radius 0.12rem
+      transition width 0.1s, height 0.1s, margin 0.1s
+      content "\00a0"
+      display inline-block
+      width 1.22rem
+      height 1.22rem
+    input[type="checkbox"]:checked + label:before
+      background #ffffff
+      color #666666
+      content "\2713"
+      text-align center
+    input[type="checkbox"]:checked + label:after
+      font-weight bold
