@@ -7,80 +7,102 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="title">Styr</h1>
-  <p class="nav"><a href="./index.html">&lt; Back</a></p>
-  <h2 class="title">Menu</h2>
-
-  <section>
-    <h3 class="title">Nested right menu</h3>
-    <div class="content">
-      <div class="menu">
-        <a class="item active">Top</a>
-        <a class="item">Page1</a>
-        <a class="item">Page2</a>
-        <div class="right menu">
-          <a class="item">Preferences</a>
-          <a class="item">Login</a>
+  <div class="container">
+    <div class="sidebar">
+      <div class="item">
+      </div>
+      <h6 class="item">Styles</h6>
+      <a class="item" href="./box.html">Box</a>
+      <a class="item" href="./breadcrumb.html">Breadcrumb</a>
+      <a class="item" href="./button.html">Button</a>
+      <a class="item" href="./form.html">Form</a>
+      <a class="item" href="./grid.html">Grid</a>
+      <a class="item active" href="./menu.html">Menu</a>
+      <a class="item" href="./message.html">Message</a>
+      <a class="item" href="./table.html">Table</a>
+      <a class="item" href="./typography.html">Typography</a>
+      <hr>
+      <h6 class="item">Modules</h6>
+      <a class="item" href="./sidebar.html">Sidebar</a>
+      <div class="bottom item">
+        <div class="primary message">
+          <h4 class="header">Styr</h4>
+          <p>STYlish css libRary, version <code>0.0.8</code></p>
         </div>
       </div>
     </div>
-    <pre>
-&lt;div class="menu"&gt;
-&lt;/div&gt;
-    </pre>
-  </section><!-- with nested right menu -->
-
-  <section>
-    <h3 class="title">Input form</h3>
     <div class="content">
-      <div class="menu">
-        <a class="item active">Top</a>
-        <a class="item">Page1</a>
-        <a class="item">Page2</a>
-        <div class="right menu">
-          <div class="item">
-            <input type="text" placeholder="Search...">
+      <div class="breadcrumb">
+        <a class="item" href="./index.html">Top</a>
+        <span class="divider">/</span>
+        <span class="item active" href="./menu.html">Menu</span>
+      </div>
+      <h2 class="title">Menu</h2>
+
+      <section>
+        <h3 class="title">Nested right menu</h3>
+        <div class="description">
+          <div class="menu">
+            <a class="item active">Top</a>
+            <a class="item">Page1</a>
+            <a class="item">Page2</a>
+            <div class="right menu">
+              <a class="item">Preferences</a>
+              <a class="item">Login</a>
+            </div>
           </div>
-          <a class="item">Logout</a>
         </div>
-      </div>
-    </div>
-    <pre>
-&lt;div class="menu"&gt;
-&lt;/div&gt;
-    </pre>
-  </section>
+        <pre>&lt;div class="menu"&gt;
+&lt;/div&gt;</pre>
+      </section>
 
-  <section>
-    <h3 class="title">Y-axis</h3>
-    <div class="content">
-      <div class="y-axis menu">
-        <a class="item">Page0</a>
-        <a class="item active">Page1</a>
-        <a class="item">Page2</a>
-        <a class="item">Page3</a>
-      </div>
-    </div>
-    <pre>
-&lt;div class="y-axis menu"&gt;
-&lt;/div&gt;
-    </pre>
-  </section>
+      <section>
+        <h3 class="title">Input form</h3>
+        <div class="description">
+          <div class="menu">
+            <a class="item active">Top</a>
+            <a class="item">Page1</a>
+            <a class="item">Page2</a>
+            <div class="right menu">
+              <div class="item">
+                <input type="text" placeholder="Search...">
+              </div>
+              <a class="item">Logout</a>
+            </div>
+          </div>
+        </div>
+        <pre>&lt;div class="menu"&gt;
+&lt;/div&gt;</pre>
+      </section>
 
-  <section>
-    <h3 class="title">Y-axis, bordered</h3>
-    <div class="content">
-      <div class="y-axis bordered menu">
-        <a class="item" href="/">Page0</a>
-        <a class="item active">Page1</a>
-        <a class="item">Page2</a>
-        <a class="item">Page3</a>
-      </div>
+      <section>
+        <h3 class="title">Y-axis</h3>
+        <div class="description">
+          <div class="y-axis menu">
+            <a class="item">Page0</a>
+            <a class="item active">Page1</a>
+            <a class="item">Page2</a>
+            <a class="item">Page3</a>
+          </div>
+        </div>
+        <pre>&lt;div class="y-axis menu"&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 class="title">Y-axis, bordered</h3>
+        <div class="description">
+          <div class="y-axis bordered menu">
+            <a class="item" href="/">Page0</a>
+            <a class="item active">Page1</a>
+            <a class="item">Page2</a>
+            <a class="item">Page3</a>
+          </div>
+        </div>
+        <pre>&lt;div class="y-axis bordered menu"&gt;
+&lt;/div&gt;</pre>
+      </section>
     </div>
-    <pre>
-&lt;div class="y-axis bordered menu"&gt;
-&lt;/div&gt;
-    </pre>
-  </section>
+  </div>
 </body>
 </html>

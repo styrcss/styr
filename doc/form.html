@@ -7,102 +7,129 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="title">Styr</h1>
-  <p class="nav"><a href="./index.html">&lt; Back</a></p>
-  <h2 class="title">Form</h2>
-
-  <section>
-    <h3 class="title">Plain</h3>
-    <div class="content">
-      <form class="frm">
-        <div class="field">
-          <label class="lbl">First Name</label>
-          <input type="text" name="first_name" placeholder="First Name">
+  <div class="container">
+    <div class="sidebar">
+      <div class="item">
+      </div>
+      <h6 class="item">Styles</h6>
+      <a class="item" href="./box.html">Box</a>
+      <a class="item" href="./breadcrumb.html">Breadcrumb</a>
+      <a class="item" href="./button.html">Button</a>
+      <a class="item active" href="./form.html">Form</a>
+      <a class="item" href="./grid.html">Grid</a>
+      <a class="item" href="./menu.html">Menu</a>
+      <a class="item" href="./message.html">Message</a>
+      <a class="item" href="./table.html">Table</a>
+      <a class="item" href="./typography.html">Typography</a>
+      <hr>
+      <h6 class="item">Modules</h6>
+      <a class="item" href="./sidebar.html">Sidebar</a>
+      <div class="bottom item">
+        <div class="primary message">
+          <h4 class="header">Styr</h4>
+          <p>STYlish css libRary, version <code>0.0.8</code></p>
         </div>
-        <div class="field">
-          <label class="lbl">Last Name</label>
-          <input type="text" name="last_name" placeholder="Last Name">
-        </div>
-        <div class="field">
-          <div class="checkbox">
-            <input tabindex=0 id="checkbox_0" type="checkbox">
-            <label for="checkbox_0" class="lbl">I'm not a robot</label>
-          </div>
-        </div>
-        <button class="primary btn" type="submit">Submit</button>
-      </form>
+      </div>
     </div>
-    <pre>&lt;form class="frm"&gt;
+    <div class="content">
+      <div class="breadcrumb">
+        <a class="item" href="./index.html">Top</a>
+        <span class="divider">/</span>
+        <span class="item active" href="./form.html">Form</span>
+      </div>
+      <h2 class="title">Form</h2>
+      <section>
+        <h3 class="title">Plain</h3>
+        <div class="description">
+          <form class="frm">
+            <div class="field">
+              <label class="lbl">First Name</label>
+              <input type="text" name="first_name" placeholder="First Name">
+            </div>
+            <div class="field">
+              <label class="lbl">Last Name</label>
+              <input type="text" name="last_name" placeholder="Last Name">
+            </div>
+            <div class="field">
+              <div class="checkbox">
+                <input tabindex=0 id="checkbox_0" type="checkbox">
+                <label for="checkbox_0" class="lbl">I'm not a robot</label>
+              </div>
+            </div>
+            <button class="primary btn" type="submit">Submit</button>
+          </form>
+        </div>
+        <pre>&lt;form class="frm"&gt;
 ...
 &lt;/form&gt;</pre>
-  </section>
+      </section>
 
-  <section>
-    <h3 class="title">Error</h3>
-    <div class="content">
-      <form class="frm">
-        <div class="field error">
-          <label class="lbl">First Name</label>
-          <input type="text" name="first_name" placeholder="First Name">
+      <section>
+        <h3 class="title">Error</h3>
+        <div class="description">
+          <form class="frm">
+            <div class="field error">
+              <label class="lbl">First Name</label>
+              <input type="text" name="first_name" placeholder="First Name">
+            </div>
+            <div class="field">
+              <label class="lbl">Last Name</label>
+              <input type="text" name="last_name" placeholder="Last Name" value="None">
+            </div>
+            <div class="field error">
+              <div class="checkbox">
+                <input tabindex=0 id="checkbox_1" type="checkbox">
+                <label for="checkbox_1" class="lbl">I'm not a robot</label>
+              </div>
+            </div>
+            <button class="primary btn" type="submit">Submit</button>
+          </form>
         </div>
-        <div class="field">
-          <label class="lbl">Last Name</label>
-          <input type="text" name="last_name" placeholder="Last Name" value="None">
-        </div>
-        <div class="field error">
-          <div class="checkbox">
-            <input tabindex=0 id="checkbox_1" type="checkbox">
-            <label for="checkbox_1" class="lbl">I'm not a robot</label>
-          </div>
-        </div>
-        <button class="primary btn" type="submit">Submit</button>
-      </form>
-    </div>
-    <pre>&lt;form class="frm"&gt;
+        <pre>&lt;form class="frm"&gt;
 ...
 &lt;/form&gt;</pre>
-  </section>
+      </section>
 
-  <section>
-    <h3 class="title">Form Header</h3>
-    <div class="content">
-      <form class="frm">
-        <h3 class="header">Name</h3>
-        <div class="field">
-          <label class="lbl">First Name</label>
-          <input type="text" name="first_name" placeholder="First Name">
+      <section>
+        <h3 class="title">Form Header</h3>
+        <div class="description">
+          <form class="frm">
+            <h3 class="header">Name</h3>
+            <div class="field">
+              <label class="lbl">First Name</label>
+              <input type="text" name="first_name" placeholder="First Name">
+            </div>
+            <div class="field">
+              <label class="lbl">Last Name</label>
+              <input type="text" name="last_name" placeholder="Last Name">
+            </div>
+            <div class="field">
+              <div class="checkbox">
+                <input tabindex=0 id="checkbox_2" type="checkbox">
+                <label for="checkbox_2" class="lbl">I'm not a robot</label>
+              </div>
+            </div>
+            <button class="primary btn" type="submit">Submit</button>
+          </form>
         </div>
-        <div class="field">
-          <label class="lbl">Last Name</label>
-          <input type="text" name="last_name" placeholder="Last Name">
-        </div>
-        <div class="field">
-          <div class="checkbox">
-            <input tabindex=0 id="checkbox_2" type="checkbox">
-            <label for="checkbox_2" class="lbl">I'm not a robot</label>
-          </div>
-        </div>
-        <button class="primary btn" type="submit">Submit</button>
-      </form>
-    </div>
-    <pre>&lt;form class="frm"&gt;
+        <pre>&lt;form class="frm"&gt;
 ...
 &lt;/form&gt;</pre>
-  </section>
+      </section>
 
-  <section>
-    <h3 class="title">Textarea</h3>
-    <div class="content">
-      <form class="frm">
-        <h3 class="header">Feedback</h3>
-        <div class="field">
-          <label class="lbl">Message</label>
-          <textarea rows="2" placeholder="I was actually a robot..."></textarea>
+      <section>
+        <h3 class="title">Textarea</h3>
+        <div class="description">
+          <form class="frm">
+            <h3 class="header">Feedback</h3>
+            <div class="field">
+              <label class="lbl">Message</label>
+              <textarea rows="2" placeholder="I was actually a robot..."></textarea>
+            </div>
+            <button class="flat secondary btn" type="submit">Submit</button>
+          </form>
         </div>
-        <button class="flat secondary btn" type="submit">Submit</button>
-      </form>
-    </div>
-    <pre>&lt;form class="frm"&gt;
+        <pre>&lt;form class="frm"&gt;
 &lt;h3 class="header"&gt;Feedback&lt;/h3&gt;
 &lt;div class="field"&gt;
   &lt;label class="lbl"&gt;Message&lt;/lbl&gt;
@@ -110,33 +137,35 @@
 &lt;/div&gt;
 ...
 &lt;/form&gt;</pre>
-  </section>
+      </section>
 
-  <section>
-    <h3 class="title">Select</h3>
-    <div class="content">
-      <form class="frm">
-        <div class="field">
-          <label class="lbl">Material</label>
-          <select>
-            <option>Steel</option>
-            <option>Gold</option>
-            <option>Paper</option>
-          </select>
+      <section>
+        <h3 class="title">Select</h3>
+        <div class="description">
+          <form class="frm">
+            <div class="field">
+              <label class="lbl">Material</label>
+              <select>
+                <option>Steel</option>
+                <option>Gold</option>
+                <option>Paper</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="lbl">Planet</label>
+              <select>
+                <option>Mars</option>
+                <option>Pluto</option>
+              </select>
+            </div>
+            <button class="primary flat btn" type="submit">Save</button>
+          </form>
         </div>
-        <div class="field">
-          <label class="lbl">Planet</label>
-          <select>
-            <option>Mars</option>
-            <option>Pluto</option>
-          </select>
-        </div>
-        <button class="primary flat btn" type="submit">Save</button>
-      </form>
-    </div>
-    <pre>&lt;form class="frm"&gt;
+        <pre>&lt;form class="frm"&gt;
 ...
 &lt;/form&gt;</pre>
-  </section>
+      </section>
+    </div>
+  </div>
 </body>
 </html>

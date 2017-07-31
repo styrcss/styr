@@ -1,0 +1,66 @@
+@require './_colour.styl'
+
+.container
+  display flex
+  height 100%
+  width 100%
+  position fixed
+  top 0
+  left 0
+  height 100%
+  max-height 100%
+  .sidebar
+    flex 1
+    box-shadow 0 0 0.04rem $gray2
+    z-index 1
+    height 100%
+    max-height 100%
+    min-width 14.78rem
+    max-width 18.97rem
+    visibility visible
+    background $gray0
+    border none
+    border-radius 0
+    margin 0
+    overflow-y auto
+    position relative
+    &.hidden
+      display none
+  .content
+    overflow-y scroll
+    width 100%
+    padding 1.03rem 1.32rem
+    flex 1
+
+.sidebar
+  .item
+    outline 0
+    display block
+    width 100%
+    padding 0 1.26rem
+    color darken($gray1, 12%)
+  .item:last-child
+    margin-bottom 0.96rem
+  .item:not(a):not(span)
+    margin 0.94rem 0
+  .item.active
+    background darken($gray0, 3%)
+
+.sidebar
+  a.item,
+  span.item
+    margin 0
+    padding 0.721rem 1.26rem
+    background none
+  a.item:hover
+      text-decoration none
+      color darken($black2, 9%)
+      background darken($gray0, 8%)
+  .item.bottom
+    width 100%
+    position absolute
+    bottom 0
+
+.sidebar
+  hr
+    margin 1.08rem 1.11rem

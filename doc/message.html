@@ -7,90 +7,114 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 class="title">Styr</h1>
-  <p class="nav"><a href="./index.html">&lt; Back</a></p>
-  <h2 class="title">Message</h2>
-
-  <section>
-    <h3 class="title">Standard</h3>
-    <div class="content">
-      <div class="message">
-        <h3 class="header">Yo</h3>
-        <p>We are come from mars...</p>
+  <div class="container">
+    <div class="sidebar">
+      <div class="item">
       </div>
-      <div class="primary message">
-        <h4 class="header">Welcome</h4>
-        <p>We are come from mars...</p>
-      </div>
-      <div class="secondary message">
-        <h4 class="header">Tips</h4>
-        <p>We are come from mars...</p>
-      </div>
-    </div>
-    <pre>
-&lt;div class="message"&gt;
-&lt;/div&gt;
-    </pre>
-  </section>
-
-  <section>
-    <h3 class="title">Level</h3>
-    <p class="desc">
-      <code>warn, warning</code><br>
-      <code>erro, error</code><br>
-      <code>info, information</code>
-    </p>
-    <div class="content">
-      <div class="warning message">
-        <h4 class="header">WARN</h4>
-        <p>Important message...</p>
-      </div>
-      <div class="error message">
-        <h4 class="header">ERRO</h4>
-        <p>Important message...</p>
-      </div>
-      <div class="information message">
-        <h4 class="header">INFO</h4>
-        <p>Important message...</p>
+      <h6 class="item">Styles</h6>
+      <a class="item" href="./box.html">Box</a>
+      <a class="item" href="./breadcrumb.html">Breadcrumb</a>
+      <a class="item" href="./button.html">Button</a>
+      <a class="item" href="./form.html">Form</a>
+      <a class="item" href="./grid.html">Grid</a>
+      <a class="item" href="./menu.html">Menu</a>
+      <a class="item active" href="./message.html">Message</a>
+      <a class="item" href="./table.html">Table</a>
+      <a class="item" href="./typography.html">Typography</a>
+      <hr>
+      <h6 class="item">Modules</h6>
+      <a class="item" href="./sidebar.html">Sidebar</a>
+      <div class="bottom item">
+        <div class="primary message">
+          <h4 class="header">Styr</h4>
+          <p>STYlish css libRary, version <code>0.0.8</code></p>
+        </div>
       </div>
     </div>
-    <pre>
-&lt;div class="warning message"&gt;
+    <div class="content">
+      <div class="breadcrumb">
+        <a class="item" href="./index.html">Top</a>
+        <span class="divider">/</span>
+        <span class="item active" href="./message.html">Message</span>
+      </div>
+      <h2 class="title">Message</h2>
+
+      <section>
+        <h3 class="title">Standard</h3>
+        <div class="description">
+          <div class="message">
+            <h3 class="header">Yo</h3>
+            <p>We are come from mars...</p>
+          </div>
+          <div class="primary message">
+            <h4 class="header">Welcome</h4>
+            <p>We are come from mars...</p>
+          </div>
+          <div class="secondary message">
+            <h4 class="header">Tips</h4>
+            <p>We are come from mars...</p>
+          </div>
+        </div>
+        <pre>&lt;div class="message"&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 class="title">Level</h3>
+        <p class="desc">
+          <code>warn, warning</code><br>
+          <code>erro, error</code><br>
+          <code>info, information</code>
+        </p>
+        <div class="description">
+          <div class="warning message">
+            <h4 class="header">WARN</h4>
+            <p>Important message...</p>
+          </div>
+          <div class="error message">
+            <h4 class="header">ERRO</h4>
+            <p>Important message...</p>
+          </div>
+          <div class="information message">
+            <h4 class="header">INFO</h4>
+            <p>Important message...</p>
+          </div>
+        </div>
+        <pre>&lt;div class="warning message"&gt;
 &lt;/div&gt;
 &lt;div class="error message"&gt;
 &lt;/div&gt;
 &lt;div class="informatin message"&gt;
-&lt;/div&gt;
-    </pre>
-  </section>
+&lt;/div&gt;</pre>
+      </section>
 
-  <section>
-    <h3 class="title">Mini</h3>
-    <div class="content">
-      <div class="mini message">
-        <p>We are come from mars...</p>
-      </div>
-      <div class="primary mini message">
-        <h4 class="header">Hi!</h4>
-        <p>We are come from mars...</p>
-      </div>
-      <div class="secondary mini message">
-        <h4 class="header">Hoi!</h4>
-        <p>We are come from mars...</p>
-      </div>
-      <div class="negative mini message">
-        <h4 class="header">Danger!</h4>
-        <p>We are come from mars...</p>
-      </div>
-      <div class="positive mini message">
-        <h4 class="header">Good!</h4>
-        <p>We are come from mars...</p>
-      </div>
+      <section>
+        <h3 class="title">Mini</h3>
+        <div class="description">
+          <div class="mini message">
+            <p>We are come from mars...</p>
+          </div>
+          <div class="primary mini message">
+            <h4 class="header">Hi!</h4>
+            <p>We are come from mars...</p>
+          </div>
+          <div class="secondary mini message">
+            <h4 class="header">Hoi!</h4>
+            <p>We are come from mars...</p>
+          </div>
+          <div class="negative mini message">
+            <h4 class="header">Danger!</h4>
+            <p>We are come from mars...</p>
+          </div>
+          <div class="positive mini message">
+            <h4 class="header">Good!</h4>
+            <p>We are come from mars...</p>
+          </div>
+        </div>
+        <pre>&lt;div class="mini message"&gt;
+&lt;/div&gt;</pre>
+      </section>
     </div>
-    <pre>
-&lt;div class="mini message"&gt;
-&lt;/div&gt;
-    </pre>
-  </section>
+  </div>
 </body>
 </html>
