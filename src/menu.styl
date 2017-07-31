@@ -1,0 +1,82 @@
+@require './_colour.styl'
+
+.menu
+  display flex
+  font-weight normal
+  border-radius 0
+  border none
+  min-height 2.147rem
+  box-shadow none
+  &::after
+    content ''
+    display block
+    height 0
+    clear both
+    visibility hidden
+
+// menu - item
+.menu
+  .item
+    position relative
+    vertical-align middle
+    line-height 0.9em
+    font-weight normal
+    text-decoration none
+    text-transform none
+    user-select none
+    background none
+    box-shadow none
+    margin 0.09rem 0.257rem
+    padding 0.185rem 0.578rem
+    color $black0
+    flex 0 0 auto
+    display flex
+    align-items center
+    border none
+    &:first-child
+      margin-left 0.33rem
+    > a,
+    > p:only-child
+      user-select text
+      line-height 1.12em
+    > p:first-child
+      margin-top 0
+    > p:last-child
+      margin-bottom 0
+
+// menu - item decoration
+.menu
+  .item
+    background rgba(0, 0, 0, 0) none repeat scroll 0 0
+    border-radius 0.185714rem
+    border none
+    transition color 0.1s ease 0s
+    &::before
+      background none
+      border none
+      border-radius none
+  a.item
+    &:hover
+      background $gray0
+    &.active
+      background rgba(0, 0, 0, 0.05) none repeat scroll 0 0
+      border-radius 0.185714rem
+      box-shadow none
+      color $black0
+
+// right
+.menu
+  .right.menu,
+  .right.item
+    margin-left auto
+    &::before
+      right auto
+      left 0
+    &:last-child
+      margin-right 0.33rem
+
+// input form
+.item
+  input[type="text"]
+    display inline-block
+    vertical-align middle
