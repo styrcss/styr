@@ -53,8 +53,9 @@ pre {
 }
 
 code {
-  margin: 0.22rem 0.34rem;
-  padding: 0.11rem 0.29rem;
+  line-height: 1.72em;
+  margin: 0.12rem 0.34rem;
+  padding: 0.04rem 0.29rem;
   border: 2px solid pink;
   border-radius: 2px;
   color: red;
