@@ -1,4 +1,5 @@
 @require './_colour.styl'
+@require './_input.styl'
 
 form.frm
   max-width 100%
@@ -13,18 +14,9 @@ form.frm
     color $black0
     font-weight 600
     text-transform none
-
   input[type="text"]
-    margin 0
-    outline 0
-    font-size 0.864em
-    line-height 1.338em
-    padding 0.394rem 0.592rem
-    background #ffffff
-    box-shadow none
-    border-radius 0.12rem
-    border 1px solid darken($gray0, 8%)
-    width 100%
+    input-text()
+
 
 // checkbox
 form.frm
