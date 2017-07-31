@@ -1,5 +1,5 @@
 31 Jun 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
-	* Add form,menu, box, breadcrumb and message
+	* Add form,menu, box, breadcrumb, message and sidebar
 
 24 Jun 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Update Node.js 7.8.0 (for development)
