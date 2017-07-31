@@ -1,5 +1,6 @@
 @require './_colour.styl'
 
+// selection
 *::selection
   background $black2
   color $gray0
@@ -8,9 +9,53 @@
   background $black0
   color $gray0
 
+// link
+a
+  color $link-colour
+  text-decoration none
+  &:hover
+    color lighten($link-colour, 26%)
+  &:visited
+    color $link-visited-colour
+  &:visited:hover
+    color lighten($link-visited-colour, 38%)
+  &:hover
+  &:visited:hover
+    text-decoration underline
+
+// line
 hr
   height 0
   border none
   border-bottom 1px solid lighten($gray1, 64%)
   display block
   margin 0 0.786rem
+
+// breadcrumb
+div.breadcrumb,
+ul.breadcrumb
+  display inline-block
+  span.divider,
+  div.divider,
+  li.divider
+    display inline-block
+    font-size 0.776em
+    padding 0
+    margin 0 0.032rem
+    color $gray1
+  a.item,
+  span.item,
+  div.item,
+  li.item
+    display inline-block
+    font-size 0.886em
+    margin 0
+    padding 0
+    &.active
+      pointer-events none
+      cursor default
+      font-weight bold
+      color $black0
+      &:hover
+        color $black0
+        text-decoration none
