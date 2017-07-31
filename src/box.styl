@@ -74,12 +74,13 @@ div.box
       border-top 1px solid $gray1
       margin-top 1.12rem
       border-radius 0.133rem 0.133rem 0 0
-    &:last-child:not(.footer)
+    &:last-child:not(.footer):not(.flat)
       margin-bottom 1.12rem
       border-radius 0 0 0.133rem 0.133rem
       box-shadow 0 0.19rem 0.08rem -0.19rem darken($gray0, 62%) !important
-      &.flat
-        box-shadow none
+    &:last-child.flat
+      border-radius 0 0 0.133rem 0.133rem
+      box-shadow none
 
 div.primary.box
   background $primary-colour
