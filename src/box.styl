@@ -1,0 +1,100 @@
+@require './_colour.styl'
+
+div.box
+  box-shadow 0 0.19rem 0.08rem -0.19rem darken($gray0, 62%)
+  border-radius 0.133rem
+  background $white0
+  margin 1.12rem 0
+  padding 0.33rem 1.12rem
+
+div.attached.header
+  border 1px solid $gray1
+  margin 0.612rem 0 0 0
+  border-radius 0.133rem 0.133rem 0 0
+  background lighten($gray0, 3%)
+  padding 0.06rem 0.96rem 0.09rem 0.96rem
+  > p
+  > h1,h2,h3,h4,h5,h6
+    margin 0.36em 0.08rem
+    padding 0
+
+div.attached.footer
+  border 1px solid $gray1
+  border-top none
+  box-shadow 0 0.19rem 0.08rem -0.19rem darken($gray0, 62%) !important
+  margin 0 0 0.612rem 0
+  border-radius 0 0 0.133rem 0.133rem
+  background lighten($gray0, 3%)
+  padding 0.09rem 0.96rem 0.06rem 0.96rem
+  > p
+  > h1,h2,h3,h4,h5,h6
+    margin 0.36em 0.08rem
+    padding 0
+
+div.attached.primary.header,
+div.attached.primary.footer
+  background $primary-colour
+
+div.attached.secondary.header,
+div.attached.secondary.footer
+  background $secondary-colour
+
+div.attached.negative.header,
+div.attached.negative.footer
+  background lighten($negative-colour, 38%)
+  color darken($negative-colour, 46%)
+
+div.attached.positive.header,
+div.attached.positive.footer
+  background lighten($positive-colour, 61%)
+  color darken($positive-colour, 60%)
+
+// clear
+div.attached.footer ~ div.box
+  border-top 1px solid $gray1
+  border-radius 0.133rem 0.133rem 0 0
+  margin-top 1.12rem
+
+div.box
+  border 1px solid $gray1
+  &.flat
+    background #ffffff
+    box-shadow none
+    border 1px solid lighten($gray1, 18%)
+  &.group,
+  &.attached
+    margin 0
+    box-shadow none
+    border-radius 0
+    border-top none
+    &.primary,
+    &.secondary
+      border-top none
+    &:first-child
+      border-top 1px solid $gray1
+      margin-top 1.12rem
+      border-radius 0.133rem 0.133rem 0 0
+    &:last-child:not(.footer)
+      margin-bottom 1.12rem
+      border-radius 0 0 0.133rem 0.133rem
+      box-shadow 0 0.19rem 0.08rem -0.19rem darken($gray0, 62%) !important
+      &.flat
+        box-shadow none
+
+div.primary.box
+  background $primary-colour
+  border 1px solid $gray1
+
+div.secondary.box
+  background $secondary-colour
+  border 1px solid $gray1
+
+div.negative.flat.box
+  background #ffffff
+  color darken($negative-colour, 42%)
+  border 1px solid darken($negative-colour, 42%)
+
+div.positive.flat.box
+  background #ffffff
+  color darken($positive-colour, 58%)
+  border 1px solid darken($positive-colour, 64%)
