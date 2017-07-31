@@ -39,12 +39,17 @@ https://gitlab.com/grauwoelfchen/styr
 
 ## Features
 
+See `doc/index.html`
+
 * Box
+* Breadcrumb
 * Button
 * Form
 * Grid
 * Menu
+* Message
 * Table
+* Typography
 
 
 ## Development
