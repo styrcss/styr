@@ -1,4 +1,5 @@
 01 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Bump version 0.0.10
 	* Rename y-axis->vertical and mini->petit
 	* Rename tbl->table, btn->button, col->column and frm->form
 
