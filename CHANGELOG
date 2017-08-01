@@ -1,6 +1,7 @@
 02 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Add input submit button support
-	* Improve button and message
+	* Improve box, button and message
+	* Add box footer message
 
 01 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.10, 0.0.11
