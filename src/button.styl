@@ -7,7 +7,8 @@ btn-style(c1, c2)
   box-shadow 0 0.18rem 0.08rem -0.19rem darken(c2, 62%)
 
 a.button,
-button.button
+button.button,
+input[type="submit"].button
   margin 0
   color #3d4448
   font-weight 300
@@ -27,8 +28,13 @@ button.button
     color #151719
     border 1px solid rgba(13, 31, 35, 0.35)
 
+a.button
+  &:hover
+    text-decoration none
+
 a.primary.button,
-button.primary.button
+button.primary.button,
+input[type="submit"].primary.button
   color rgba(91, 105, 142, 0.79)
   btn-style(#f0f3f6, $primary-colour)
   &:hover
@@ -41,7 +47,8 @@ button.primary.button
       border-color darken($primary-colour, 26%)
 
 a.secondary.button,
-button.secondary.button
+button.secondary.button,
+input[type="submit"].secondary.button
   border 1px solid rgba(182, 186, 183, 0.89)
   color rgba(84, 85, 87, 0.86)
   btn-style(#e9edf0, $secondary-colour)
@@ -53,7 +60,8 @@ button.secondary.button
     box-shadow 0 0.15rem 0.07rem -0.19rem darken($primary-colour, 62%)
 
 a.negative.button,
-button.negative.button
+button.negative.button,
+input[type="submit"].negative.button
   border 1px solid rgba(194, 128, 128, 0.68)
   color rgba(140, 51, 51, 0.88)
   btn-style(#f7cccc, $negative-colour)
@@ -65,7 +73,8 @@ button.negative.button
     box-shadow 0 0.15rem 0.07rem -0.19rem darken($negative-colour, 62%)
 
 a.positive.button,
-button.positive.button
+button.positive.button,
+input[type="submit"].positive.button
   border 1px solid rgba(105, 165, 113, 0.76)
   color rgba(41, 84, 60, 0.88)
   btn-style(#c8f5d9, $positive-colour)
@@ -77,7 +86,8 @@ button.positive.button
     box-shadow 0 0.15rem 0.07rem -0.19rem darken($positive-colour, 62%)
 
 a.flat.button,
-button.flat.button
+button.flat.button,
+input[type="submit"].flat.button
   background-image none
   background none
   box-shadow 0 0.15rem 0.07rem -0.19rem darken($gray-colour, 62%)
@@ -86,6 +96,7 @@ button.flat.button
     background none
 
 a.button.disabled,
-button.button.disabled
+button.button.disabled,
+input[type="submit"].button.disabled
   opacity 0.4
   cursor not-allowed
