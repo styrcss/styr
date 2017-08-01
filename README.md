@@ -46,6 +46,7 @@ See `doc/index.html`
 * Button
 * Form
 * Grid
+* Label
 * Menu
 * Message
 * Table
