@@ -6,8 +6,8 @@ btn-style(c1, c2)
   background-image linear-gradient(-180deg, c1 0%, c2 91%)
   box-shadow 0 0.18rem 0.08rem -0.19rem darken(c2, 62%)
 
-a.btn,
-button.btn
+a.button,
+button.button
   margin 0
   color #3d4448
   font-weight 300
@@ -27,8 +27,8 @@ button.btn
     color #151719
     border 1px solid rgba(13, 31, 35, 0.35)
 
-a.primary.btn,
-button.primary.btn
+a.primary.button,
+button.primary.button
   color rgba(91, 105, 142, 0.79)
   btn-style(#f0f3f6, $primary-colour)
   &:hover
@@ -40,8 +40,8 @@ button.primary.btn
     &:hover
       border-color darken($primary-colour, 26%)
 
-a.secondary.btn,
-button.secondary.btn
+a.secondary.button,
+button.secondary.button
   border 1px solid rgba(182, 186, 183, 0.89)
   color rgba(84, 85, 87, 0.86)
   btn-style(#e9edf0, $secondary-colour)
@@ -52,8 +52,8 @@ button.secondary.btn
     color darken($secondary-colour, 58%)
     box-shadow 0 0.15rem 0.07rem -0.19rem darken($primary-colour, 62%)
 
-a.negative.btn,
-button.negative.btn
+a.negative.button,
+button.negative.button
   border 1px solid rgba(194, 128, 128, 0.68)
   color rgba(140, 51, 51, 0.88)
   btn-style(#f7cccc, $negative-colour)
@@ -64,8 +64,8 @@ button.negative.btn
     color darken($negative-colour, 58%)
     box-shadow 0 0.15rem 0.07rem -0.19rem darken($negative-colour, 62%)
 
-a.positive.btn,
-button.positive.btn
+a.positive.button,
+button.positive.button
   border 1px solid rgba(105, 165, 113, 0.76)
   color rgba(41, 84, 60, 0.88)
   btn-style(#c8f5d9, $positive-colour)
@@ -76,8 +76,8 @@ button.positive.btn
     color darken($positive-colour, 62%)
     box-shadow 0 0.15rem 0.07rem -0.19rem darken($positive-colour, 62%)
 
-a.flat.btn,
-button.flat.btn
+a.flat.button,
+button.flat.button
   background-image none
   background none
   box-shadow 0 0.15rem 0.07rem -0.19rem darken($gray-colour, 62%)
@@ -85,7 +85,7 @@ button.flat.btn
     background-image none
     background none
 
-a.btn.disabled,
-button.btn.disabled
+a.button.disabled,
+button.button.disabled
   opacity 0.4
   cursor not-allowed

@@ -1,12 +1,12 @@
 @require './_colour.styl'
 @require './_input.styl'
 
-form.frm
+form.form
   max-width 100%
   .field
     margin-bottom 0.992rem
 
-form.frm
+form.form
   label.lbl
     display block
     margin 0 0 0.369rem 0.12rem
@@ -18,7 +18,7 @@ form.frm
     input-text()
 
 // checkbox
-form.frm
+form.form
   .checkbox
     position relative
     display inline-block
@@ -64,7 +64,7 @@ form.frm
       font-weight bold
 
 // select
-form.frm
+form.form
   select
     outline 0
     min-height 1.2rem
@@ -83,14 +83,13 @@ form.frm
       background #ffffff
       border none
 
-
 // textarea
-form.frm
+form.form
   textarea
     input-text()
 
 // header
-form.frm
+form.form
   .header
     font-size 0.962em
     border none
@@ -102,7 +101,7 @@ form.frm
     border-bottom 1px solid lighten($gray1, 36%)
 
 // error
-form.frm
+form.form
   .field.error
     input[type="text"],
     input[type="checkbox"] + label:before

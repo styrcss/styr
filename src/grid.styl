@@ -27,93 +27,93 @@ cols = {
 
 /**
  * NOTE:
- *   off-N works only range in media queries
+ *   offset-N works only range in media queries
  */
 
 for k, v in cols
-  .col-{k}
+  .column-{k}
     width unquote(v)
     display inline-block
     box-sizing border-box
     float left
     padding 0.6rem
-  .off-{k}
+  .offset-{k}
     margin-left unquote(v)
 
 @media only screen and (max-width: 1280px)
   /* v(ast|ery large) size */
-  [class*="col-v-"][class*="off-"]
+  [class*="column-v-"][class*="offset-"]
     margin-left unset
-  [class*="col-"]
+  [class*="column-"]
     padding 0.6rem 0.5rem
   for k, v in cols
-    .col-v-{k},
-    .col-v-{k}[class*="col-"]
+    .column-v-{k},
+    .column-v-{k}[class*="column-"]
       width unquote(v)
-    .row .off-v-{k}
+    .row .offset-v-{k}
       margin-left unquote(v)
 
 @media only screen and (max-width: 980px)
   /* large size */
-  [class*="col-l-"][class*="off-"]
+  [class*="column-l-"][class*="offset-"]
     margin-left unset
-  [class*="col-"]
+  [class*="column-"]
     padding 0.6rem 0.4rem
   for k, v in cols
-    .col-l-{k},
-    .col-l-{k}[class*="col-"]
+    .column-l-{k},
+    .column-l-{k}[class*="column-"]
       width unquote(v)
-    .row .off-l-{k}
+    .row .offset-l-{k}
       margin-left unquote(v)
 
 @media only screen and (max-width: 768px)
   /* normal size */
-  [class*="col-n-"][class*="off-"]
+  [class*="column-n-"][class*="offset-"]
     margin-left unset
-  [class*="col-"]
+  [class*="column-"]
     padding 0.6rem 0.35rem
   for k, v in cols
-    .col-n-{k},
-    .col-n-{k}[class*="col-"]
+    .column-n-{k},
+    .column-n-{k}[class*="column-"]
       width unquote(v)
-    .row .off-n-{k}
+    .row .offset-n-{k}
       margin-left unquote(v)
 
 @media only screen and (max-width: 640px)
   /* m(iddle|edium) size */
-  [class*="col-m-"][class*="off-"]
+  [class*="column-m-"][class*="offset-"]
     margin-left unset
-  [class*="col-"]
+  [class*="column-"]
     padding 0.6rem 0.3rem
   for k, v in cols
-    .col-m-{k},
-    .col-m-{k}[class*="col-"]
+    .column-m-{k},
+    .column-m-{k}[class*="column-"]
       width unquote(v)
-    .row .off-m-{k}
+    .row .offset-m-{k}
       margin-left unquote(v)
 
 @media only screen and (max-width: 480px)
   /* small size */
-  [class*="col-s-"][class*="off-"]
+  [class*="column-s-"][class*="offset-"]
     margin-left unset
-  [class*="col-"]
+  [class*="column-"]
     padding 0.6rem 0.2rem
   for k, v in cols
-    .col-s-{k},
-    .col-s-{k}[class*="col-"]
+    .column-s-{k},
+    .column-s-{k}[class*="column-"]
       width unquote(v)
-    .row .off-s-{k}
+    .row .offset-s-{k}
       margin-left unquote(v)
 
 @media only screen and (max-width: 320px)
   /* tiny size */
-  [class*="col-t-"][class*="off-"]
+  [class*="column-t-"][class*="offset-"]
     margin-left unset
-  [class*="col-"]
+  [class*="column-"]
     padding 0.6rem 0.1rem
   for k, v in cols
-    .col-t-{k},
-    .col-t-{k}[class*="col-"]
+    .column-t-{k},
+    .column-t-{k}[class*="column-"]
       width unquote(v)
-    .row .off-t-{k}
+    .row .offset-t-{k}
       margin-left unquote(v)
