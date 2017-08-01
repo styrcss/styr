@@ -1,4 +1,5 @@
 02 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Add label
 	* Add input submit button support
 	* Improve box, button and message
 	* Add box footer message
