@@ -17,6 +17,7 @@
       <a class="item" href="./button.html">Button</a>
       <a class="item active" href="./form.html">Form</a>
       <a class="item" href="./grid.html">Grid</a>
+      <a class="item" href="./label.html">Label</a>
       <a class="item" href="./menu.html">Menu</a>
       <a class="item" href="./message.html">Message</a>
       <a class="item" href="./table.html">Table</a>
@@ -43,17 +44,17 @@
         <div class="description">
           <form class="form">
             <div class="field">
-              <label class="label">First Name</label>
-              <input type="text" name="first_name" placeholder="First Name">
+              <label for="first_name_0" class="label">First Name</label>
+              <input type="text" id="first_name_0" name="first_name" placeholder="First Name">
             </div>
             <div class="field">
-              <label class="label">Last Name</label>
-              <input type="text" name="last_name" placeholder="Last Name">
+              <label for="last_name_0" class="label">Last Name</label>
+              <input type="text" id="last_name_0" name="last_name" placeholder="Last Name">
             </div>
             <div class="field">
               <div class="checkbox">
-                <input tabindex=0 id="checkbox_0" type="checkbox">
-                <label for="checkbox_0" class="label">I'm not a robot</label>
+                <input tabindex=0 id="robot_check_0" type="checkbox">
+                <label for="robot_check_0" class="label">I'm not a robot</label>
               </div>
             </div>
             <button class="primary button" type="submit">Submit</button>
@@ -69,17 +70,17 @@
         <div class="description">
           <form class="form">
             <div class="field error">
-              <label class="label">First Name</label>
-              <input type="text" name="first_name" placeholder="First Name">
+              <label for="first_name_1" class="label">First Name</label>
+              <input type="text" id="first_name_1" name="first_name" placeholder="First Name">
             </div>
             <div class="field">
-              <label class="label">Last Name</label>
-              <input type="text" name="last_name" placeholder="Last Name" value="None">
+              <label for="last_name_1" class="label">Last Name</label>
+              <input type="text" id="last_name_1" name="last_name" placeholder="Last Name" value="None">
             </div>
             <div class="field error">
               <div class="checkbox">
-                <input tabindex=0 id="checkbox_1" type="checkbox">
-                <label for="checkbox_1" class="label">I'm not a robot</label>
+                <input tabindex=0 id="robot_check_1" type="checkbox">
+                <label for="robot_check_1" class="label">I'm not a robot</label>
               </div>
             </div>
             <button class="primary button" type="submit">Submit</button>
@@ -96,17 +97,17 @@
           <form class="form">
             <h3 class="header">Name</h3>
             <div class="field">
-              <label class="label">First Name</label>
-              <input type="text" name="first_name" placeholder="First Name">
+              <label for="first_name_2" class="label">First Name</label>
+              <input type="text" id="first_name_2" name="first_name" placeholder="First Name">
             </div>
             <div class="field">
-              <label class="label">Last Name</label>
-              <input type="text" name="last_name" placeholder="Last Name">
+              <label for="last_name_2" class="label">Last Name</label>
+              <input type="text" id="last_name_2" name="last_name" placeholder="Last Name">
             </div>
             <div class="field">
               <div class="checkbox">
-                <input tabindex=0 id="checkbox_2" type="checkbox">
-                <label for="checkbox_2" class="label">I'm not a robot</label>
+                <input tabindex=0 id="robot_check_2" type="checkbox">
+                <label for="robot_check_2" class="label">I'm not a robot</label>
               </div>
             </div>
             <button class="primary button" type="submit">Submit</button>
@@ -123,8 +124,8 @@
           <form class="form">
             <h3 class="header">Feedback</h3>
             <div class="field">
-              <label class="label">Message</label>
-              <textarea rows="2" placeholder="I was actually a robot..."></textarea>
+              <label for="message" class="label">Message</label>
+              <textarea id="message" rows="2" placeholder="I was actually a robot..."></textarea>
             </div>
             <button class="flat secondary button" type="submit">Submit</button>
           </form>
@@ -144,16 +145,16 @@
         <div class="description">
           <form class="form">
             <div class="field">
-              <label class="label">Material</label>
-              <select>
+              <label for="material" class="label">Material</label>
+              <select id="material">
                 <option>Steel</option>
                 <option>Gold</option>
                 <option>Paper</option>
               </select>
             </div>
             <div class="field">
-              <label class="label">Planet</label>
-              <select>
+              <label for="planet" class="label">Planet</label>
+              <select id="planet">
                 <option>Mars</option>
                 <option>Pluto</option>
               </select>
