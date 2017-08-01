@@ -135,6 +135,31 @@
 ...</pre>
       </section>
 
+      <section>
+        <h3 class="title">Inner Grid</h3>
+        <div class="description">
+          <div class="attached primary header">
+            <p>Box</p>
+          </div>
+          <div class="attached box">
+            <div class="grid">
+              <div class="row">
+                <div class="column-3 column-n-8">Foo</div>
+                <div class="column-13 column-n-8">Bar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>&lt;div class="attached primary header"&gt;
+...
+&lt;/div&gt;
+&lt;div class="attached box"&gt;
+&lt;div class="grid"&gt;
+...
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+
       <h2 class="title">Box Attachments</h2>
 
       <section>
@@ -203,24 +228,28 @@
       </section>
 
       <section>
-        <h3 class="title">Inner Grid</h3>
+        <h3 class="title">Footer Message</h3>
         <div class="description">
-          <div class="attached primary header">
+          <div class="attached box">
             <p>Box</p>
           </div>
+          <div class="attached secondary message">
+            <h3 class="header">Welcome</h3>
+            <p>message...</p>
+          </div>
+
           <div class="attached box">
-            <div class="grid">
-              <div class="row">
-                <div class="column-3 column-n-8">Foo</div>
-                <div class="column-13 column-n-8">Bar</div>
-              </div>
-            </div>
+            <p>Box</p>
+          </div>
+          <div class="attached warn message">
+            <h3 class="header">Warning</h3>
+            <p>message...</p>
           </div>
         </div>
-        <pre>&lt;div class="attached primary header"&gt;
+        <pre>&lt;div class="attached box"&gt;
 ...
 &lt;/div&gt;
-&lt;div class="attached box"&gt;
+&lt;div class="attached warn message"&gt;
 ...
 &lt;/div&gt;</pre>
       </section>
