@@ -7,12 +7,6 @@ section {
   padding: 9px 0;
 }
 
-section .description {
-  padding: 9px;
-  margin: 9px 0;
-  border: 1px solid #ededed;
-}
-
 ul li {
   line-height: 1.59rem;
 }
@@ -22,26 +16,7 @@ ul li {
   margin: 19px 0 9px 0;
 }
 
-/* nav */
-ul.nav li {
-  display: block;
-  padding-left: 0;
-  margin-left: 0;
-  line-height: 1.68rem;
-  margin: 0.06rem 0;
-}
-
-ul.nav {
-  margin-left: 0.86rem;
-  padding-left: 0;
-}
-
-p.nav {
-  margin-left: 0.86rem;
-}
-
-p.note,
-ul.note {
+.note {
   margin: 0.09rem 0.19rem 0.68rem 0.19rem;
 }
 
