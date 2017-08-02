@@ -1,10 +1,102 @@
 @require './_colour.styl'
 @require './_input.styl'
+@require './_variable.styl'
 
 form.form
-  max-width 100%
+  display block
+  width 100%
+  .row
+    display inline-block
+    width 100%
+
   .field
+    padding 0.28rem 0 0.36rem 0
     margin-bottom 0.992rem
+
+// field-N
+for k, v in cols
+  form.form
+    .field-{k}
+      width unquote(v)
+      display inline-block
+      box-sizing border-box
+      float left
+      padding 0.28rem 0.91rem 0.36rem 0
+      margin-bottom 0.992rem
+    .offset-{k}
+      margin-left unquote(v)
+
+@media only screen and (max-width: 1280px)
+  /* v(ast|ery large) size */
+  for k, v in cols
+    form.form
+      [class*="field-v-"][class*="offset-"]
+        margin-left unset
+      .field-v-{k},
+      .field-v-{k}[class*="field-"]
+        width unquote(v)
+      .row .offset-v-{k}
+        margin-left unquote(v)
+
+@media only screen and (max-width: 980px)
+  /* large size */
+  for k, v in cols
+    form.form
+      [class*="field-l-"][class*="offset-"]
+        margin-left unset
+      .field-l-{k},
+      .field-l-{k}[class*="field-"]
+        width unquote(v)
+      .row .offset-l-{k}
+        margin-left unquote(v)
+
+@media only screen and (max-width: 768px)
+  /* normal size */
+  for k, v in cols
+    form.form
+      [class*="field-n-"][class*="offset-"]
+        margin-left unset
+      .field-n-{k},
+      .field-n-{k}[class*="field-"]
+        width unquote(v)
+      .row .offset-n-{k}
+        margin-left unquote(v)
+
+@media only screen and (max-width: 640px)
+  /* m(iddle|edium) size */
+  for k, v in cols
+    form.form
+      [class*="field-m-"][class*="offset-"]
+        margin-left unset
+      .field-m-{k},
+      .field-m-{k}[class*="field-"]
+        width unquote(v)
+      .row .offset-m-{k}
+        margin-left unquote(v)
+
+@media only screen and (max-width: 480px)
+  /* small size */
+  for k, v in cols
+    form.form
+      [class*="field-s-"][class*="offset-"]
+        margin-left unset
+      .field-s-{k},
+      .field-s-{k}[class*="field-"]
+        width unquote(v)
+      .row .offset-s-{k}
+        margin-left unquote(v)
+
+@media only screen and (max-width: 320px)
+  /* tiny size */
+  for k, v in cols
+    form.form
+      [class*="field-t-"][class*="offset-"]
+        margin-left unset
+      .field-t-{k},
+      .field-t-{k}[class*="field-"]
+        width unquote(v)
+      .row .offset-t-{k}
+        margin-left unquote(v)
 
 form.form
   label.label
