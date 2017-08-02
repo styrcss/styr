@@ -20,21 +20,6 @@ ul li {
   margin: 0.09rem 0.19rem 0.68rem 0.19rem;
 }
 
-/* pre */
-pre {
-  background: #f6f6f6;
-  padding: 12px 9px;
-}
-
-code {
-  line-height: 1.16em;
-  margin: 0.04rem 0.21rem;
-  padding: 0.02rem 0.28rem;
-  border: 1px solid pink;
-  border-radius: 0.133rem;
-  color: #838883;
-}
-
 /* grid */
 section .grid .row {
   margin: 0.38rem 0;
