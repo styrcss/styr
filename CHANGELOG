@@ -1,5 +1,6 @@
 02 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.12
+	* Update text formatting styles
 	* Update form (add required field, type="password")
 	* Add label
 	* Add input submit button support
