@@ -5,11 +5,11 @@ div.box
   border-radius 0.133rem
   background $white0
   margin 1.32rem 0
-  padding 0.33rem 1.12rem
+  padding 0.33rem 1.11rem
 
 div.attached.header
   border 1px solid $gray1
-  margin 0.612rem 0 0 0
+  margin 1.11rem 0 0 0
   border-radius 0.133rem 0.133rem 0 0
   background lighten($gray0, 3%)
   padding 0.06rem 0.96rem 0.09rem 0.96rem
@@ -22,7 +22,7 @@ div.attached.footer
   border 1px solid $gray1
   border-top none
   box-shadow 0 0.19rem 0.08rem -0.19rem darken($gray0, 62%) !important
-  margin 0 0 0.612rem 0
+  margin 0 0 1.11rem 0
   border-radius 0 0 0.133rem 0.133rem
   background lighten($gray0, 3%)
   padding 0.09rem 0.96rem 0.06rem 0.96rem
@@ -49,16 +49,21 @@ div.attached.positive.footer
   background lighten($positive-colour, 61%)
   color darken($positive-colour, 60%)
 
+div.attached.header + div.attached.box
+  border-radius 0 0 0.133rem 0.133rem
+  box-shadow 0 0.19rem 0.08rem -0.19rem darken($gray0, 62%) !important
+
 // clear
 div.attached.footer + div.box,
 div.attached.message + div.box
   border-top 1px solid $gray1
   border-radius 0.133rem 0.133rem 0 0
-  margin-top 1.12rem
+  margin-top 1.11rem + 0.18rem
 
 // footer message
 div.attached.box + div.attached.message
   margin-top 0
+  margin-bottom 1.11rem
   border-top none
   border-radius 0 0 0.133rem 0.133rem
 
@@ -80,21 +85,16 @@ div.box
       border-top none
     &:first-child
       border-top 1px solid $gray1
-      margin-top 1.12rem
+      margin-top 1.11rem
       border-radius 0.133rem 0.133rem 0 0
     &:last-child:not(.footer):not(.flat)
-      margin-bottom 1.12rem
+      margin-bottom 1.11rem
       border-radius 0 0 0.133rem 0.133rem
       box-shadow 0 0.19rem 0.08rem -0.19rem darken($gray0, 62%) !important
     &:last-child.flat
+      margin-bottom 1.11rem
       border-radius 0 0 0.133rem 0.133rem
       box-shadow none
-
-div.attached.header + div.attached.box
-  border-radius 0 0 0.133rem 0.133rem
-  box-shadow 0 0.19rem 0.08rem -0.19rem darken($gray0, 62%) !important
-
-
 
 div.primary.box
   background $primary-colour
