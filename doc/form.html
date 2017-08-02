@@ -117,22 +117,48 @@
       </section>
 
       <section>
+        <h3 class="title">Required</h3>
+        <div class="description">
+          <form class="form">
+            <div class="required field">
+              <label for="first_name_2" class="label">First Name</label>
+              <input type="text" id="first_name_2" name="first_name" placeholder="First Name">
+            </div>
+            <div class="required field">
+              <label for="last_name_2" class="label">Last Name</label>
+              <input type="text" id="last_name_2" name="last_name" placeholder="Last Name" value="None">
+            </div>
+            <div class="required field">
+              <div class="checkbox">
+                <input tabindex=0 id="robot_check_2" type="checkbox">
+                <label for="robot_check_2" class="label">I'm not a robot</label>
+              </div>
+            </div>
+            <button class="primary button" type="submit">Submit</button>
+          </form>
+        </div>
+        <pre>&lt;form class="form"&gt;
+...
+&lt;/form&gt;</pre>
+      </section>
+
+      <section>
         <h3 class="title">Form Header</h3>
         <div class="description">
           <form class="form">
             <h3 class="header">Name</h3>
             <div class="field">
-              <label for="first_name_2" class="label">First Name</label>
-              <input type="text" id="first_name_2" name="first_name" placeholder="First Name">
+              <label for="first_name_3" class="label">First Name</label>
+              <input type="text" id="first_name_3" name="first_name" placeholder="First Name">
             </div>
             <div class="field">
-              <label for="last_name_2" class="label">Last Name</label>
-              <input type="text" id="last_name_2" name="last_name" placeholder="Last Name">
+              <label for="last_name_3" class="label">Last Name</label>
+              <input type="text" id="last_name_3" name="last_name" placeholder="Last Name">
             </div>
             <div class="field">
               <div class="checkbox">
-                <input tabindex=0 id="robot_check_2" type="checkbox">
-                <label for="robot_check_2" class="label">I'm not a robot</label>
+                <input tabindex=0 id="robot_check_3" type="checkbox">
+                <label for="robot_check_3" class="label">I'm not a robot</label>
               </div>
             </div>
             <button class="primary button" type="submit">Submit</button>

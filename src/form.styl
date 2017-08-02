@@ -41,7 +41,7 @@ form.form
       position absolute
       top 0
       left 0
-    input[type="checkbox"] + label:before
+    input[type="checkbox"] + label::before
       cursor pointer
       top 0
       left 0
@@ -56,12 +56,12 @@ form.form
       display inline-block
       width 1.22rem
       height 1.22rem
-    input[type="checkbox"]:checked + label:before
+    input[type="checkbox"]:checked + label::before
       background #ffffff
       color #666666
       content "\25a0"
       text-align center
-    input[type="checkbox"]:checked + label:after
+    input[type="checkbox"]:checked + label::after
       font-weight bold
 
 // select
@@ -106,7 +106,18 @@ form.form
   .field.error
     input[type="text"],
     input[type="password"],
-    input[type="checkbox"] + label:before
+    input[type="checkbox"] + label::before
       border 1px solid $negative-colour
     label.label
       color darken($negative-colour, 36%)
+
+// required
+form.form
+  .required.field
+    label.label::after
+      vertical-align top
+      font-size 0.88em
+      display inline-block
+      margin -0.19rem 0 0 0.21rem
+      content '*'
+      color lighten(red, 3%)
