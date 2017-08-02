@@ -1,6 +1,6 @@
 {
   "name": "styr",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "STYlish css libRary",
   "main": "dst/styr.min.css",
   "author": "Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>",
