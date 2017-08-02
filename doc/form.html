@@ -66,6 +66,31 @@
       </section>
 
       <section>
+        <h3 class="title">Password</h3>
+        <p class="note">Specify `type="password"` same as <code>&lt;input type="text"&gt;</code></p>
+        <div class="description">
+          <form class="form">
+            <div class="field">
+              <label for="current_password" class="label">Current password</label>
+              <input type="password" id="current_password" name="current_password" placeholder="Do you remember?">
+            </div>
+            <div class="field">
+              <label for="new_password" class="label">New password</label>
+              <input type="password" id="new_password" name="new_password" placeholder="Keep it secret!">
+            </div>
+            <div class="field">
+              <label for="new_password_confirmation" class="label">New Password confirmation</label>
+              <input type="password" id="new_password_confirmation" name="new_password_confirmation" placeholder="Once again">
+            </div>
+            <button class="primary button" type="submit">Change</button>
+          </form>
+        </div>
+        <pre>&lt;form class="form"&gt;
+...
+&lt;/form&gt;</pre>
+      </section>
+
+      <section>
         <h3 class="title">Error</h3>
         <div class="description">
           <form class="form">

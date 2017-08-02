@@ -14,7 +14,8 @@ form.form
     color $black0
     font-weight 600
     text-transform none
-  input[type="text"]
+  input[type="text"],
+  input[type="password"]
     input-text()
 
 // checkbox
@@ -104,6 +105,7 @@ form.form
 form.form
   .field.error
     input[type="text"],
+    input[type="password"],
     input[type="checkbox"] + label:before
       border 1px solid $negative-colour
     label.label

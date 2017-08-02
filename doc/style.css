@@ -13,6 +13,10 @@ section .description {
   border: 1px solid #ededed;
 }
 
+ul li {
+  line-height: 1.59rem;
+}
+
 .title {
   color: #888888;
   margin: 19px 0 9px 0;
@@ -23,7 +27,8 @@ ul.nav li {
   display: block;
   padding-left: 0;
   margin-left: 0;
-  line-height: 1.66rem;
+  line-height: 1.68rem;
+  margin: 0.06rem 0;
 }
 
 ul.nav {
@@ -35,8 +40,9 @@ p.nav {
   margin-left: 0.86rem;
 }
 
-p.desc {
-  margin: 0.09rem 0.19rem;
+p.note,
+ul.note {
+  margin: 0.09rem 0.19rem 0.68rem 0.19rem;
 }
 
 /* pre */
@@ -46,12 +52,12 @@ pre {
 }
 
 code {
-  line-height: 1.72em;
-  margin: 0.12rem 0.34rem;
-  padding: 0.04rem 0.29rem;
-  border: 2px solid pink;
-  border-radius: 2px;
-  color: red;
+  line-height: 1.16em;
+  margin: 0.04rem 0.21rem;
+  padding: 0.02rem 0.28rem;
+  border: 1px solid pink;
+  border-radius: 0.133rem;
+  color: #838883;
 }
 
 /* grid */
