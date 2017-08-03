@@ -1,5 +1,6 @@
 03 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.17
+	* Fix issuen #2
 	* Add form field description and text
 	* Update button styles (color, opacity)
 	* Add flat disabled button
