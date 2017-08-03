@@ -213,3 +213,26 @@ form.form
       margin -0.19rem 0 0 0.21rem
       content '*'
       color lighten(red, 3%)
+
+// text
+form.form
+  .field,
+  [class*="field-"]
+    .text
+      font-size 0.91em
+      display block
+      margin 0.428rem 0 0.602rem 0.11rem
+  .field.error,
+  [class*="field-"].error
+    .text
+      color darken($negative-colour, 13%)
+
+// description
+form.form
+  .field,
+  [class*="field-"]
+    .description
+      font-size 0.91em
+      display block
+      margin 0.428rem 0 0.602rem 0.11rem
+      line-height 1.32em
