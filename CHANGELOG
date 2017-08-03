@@ -1,3 +1,7 @@
+03 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Update button styles (color, opacity)
+	* Add flat disabled button
+
 02 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.12, 0.0.13, 0.0.14, 0.0.15, 0.0.16
 	* Fix sidebar height and overflow-y issue
