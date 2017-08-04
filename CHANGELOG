@@ -1,5 +1,6 @@
 04 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.19
+	* Update button shadow
 	* Update sidebar (right sidebar sample)
 	* Rename `container` to `sidebar-container`
 
