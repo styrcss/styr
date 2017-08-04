@@ -1,6 +1,6 @@
 @require './_colour.styl'
 
-.container
+.sidebar-container
   display flex
   height 100%
   width 100%
@@ -9,7 +9,7 @@
   left 0
   height 100%
   max-height 100%
-  .sidebar
+  > .sidebar
     flex 1
     box-shadow 0 0 0.04rem $gray2
     z-index 1
@@ -26,13 +26,14 @@
     position relative
     &.hidden
       display none
-  .content
+  > .content
     overflow-y auto
     height 100%
     width 100%
     padding 1.03rem 1.32rem
     flex 1
 
+// sidebar item
 .sidebar
   .item
     outline 0
