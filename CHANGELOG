@@ -1,3 +1,7 @@
+04 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Update sidebar (right sidebar sample)
+	* Rename `container` to `sidebar-container`
+
 03 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.17, 0.0.18
 	* Fix issuen #2
