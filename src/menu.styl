@@ -56,11 +56,11 @@
       background none
       border none
       border-radius none
-  a.item
+  .item
     color lighten($black0, 16%)
     &:hover
       color darken($black2, 9%)
-      background $gray0
+      background-color darken($gray0, 1%)
     &.active
       background rgba(0, 0, 0, 0.05) none repeat scroll 0 0
       border-radius 0.185714rem
@@ -102,3 +102,36 @@
         border-radius 0.133rem 0.133rem 0 0
       &:last-child
         border-radius 0 0 0.133rem 0.133rem
+
+// tab
+$tab-line-color = lighten($gray1, 46%)
+.tab.menu
+  margin 0.68rem 0
+  -webkit-padding-after 0.07rem
+  border-bottom 1px solid $tab-line-color
+  .item
+    font-size 0.95em
+    line-height 1.12em
+    padding 0.69rem 0.995rem 0.68rem 0.995rem
+    margin 0 0.33rem -0.11rem 0
+    //margin-left 0
+    //margin-bottom -0.103rem
+    background-color white
+    border-bottom 1px solid $tab-line-color
+    border-radius 0.153rem 0.153rem 0 0
+    &.active
+      padding 0.43rem 0.995rem 0.71rem 0.995rem
+      border-radius 0.153rem 0.153rem 0 0
+      border-top 3px solid $tab-line-color
+      border-left 1px solid $tab-line-color
+      border-right 1px solid $tab-line-color
+      border-bottom 0
+      &:hover
+        background-color white
+    &:hover
+      color darken($black2, 9%)
+      background darken($gray0, 1%)
+      border-radius 0.133rem 0.133rem 0 0
+  .menu:last-child,
+  .item:last-child
+    margin-right 0
