@@ -1,13 +1,14 @@
 stages:
   - check
   - build
+  - pages
 
-check-style:
+check:
   stage: check
   image: node:7.8.0
   services:
   variables:
-    ENV: development
+    NODE_ENV: development
   before_script:
     - node --version
     - npm --version
@@ -21,12 +22,12 @@ check-style:
   except:
     - tags
 
-build-assets:
+build:
   stage: build
   image: node:7.8.0
   services:
   variables:
-    ENV: development
+    NODE_ENV: production
   before_script:
     - node --version
     - npm --version
@@ -38,5 +39,28 @@ build-assets:
     untracked: true
     paths:
       - node_modules
+  artifacts:
+    untracked: true
+    paths:
+      - dst
   except:
     - tags
+
+pages:
+  stage: pages
+  image: node:7.8.0
+  services:
+  variables:
+    NODE_ENV: production
+  before_script:
+    - mkdir -p public/css
+    - rm doc/css/styr.css
+  script:
+    - cp -R doc/* public/
+    - cp dst/styr.min.css public/css/styr.css
+  artifacts:
+    untracked: true
+    paths:
+      - public
+  only:
+    - master
