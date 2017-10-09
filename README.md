@@ -53,6 +53,11 @@ See `doc/index.html`
 * Typography
 
 
+## Documentation
+
+https://grauwoelfchen.gitlab.io/styr
+
+
 ## Development
 
 ### Setup
@@ -69,7 +74,14 @@ See `doc/index.html`
 (venv) % npm i
 ```
 
-### Style check
+### Document
+
+```zsh
+: local document
+% xdg-open doc/index.html
+```
+
+### Lint
 
 ```zsh
 : check gulpfile.js
@@ -88,9 +100,14 @@ See `doc/index.html`
 
 ## License
 
-Styr; Copyright (c) 2017 Yasuhiro Asaka
-
 This program is free software: you can redistribute it and/or modify it
 under the terms of the MIT License.
 
+
 See [LICENSE](LICENSE).
+
+
+```txt
+Styr
+Copyright (c) 2017 Yasuhiro Asaka
+```
