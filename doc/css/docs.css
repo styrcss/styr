@@ -3,6 +3,28 @@ body {
   padding: 0 16px;
 }
 
+body,
+p,
+span,
+a,
+button,
+input[type="submit"] {
+  font-family: 'Open Sans', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+pre, code {
+  font-family: 'Cutive Mono', monospace;
+}
+
 section {
   padding: 9px 0;
 }
