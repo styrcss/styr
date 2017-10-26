@@ -2,9 +2,7 @@
 
 `/stɪ́əɾ/`
 
-[![build status](
-https://gitlab.com/grauwoelfchen/styr/badges/master/build.svg)](
-https://gitlab.com/grauwoelfchen/styr/commits/master)
+[![pipeline status][pipeline]][commit] [![npm version][version]][npm]
 
 [![Screenshot](doc/img/screenshot-thumb.png)](
 https://gitlab.com/grauwoelfchen/styr/raw/master/doc/img/screenshot.png)
@@ -111,3 +109,9 @@ See [LICENSE](LICENSE).
 Styr
 Copyright (c) 2017 Yasuhiro Asaka
 ```
+
+
+[pipeline]: https://gitlab.com/grauwoelfchen/styr/badges/master/pipeline.svg
+[commit]: https://gitlab.com/grauwoelfchen/styr/commits/master
+[version]: https://img.shields.io/npm/v/styr.svg
+[npm]: https://www.npmjs.com/package/styr
