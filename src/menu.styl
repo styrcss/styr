@@ -8,6 +8,7 @@
   border none
   min-height 2.147rem
   box-shadow none
+  list-style none
   &::after
     content ''
     display block
@@ -18,6 +19,7 @@
 // menu - item
 .menu
   .item
+    display inline-block
     position relative
     vertical-align middle
     line-height 0.9em
@@ -48,7 +50,6 @@
 // menu - item decoration
 .menu
   .item
-    background rgba(0, 0, 0, 0) none repeat scroll 0 0
     border-radius 0.185714rem
     border none
     transition color 0.1s ease 0s
@@ -62,7 +63,6 @@
       color darken($black2, 9%)
       background-color darken($gray0, 1%)
     &.active
-      background rgba(0, 0, 0, 0.05) none repeat scroll 0 0
       border-radius 0.185714rem
       box-shadow none
       color $black0
@@ -106,28 +106,38 @@
 // tab
 $tab-line-color = lighten($gray1, 46%)
 .tab.menu
+  position relative
   margin 0.68rem 0
-  -webkit-padding-after 0.07rem
-  border-bottom 1px solid $tab-line-color
-  .item
-    font-size 0.95em
-    line-height 1.12em
-    padding 0.69rem 0.995rem 0.68rem 0.995rem
-    margin 0 0.33rem -0.11rem 0
-    //margin-left 0
-    //margin-bottom -0.103rem
-    background-color white
+  &::before
+    z-index 1
+  &::after
+    visibility visible
+    position absolute
+    width 100%
+    content ''
+    bottom 0
+    left 0
     border-bottom 1px solid $tab-line-color
+    z-index 1
+  .item
+    position relative
+    z-index 0
+    font-size 0.95em
+    line-height 0.9em
+    padding 0.58rem 1.095rem 0.58rem 1.095rem
+    margin 0 0.16rem
     border-radius 0.153rem 0.153rem 0 0
     &.active
-      padding 0.43rem 0.995rem 0.71rem 0.995rem
+      z-index 2
+      margin 0
       border-radius 0.153rem 0.153rem 0 0
       border-top 3px solid $tab-line-color
       border-left 1px solid $tab-line-color
       border-right 1px solid $tab-line-color
-      border-bottom 0
+      border-bottom 1px solid #ffffff
       &:hover
-        background-color white
+        border-top 3px solid darken($tab-line-color, 30%)
+        background #ffffff
     &:hover
       color darken($black2, 9%)
       background darken($gray0, 1%)
