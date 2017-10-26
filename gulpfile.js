@@ -71,7 +71,7 @@ var paths = { // watch targets
 
 gulp.task('watch', function() {
   gulp.watch('gulpfile.js', ['default']);
-  gulp.watch(paths.styl, ['distribute']);
+  gulp.watch(paths.styl, ['compress']);
 });
 
 // -- [main tasks]
