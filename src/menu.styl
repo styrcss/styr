@@ -30,7 +30,7 @@
     background none
     box-shadow none
     margin 0.192rem 0.257rem
-    padding 0.15rem 0.578rem
+    padding 0.45rem 0.598rem
     color $black0
     flex 0 0 auto
     display flex
@@ -78,10 +78,15 @@
     &:last-child
       margin-right 0.33rem
 
+.menu
+  .menu
+    background none
+
 // input form
-.item
-  input[type="text"]
-    input-text()
+input[type="text"].item
+  input-text()
+  width auto
+  margin-right 0.48rem
 
 // vertical
 .menu.vertical
@@ -89,7 +94,7 @@
   display block
   flex-direction column
   .item
-    padding 0.66rem 0.864rem
+    padding 0.76rem 0.924rem
     display block
   &.bordered
     .item
