@@ -1,3 +1,8 @@
+30 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Improve positive and negative colour
+	* Add critical and debug message colour
+	* Fix positive button
+
 27 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Update sample images
 
