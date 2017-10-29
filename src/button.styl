@@ -58,13 +58,13 @@ $secondary-text-colour = rgba(84, 85, 87, 0.86)
 a.secondary.button,
 button.secondary.button,
 input[type="submit"].secondary.button
-  border 1px solid darken($secondary-colour, 13%)
+  border 1px solid darken($secondary-colour, 18%)
   color $secondary-text-colour
-  btn-style(#e9edf0, $secondary-colour)
+  btn-style(#e9edf0, darken($secondary-colour, 3%))
   &:hover
-    border 1px solid darken($secondary-colour, 23%)
+    border 1px solid darken($secondary-colour, 26%)
     color darken($secondary-text-colour, 22%)
-    btn-style(#e1e7eb, #d4dadd)
+    btn-style(#e4e9ec, #d4dadd)
   &.flat
     color darken($secondary-colour, 58%)
     box-shadow 0 0.18rem 0.11rem -0.186rem darken($secondary-colour, 62%)
@@ -76,31 +76,31 @@ a.negative.button,
 button.negative.button,
 input[type="submit"].negative.button
   border 1px solid lighten($negative-text-colour, 51%)
-  color $negative-text-colour
-  btn-style(#f7cccc, $negative-colour)
+  color darken($negative-text-colour, 3%)
+  btn-style(lighten($negative-colour, 33%), $negative-colour)
   &:hover
-    border 1px solid lighten($negative-text-colour, 23%)
+    border 1px solid lighten($negative-text-colour, 29%)
     color darken($negative-text-colour, 18%)
-    btn-style(#f4c1c1, #f6b5b5)
+    btn-style(lighten($negative-colour, 41%), darken($negative-colour, 3%))
   &.flat
     color darken($negative-colour, 55%)
     box-shadow 0 0.18rem 0.11rem -0.186rem darken($negative-colour, 62%)
     &.disabled
       box-shadow 0 0.22rem 0.11rem -0.22em darken($negative-colour, 62%)
 
-$positive-text-colour = rgba(28, 13, 42, 0.89)
+$positive-text-colour = rgba(122, 153, 108, 0.88)
 a.positive.button,
 button.positive.button,
 input[type="submit"].positive.button
-  border 1px solid lighten($primary-text-colour, 61%)
-  color $primary-text-colour
-  btn-style(#c8f5d9, $positive-colour)
+  border 1px solid darken($positive-text-colour, 2%)
+  color darken($positive-text-colour, 38%)
+  btn-style(lighten($positive-colour, 16%), $positive-colour)
   &:hover
-    border 1px solid lighten($primary-text-colour, 44%)
-    color darken($positive-text-colour, 39%)
-    btn-style(#a6f4c2, #a0f1b8)
+    border 1px solid darken($positive-text-colour, 8%)
+    color darken($positive-text-colour, 46%)
+    btn-style(lighten($positive-colour, 28%), darken($positive-colour, 5%))
   &.flat
-    color darken($positive-colour, 71%)
+    color darken($positive-text-colour, 42%)
     box-shadow 0 0.18rem 0.11rem -0.186rem darken($positive-colour, 62%)
     &.disabled
       box-shadow 0 0.22rem 0.11rem -0.22em darken($positive-colour, 62%)

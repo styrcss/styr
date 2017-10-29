@@ -72,39 +72,92 @@
 
       <section>
         <h3 class="title">Level</h3>
-        <p class="note">`alias` is also available.</p>
+        <p class="note">`alias`</p>
         <ul class="note">
-          <li>warning: <code>warn</code></li>
+          <li>critical: <code>-</code></li>
           <li>error: <code>erro</code></li>
+          <li>warning: <code>warn</code></li>
           <li>information: <code>info</code></li>
+          <li>debug: <code>-</code></li>
         </ul>
         <div class="flat box">
+          <div class="critical message">
+            <h4 class="header">CRITICAL</h4>
+            <p>Important message...</p>
+          </div>
+          <div class="error message">
+            <h4 class="header">ERROR</h4>
+            <p>Important message...</p>
+          </div>
+          <div class="erro message">
+            <p>Important message...</p>
+          </div>
           <div class="warning message">
-            <h4 class="header">WARN</h4>
+            <h4 class="header">WARNING</h4>
             <p>Important message...</p>
           </div>
           <div class="warn message">
             <p>Important message...</p>
           </div>
-          <div class="error message">
-            <h4 class="header">ERRO</h4>
+          <div class="information message">
+            <h4 class="header">INFORMATION</h4>
             <p>Important message...</p>
           </div>
-          <div class="information message">
-            <h4 class="header">INFO</h4>
+          <div class="info message">
+            <p>Important message...</p>
+          </div>
+          <div class="debug message">
+            <h4 class="header">DEBUG</h4>
             <p>Important message...</p>
           </div>
         </div>
-        <pre>&lt;div class="warning message"&gt;
-...
-&lt;/div&gt;
-&lt;div class="warn message"&gt;
+        <pre>&lt;div class="critical message"&gt;
 ...
 &lt;/div&gt;
 &lt;div class="error message"&gt;
 ...
 &lt;/div&gt;
+&lt;div class="warn message"&gt;
+...
+&lt;/div&gt;
+&lt;div class="warn message"&gt;
+...
+&lt;/div&gt;
 &lt;div class="informatin message"&gt;
+...
+&lt;/div&gt;
+&lt;div class="debug message"&gt;
+...
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 class="title">Context</h3>
+        <p class="note">`alias`</p>
+        <ul class="note">
+          <li>positive: <code>success</code></li>
+          <li>negative: <code>failure</code></li>
+        </ul>
+        <div class="flat box">
+          <div class="failure message">
+            <h4 class="header">FAILURE!</h4>
+            <p>Oh no! ...</p>
+          </div>
+          <div class="negative  message">
+            <p>Oh no! ...</p>
+          </div>
+          <div class="success message">
+            <h4 class="header">SUCCESS!</h4>
+            <p>Well done! ...</p>
+          </div>
+          <div class="positive  message">
+            <p>Well done! ...</p>
+          </div>
+        </div>
+        <pre>&lt;div class="failure message"&gt;
+...
+&lt;/div&gt;
+&lt;div class="success message"&gt;
 ...
 &lt;/div&gt;</pre>
       </section>

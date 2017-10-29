@@ -38,20 +38,24 @@ div.secondary.message
   color darken($secondary-colour, 48%)
   background lighten($secondary-colour, 16%)
 
-div.negative.message
-  color darken($negative-colour, 55%)
+// context
+div.negative.message,
+div.failure.message
+  border 1px solid darken($negative-colour, 51%)
+  color darken($negative-colour, 49%)
   background lighten($negative-colour, 18%)
 
-div.positive.message
+div.positive.message,
+div.success.message
+  border 1px solid darken($positive-colour, 62%)
   color darken($positive-colour, 68%)
   background lighten($positive-colour, 3%)
 
 // level
-div.warn.message,
-div.warning.message
-  border 1px solid darken($warning-colour, 46%)
-  color darken($warning-colour, 60%)
-  background lighten($warning-colour, 9%)
+div.critical.message
+  border 1px solid darken($critical-colour, 42%)
+  color darken($critical-colour, 62%)
+  background lighten($critical-colour, 28%)
 
 div.erro.message,
 div.error.message
@@ -59,8 +63,19 @@ div.error.message
   color darken($error-colour, 63%)
   background lighten($error-colour, 21%)
 
+div.warn.message,
+div.warning.message
+  border 1px solid darken($warning-colour, 56%)
+  color darken($warning-colour, 69%)
+  background lighten($warning-colour, 9%)
+
 div.info.message,
 div.information.message
-  border 1px solid darken($information-colour, 61%)
-  color darken($information-colour, 58%)
+  border 1px solid darken($information-colour, 51%)
+  color darken($information-colour, 69%)
   background lighten($information-colour, 19%)
+
+div.debug.message
+  border 1px solid darken($debug-colour, 27%)
+  color darken($debug-colour, 50%)
+  background lighten($debug-colour, 24%)
