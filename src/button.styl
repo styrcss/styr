@@ -25,17 +25,26 @@ input[type="submit"].button
   opacity 0.94
   border 1px solid rgba(27, 31, 35, 0.2)
   btn-style(#fbfbfc, $basic-colour)
-  &.flat
+  &.flat,
+  &.line
     color darken($basic-text-colour, 46%)
+  &.line
     box-shadow 0 0.18rem 0.11rem -0.186rem darken($line-colour, 72%)
     &.disabled
       box-shadow 0 0.22rem 0.11rem -0.22em darken($line-colour, 72%)
+  &.flat
+    box-shadow none
   &:hover,
-  &.flat:hover
+  &.flat:hover,
+  &.line:hover
     cursor pointer
     color darken($basic-text-colour, 46%)
     border 1px solid rgba(13, 31, 35, 0.35)
     text-decoration none
+  &.line:hover,
+  &.flat:hover
+    background-color lighten($basic-colour, 6%)
+
 
 $primary-text-colour = rgba(91, 105, 142, 0.92)
 a.primary.button,
@@ -48,11 +57,13 @@ input[type="submit"].primary.button
     border-color darken($primary-colour, 21%)
     color darken($primary-text-colour, 36%)
     btn-style(#f0f3f6, #e2eaf4)
-  &.flat
+  &.flat,
+  &.line
     color darken($primary-colour, 58%)
-    box-shadow 0 0.18rem 0.11rem -0.186rem darken($primary-colour, 62%)
-    &.disabled
-      box-shadow 0 0.22rem 0.11rem -0.22em darken($primary-colour, 62%)
+    &:hover
+      background-color lighten($primary-colour, 28%)
+  &.flat
+    box-shadow none
 
 $secondary-text-colour = rgba(84, 85, 87, 0.86)
 a.secondary.button,
@@ -65,28 +76,32 @@ input[type="submit"].secondary.button
     border 1px solid darken($secondary-colour, 26%)
     color darken($secondary-text-colour, 22%)
     btn-style(#e4e9ec, #d4dadd)
-  &.flat
+  &.flat,
+  &.line
     color darken($secondary-colour, 58%)
-    box-shadow 0 0.18rem 0.11rem -0.186rem darken($secondary-colour, 62%)
-    &.disabled
-      box-shadow 0 0.22rem 0.11rem -0.22em darken($secondary-colour, 62%)
+    &:hover
+      background-color lighten($secondary-colour, 9%)
+  &.flat
+    box-shadow none
 
 $negative-text-colour = rgba(140, 51, 51, 0.88)
 a.negative.button,
 button.negative.button,
 input[type="submit"].negative.button
-  border 1px solid lighten($negative-text-colour, 51%)
+  border 1px solid lighten($negative-text-colour, 41%)
   color darken($negative-text-colour, 3%)
   btn-style(lighten($negative-colour, 33%), $negative-colour)
   &:hover
     border 1px solid lighten($negative-text-colour, 29%)
     color darken($negative-text-colour, 18%)
     btn-style(lighten($negative-colour, 41%), darken($negative-colour, 3%))
-  &.flat
+  &.flat,
+  &.line
     color darken($negative-colour, 55%)
-    box-shadow 0 0.18rem 0.11rem -0.186rem darken($negative-colour, 62%)
-    &.disabled
-      box-shadow 0 0.22rem 0.11rem -0.22em darken($negative-colour, 62%)
+    &:hover
+      background-color lighten($negative-colour, 13%)
+  &.flat
+    box-shadow none
 
 $positive-text-colour = rgba(122, 153, 108, 0.88)
 a.positive.button,
@@ -99,20 +114,29 @@ input[type="submit"].positive.button
     border 1px solid darken($positive-text-colour, 8%)
     color darken($positive-text-colour, 46%)
     btn-style(lighten($positive-colour, 28%), darken($positive-colour, 5%))
-  &.flat
+  &.flat,
+  &.line
     color darken($positive-text-colour, 42%)
-    box-shadow 0 0.18rem 0.11rem -0.186rem darken($positive-colour, 62%)
-    &.disabled
-      box-shadow 0 0.22rem 0.11rem -0.22em darken($positive-colour, 62%)
+    &:hover
+      background-color lighten($positive-colour, 21%)
+  &.flat
+    box-shadow none
+
 
 a.flat.button,
 button.flat.button,
 input[type="submit"].flat.button
   background-image none
-  background none
   &:hover
     background-image none
-    background none
+
+a.line.button,
+button.line.button,
+input[type="submit"].line.button
+  background none
+  background-image none
+  &:hover
+    background-image none
 
 a.button.disabled,
 button.button.disabled,
