@@ -1,3 +1,8 @@
+31 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Remove shadow and set background for flat button
+	* Add line styled button (-background)
+	* Remove unnecessary styles (button)
+
 30 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.23
 	* Fix menu item
