@@ -1,0 +1,82 @@
+@require './_colour.styl'
+
+$secondary-text-colour = rgba(84, 85, 87, 0.86)
+
+pagination_link()
+  cursor pointer
+  text-decoration none
+  border 1px solid lighten($line-colour, 49%)
+  color $gray2
+  border-radius 0.133rem
+  display inline-block
+  padding 0.2rem 0.66rem 0.21rem 0.66rem
+  &:hover
+    background-color darken($secondary-colour, 3%)
+    color darken($secondary-text-colour, 36%)
+
+$active_link_colour = lighten($gray1, 82%)
+
+pagination_link_active()
+  background-color $active_link_colour
+  &:hover
+    background-color $active_link_colour
+    cursor default
+    color $gray2
+
+ul.pagination,
+div.pagination
+  padding 1.2rem 0
+  margin 0
+
+ul.pagination li.item,
+div.pagination span.item
+  line-height 1.38em
+
+ul.pagination
+  li.item
+    margin 0
+    padding 0 0.39rem 0 0
+    display inline-block
+    list-style none
+    a
+      pagination_link()
+      &.active
+        pagination_link_active()
+    &.active
+      a
+        pagination_link_active()
+
+div.pagination
+  span.item
+    margin 0
+    padding 0 0.39rem 0 0
+    display inline-block
+    a
+      pagination_link()
+      &.active
+        pagination_link_active()
+    &.active
+      a
+        pagination_link_active()
+
+  // simple
+  a.item
+    cursor pointer
+    color $gray2
+    display inline-block
+    padding 0.22rem 0.44rem 0.23rem 0.44rem
+    margin-right 0.23rem
+    &:hover
+      color darken($gray2, 13%)
+    &.active
+      color darken($gray2, 13%)
+      background-color $active_link_colour
+      &:hover
+        color $gray2
+        text-decoration none
+        cursor default
+
+div.rounded.pagination
+  .item a,
+  a.item
+    border-radius 2.66rem

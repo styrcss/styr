@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styr</title>
+  <link rel="stylesheet" href="css/styr.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Open+Sans:300" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <h2 class="item">Documents</h2>
+      <a class="item" href="index.html">Home</a>
+      <hr>
+      <h6 class="item">Styles</h6>
+      <a class="item" href="box.html">Box</a>
+      <a class="item" href="breadcrumb.html">Breadcrumb</a>
+      <a class="item" href="button.html">Button</a>
+      <a class="item" href="form.html">Form</a>
+      <a class="item" href="grid.html">Grid</a>
+      <a class="item" href="label.html">Label</a>
+      <a class="item" href="menu.html">Menu</a>
+      <a class="item" href="message.html">Message</a>
+      <a class="item active" href="pagination.html">Pagination</a>
+      <a class="item" href="table.html">Table</a>
+      <a class="item" href="text.html">Text</a>
+      <a class="item" href="typography.html">Typography</a>
+      <hr>
+      <h6 class="item">Modules</h6>
+      <a class="item" href="sidebar.html">Sidebar</a>
+      <div class="bottom item">
+        <div class="primary message">
+          <h4 class="header">Styr</h4>
+          <p><a class="link" href="https://gitlab.com/grauwoelfchen/styr">gitlab.com:grauwoelfchen/styr</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="breadcrumb">
+        <a class="item" href="index.html">Home</a>
+        <span class="divider">/</span>
+        <span class="item active" href="pagination.html">Pagination</span>
+      </div>
+      <h2 class="title">Pagination</h2>
+
+      <section>
+        <h3 class="title">Standard - list</h3>
+        <p>&lt;ul&gt; + &lt;li&gt; + &lt;a&gt;</p>
+        <p><code>active</code> class is available for both of `li` and `li a`. </p>
+        <div class="flat box">
+          <ul class="pagination">
+            <li class="item"><a href="#">1</a></li>
+            <li class="item active"><a href="#">2</a></li>
+            <li class="item"><a href="#">3</a></li>
+            <li class="item">...</li>
+            <li class="item"><a href="#">9</a></li>
+          </ul>
+          <ul class="pagination">
+            <li class="item"><a href="#">« Older</a></li>
+            <li class="item"><a href="#">Newer »</a></li>
+          </ul>
+        </div>
+        <pre>&lt;ul class="pagination"&gt;
+  &lt;li class="item"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="item active"&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="item"&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="item"&gt;...&lt;/li&gt;
+  &lt;li class="item"&gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="pagination"&gt;
+  &lt;li class="item"&gt;&lt;a href="#"&gt;« Older&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="item"&gt;&lt;a href="#"&gt;Newer »&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+      </section>
+
+      <section>
+        <h3 class="title">Standard - div</h3>
+        <p>&lt;div&gt; + &lt;span&gt; + &lt;a&gt;</p>
+        <p><code>active</code> class is available for both of `span` and `span a`. </p>
+        <div class="flat box">
+          <div class="pagination">
+            <span class="item"><a href="#">1</a></span>
+            <span class="item">...</span>
+            <span class="item"><a href="#">7</a></span>
+            <span class="item"><a class="active" href="#">8</a></span>
+            <span class="item"><a href="#">9</a></span>
+            <span class="item">...</span>
+            <span class="item"><a href="#">29</a></span>
+          </div>
+          <div class="pagination">
+            <span class="item"><a href="#">&lt;</a></span>
+            <span class="item"><a href="#">&gt;</a></span>
+          </div>
+        </div>
+        <pre>&lt;div class="pagination"&gt;
+  &lt;span class="item"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/span&gt;
+  &lt;span class="item"&gt;&lt;a class="item" href="#"&gt;2&lt;/a&gt;&lt;/span&gt;
+  &lt;span class="item"&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/span&gt;
+  ...
+&lt;div class="pagination"&gt;
+  &lt;span class="item"&gt;&lt;a href="#"&gt;&lt;&lt;/a&gt;&lt;/span&gt;
+  &lt;span class="item"&gt;&lt;a href="#"&gt;&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;/ul&gt;</pre>
+      </section>
+
+      <section>
+        <h3 class="title">Simple</h3>
+        <p>&lt;div&gt; + &lt;a&gt;</p>
+        <div class="flat box">
+          <div class="pagination">
+            <a class="item" href="#">18</a>
+            <a class="active item" href="#">19</a>
+            <a class="item" href="#">20</a>
+            <span class="item">...</span>
+            <a class="item" href="#">35</a>
+            <a class="item" href="#">36</a>
+          </div>
+          <div class="pagination">
+            <a class="item" href="#">« Prev</a>
+            <a class="item" href="#">Next »</a>
+          </div>
+        </div>
+        <pre>&lt;div class="pagination"&gt;
+  &lt;a class="item" href="#"&gt;1&lt;/a&gt;
+  &lt;a class="item active" href="#"&gt;2&lt;/a&gt;
+  &lt;a class="item" href="#"&gt;2&lt;/a&gt;
+  ...
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 class="title">Simple Rounded</h3>
+        <p>&lt;div&gt; + &lt;a&gt;</p>
+        <div class="flat box">
+          <div class="rounded pagination">
+            <a class="item" href="#">18</a>
+            <a class="active item" href="#">19</a>
+            <a class="item" href="#">20</a>
+            <span class="item">...</span>
+            <a class="item" href="#">35</a>
+            <a class="item" href="#">36</a>
+          </div>
+        </div>
+        <pre>&lt;div class="rounded pagination"&gt;
+  &lt;a class="item" href="#"&gt;1&lt;/a&gt;
+  &lt;a class="item active" href="#"&gt;2&lt;/a&gt;
+  &lt;a class="item" href="#"&gt;2&lt;/a&gt;
+  ...
+&lt;/div&gt;</pre>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
