@@ -1,50 +1,50 @@
-11 Nov 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Sat 11 Nov 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Reduce font-size h4, 5 and 6
 	* Remove unnecessary margin(s) from text style and headings
 	* Add styles for pagination component
 
-31 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Tue 31 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.24
 	* Remove shadow and set background for flat button
 	* Add line styled button (-background)
 	* Remove unnecessary styles (button)
 
-30 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Mon 30 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.23
 	* Fix menu item
 	* Improve positive and negative colour
 	* Add critical and debug message colour
 	* Fix positive button
 
-27 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Fri 27 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Update sample images
 
-26 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Thu 26 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.22
 	* Add style using web fonts for documentation
 	* Improve tab menu style
 
-10 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Tue 10 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Create documentation site (gitlab pages)
 
-07 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Mon 07 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.21
 	* Add tab menu
 
-04 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Fri 04 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.19, 0.0.20
 	* Update button shadow
 	* Update sidebar (right sidebar sample)
 	* Rename `container` to `sidebar-container`
 
-03 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Thu 03 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.17, 0.0.18
 	* Fix issuen #2
 	* Add form field description and text
 	* Update button styles (color, opacity)
 	* Add flat disabled button
 
-02 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Wed 02 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.12, 0.0.13, 0.0.14, 0.0.15, 0.0.16
 	* Fix sidebar height and overflow-y issue
 	* Fix form max-width
@@ -56,27 +56,27 @@
 	* Improve box, button and message
 	* Add box footer message
 
-01 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Tue 01 Aug 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.10, 0.0.11
 	* Rename lbl->label
 	* Rename y-axis->vertical and mini->petit
 	* Rename tbl->table, btn->button, col->column and frm->form
 
-31 Jun 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+31 Jul 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.9
 	* Add form,menu, box, breadcrumb, message and sidebar
 
-24 Jun 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Sat 24 Jun 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Update Node.js 7.8.0 (for development)
 	* Bump version 0.0.4, 0.0.5, 0.0.6, 0.0.7, 0.0.8
 	* Update button shadow
 	* Make grid responsive
 	* Add col-v-N, col-l-N, col-n-N, col-m-N, col-s-N and col-t-N
 
-17 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Wed 17 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Add table
 
-16 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Tue 16 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.2, 0.0.3
 	* Add button
 	* Setup CI
@@ -84,6 +84,6 @@
 	* Add a screenshot into README.md
 	* Add eslint integration
 
-15 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Mon 15 May 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Initial import
 	* Release 0.0.1
