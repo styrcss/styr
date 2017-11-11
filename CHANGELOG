@@ -1,3 +1,8 @@
+11 Nov 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Reduce font-size h4, 5 and 6
+	* Remove unnecessary margin(s) from text style and headings
+	* Add styles for pagination component
+
 31 Oct 2017 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.24
 	* Remove shadow and set background for flat button
