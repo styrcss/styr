@@ -40,6 +40,11 @@
       <div class="grid">
         <div class="row">
           <div class="offset-3 column-10 column-v-16">
+            <div class="warning message">
+              <h6 class="header">Note</h6>
+              <p>While in <code>0.0.X</code>, inconsistent changes or updates might be added. Any suggestions or update request from
+                 <a href="https://gitlab.com/grauwoelfchen/styr/issues">Issues</a> is always welcome ;)</p>
+            </div>
             <div class="secondary attached header">
               <p>Styr; STYlish css libRary</p>
             </div>
@@ -50,22 +55,38 @@
                 <a href="https://www.npmjs.com/package/styr"><img src="https://img.shields.io/npm/v/styr.svg"></a>
               </p>
               <p>This is designed to keep minimal size, to work for component. And it's not a framework, but library. See also <a href="https://gitlab.com/grauwoelfchen/styr">README.</a></p>
-              <div>
-                <h6>Usage</h6>
+              <div class="container">
+                <h5>Usage</h5>
+                <h6>CDN</h6>
+                <pre>TODO</pre>
+
+                <h6>Build</h6>
                 <pre>% npm install --save styr</pre>
+                <p>
+                  See <strong>dst</strong> directory. <code class="inverted">styr.css</code> and <code class="inverted">styr.min.css</code> is available.<br>
+                  Or, you can import only some styles as you need from style files in <strong>src</strong>, directly. (Styr uses <em>stylus</em> as syntax).</p>
+                <pre>: to build, you need `gulp`
+% npm install -g gulp-cli
+
+% gulp
+
+: for development
+% gulp watch</pre>
               </div>
-              <div>
-                <h6>Note</h6>
+              <div class="container">
+                <h5>Policy</h5>
                 <p>Styr does not contain...</p>
                 <div class="flat box">
                 <ul>
                   <li>JavaScript</li>
+                  <li>CSS Animation</li>
                   <li>Web Font</li>
+                  <li>Image</li>
                 </ul>
                 </div>
               </div>
-              <div>
-                <h6>License</h6>
+              <div class="container">
+                <h5>License</h5>
                 <p>See <a class="https://gitlab.com/grauwoelfchen/styr/blob/master/LICENSE">LICENSE</a></a>
               </div>
             </div>

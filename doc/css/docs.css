@@ -33,6 +33,10 @@ ul li {
   line-height: 1.59rem;
 }
 
+.container {
+  margin: 2.22rem 0;
+}
+
 .title {
   color: #888888;
   margin: 19px 0 9px 0;
