@@ -46,7 +46,33 @@
       <h2 class="title">Box</h2>
 
       <section>
-        <h3 class="title">Normal</h3>
+        <form class="form">
+          <select id="change_nav">
+            <option value="normal">Standard Box</option>
+            <option value="flat">Flat Box</option>
+            <option value="grouped">Grouped Box</option>
+            <option value="grouped_flat">Grouped + Flat Box</option>
+            <option value="inner_grid">Box + (inner) Grid</option>
+            <option value="attached_header">Attached Header</option>
+            <option value="attached_footer">Attached Footer</option>
+            <option value="attached_message">Attached Message</option>
+            <option value="examples">Combination Examples</option>
+          </select>
+          <script>
+var nav = document.querySelector('#change_nav');
+nav.addEventListener('change', function(e) {
+  var s = e.target
+    , v = s[s.selectedIndex].value
+    ;
+  var url = window.location.href;
+  window.location.href = url.replace(/#[A-z0-9\-]*$/, '') + '#' + v;
+});
+          </script>
+        </form>
+      </section>
+
+      <section>
+        <h3 id="normal" class="title">Standard Box</h3>
         <div class="flat box">
           <div class="box">
             <p>Basic Box</p>
@@ -70,7 +96,7 @@
       </section>
 
       <section>
-        <h3 class="title">Flat</h3>
+        <h3 id="flat" class="title">Flat Box</h3>
         <div class="flat box">
           <div class="flat box">
             <p>Basic</p>
@@ -99,225 +125,268 @@
       </section>
 
       <section>
-        <h3 class="title">Group</h3>
+        <h3 id="grouped" class="title">Grouped Box</h3>
+        <p class="description">You may want wrap these boxes something container like <code>.container</code>. Styr does not set style for that wrapper, you can use it by yourself as you like.</p>
         <div class="flat box">
-          <div class="group box">
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="group primary box">
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="group secondary box">
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="group box">
-            <p>Lorem ipsum</p>
+          <div class="container">
+            <div class="grouped box">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="grouped primary box">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="grouped secondary box">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="grouped box">
+              <p>Lorem ipsum</p>
+            </div>
           </div>
         </div>
-        <pre>&lt;div class="group box"&gt;
-...
-&lt;/div&gt;
-&lt;div class="group box"&gt;
-...
-&lt;/div&gt;
-...</pre>
+        <pre>&lt;div class="container"&gt;
+  &lt;div class="grouped box"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="grouped box"&gt;
+  ...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
       </section>
 
       <section>
-        <h3 class="title">Flat Group</h3>
+        <h3 id="grouped_flat" class="title">Grouped + Flat Box</h3>
         <div class="flat box">
-          <div class="group flat box">
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="group flat box">
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="group flat box">
-            <p>Lorem ipsum</p>
+          <div class="container">
+            <div class="grouped flat box">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="grouped flat box">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="grouped flat box">
+              <p>Lorem ipsum</p>
+            </div>
           </div>
         </div>
-        <pre>&lt;div class="group flat box"&gt;
-...
-&lt;/div&gt;
-&lt;div class="group flat box"&gt;
-...
-&lt;/div&gt;
-...</pre>
+        <pre>&lt;div class="container"&gt;
+  &lt;div class="grouped flat box"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="grouped flat box"&gt;
+  ...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
       </section>
 
       <section>
-        <h3 class="title">Inner Grid</h3>
+        <h3 id="inner_grid" class="title">Box + (inner) Grid</h3>
+        <p class="description">Box can have inner grids.</p>
         <div class="flat box">
-          <div class="attached primary header">
-            <p>Box</p>
-          </div>
-          <div class="attached box">
-            <div class="grid">
-              <div class="row">
-                <div class="column-3 column-n-8">Foo</div>
-                <div class="column-13 column-n-8">Bar</div>
+          <div class="container">
+            <div class="attached primary header">
+              <p>Box</p>
+            </div>
+            <div class="attached box">
+              <div class="grid">
+                <div class="row">
+                  <div class="column-3 column-n-8">Foo</div>
+                  <div class="column-13 column-n-8">Bar</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <pre>&lt;div class="attached primary header"&gt;
-...
-&lt;/div&gt;
-&lt;div class="attached box"&gt;
-&lt;div class="grid"&gt;
-...
-&lt;/div&gt;
-&lt;/div&gt;</pre>
-      </section>
-
-      <h2 class="title">Box Attachments</h2>
-
-      <section>
-        <h3 class="title">Header</h3>
-        <div class="flat box">
-          <div class="attached header">
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="attached box">
-            <p>Lorem ipsum</p>
-          </div>
-
-          <div class="attached secondary header">
-            <p>Lorem ipsum</p>
-          </div>
-          <div class="attached box">
-            <p>Lorem ipsum</p>
-          </div>
-        </div>
-        <pre>&lt;div class="attached header"&gt;
-...
-&lt;/div&gt;
-&lt;div class="attached box"&gt;
-...
-&lt;/div&gt;
-...</pre>
-      </section>
-
-      <section>
-        <h3 class="title">Footer</h3>
-        <div class="flat box">
-          <div class="attached box">
-            <p>Box</p>
-          </div>
-          <div class="attached primary footer">
-            <p>Primary Footer</p>
-          </div>
-
-          <div class="attached box">
-            <p>Box</p>
-          </div>
-          <div class="attached negative footer">
-            <p>Negative Footer</p>
-          </div>
-
-          <div class="attached box">
-            <p>Box</p>
-          </div>
-          <div class="attached positive footer">
-            <p>Negative Footer</p>
-          </div>
-        </div>
-        <pre>&lt;div class="attached box"&gt;
-...
-&lt;/div&gt;
-&lt;div class="attached primary footer"&gt;
-...
-&lt;/div&gt;
-
-&lt;div class="attached box"&gt;
-...
-&lt;/div&gt;
-&lt;div class="attached negative footer"&gt;
-...
-&lt;/div&gt;
-
-&lt;div class="attached box"&gt;
-...
-&lt;/div&gt;
-&lt;div class="attached positive footer"&gt;
-...
+        <pre>&lt;div class="container"&gt;
+  &lt;div class="attached primary header"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached box"&gt;
+    &lt;div class="grid"&gt;
+      &lt;div class="column-3 column-n-8"&gt;Foo&lt;/div&gt;
+      &lt;div class="column-13 column-n-8"&gt;Bar&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
       </section>
 
       <section>
-        <h3 class="title">Footer Message</h3>
+        <h3 id="attached_header" class="title">Attached Header</h3>
         <div class="flat box">
-          <div class="attached box">
-            <p>Box</p>
-          </div>
-          <div class="attached secondary message">
-            <h3 class="header">Welcome</h3>
-            <p>message...</p>
+          <div class="container">
+            <div class="attached header">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="attached box">
+              <p>Lorem ipsum</p>
+            </div>
           </div>
 
-          <div class="attached box">
-            <p>Box</p>
-          </div>
-          <div class="attached warn message">
-            <h3 class="header">Warning</h3>
-            <p>message...</p>
+          <div class="container">
+            <div class="attached secondary header">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="attached box">
+              <p>Lorem ipsum</p>
+            </div>
           </div>
         </div>
-        <pre>&lt;div class="attached box"&gt;
-...
-&lt;/div&gt;
-&lt;div class="attached warn message"&gt;
-...
+        <pre>&lt;div class="container"&gt;
+  &lt;div class="attached header"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached box"&gt;
+  ...
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
       </section>
 
       <section>
-        <h3 class="title">Combination</h3>
+        <h3 id="attached_footer" class="title">Attached Footer</h3>
         <div class="flat box">
-          <div class="attached header">
-            <h6>Header</h6>
+          <div class="container">
+            <div class="attached box">
+              <p>Box</p>
+            </div>
+            <div class="attached primary footer">
+              <p>Primary Footer</p>
+            </div>
           </div>
-          <div class="attached group box">
-            <p>Box</p>
+
+          <div class="container">
+            <div class="attached box">
+              <p>Box</p>
+            </div>
+            <div class="attached negative footer">
+              <p>Negative Footer</p>
+            </div>
           </div>
-          <div class="attached group box">
-            <p>Box</p>
-          </div>
-          <div class="attached primary message">
-            <h3 class="header">Welcome</h3>
-            <p>message...</p>
-          </div>
-          <div class="attached negative header">
-            <h6>Header</h6>
-          </div>
-          <div class="attached box">
-            <p>Box</p>
-          </div>
-          <div class="attached secondary message">
-            <h3 class="header">Welcome</h3>
-            <p>message...</p>
+
+          <div class="container">
+            <div class="attached box">
+              <p>Box</p>
+            </div>
+            <div class="attached positive footer">
+              <p>Negative Footer</p>
+            </div>
           </div>
         </div>
-        <pre>&lt;div class="attached header"&gt;
-...
+        <pre>&lt;div class="container"&gt;
+  &lt;div class="attached box"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached primary footer"&gt;
+  ...
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="attached group box"&gt;
-...
+
+&lt;div class="container"&gt;
+  &lt;div class="attached box"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached negative footer"&gt;
+  ...
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="attached group box"&gt;
-...
+
+&lt;div class="container"&gt;
+  &lt;div class="attached box"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached positive footer"&gt;
+  ...
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="attached_message" class="title">Attached (Footer) Message</h3>
+        <div class="flat box">
+          <div class="container">
+            <div class="attached box">
+              <p>Box</p>
+            </div>
+            <div class="attached secondary message">
+              <h3 class="header">Welcome</h3>
+              <p>message...</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="attached box">
+              <p>Box</p>
+            </div>
+            <div class="attached warn message">
+              <h3 class="header">Warning</h3>
+              <p>message...</p>
+            </div>
+          </div>
+        </div>
+        <pre>&lt;div class="container"&gt;
+  &lt;div class="attached box"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached warn message"&gt;
+  ...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="combination_example" class="title">Combination Examples</h3>
+        <div class="flat box">
+          <div class="container">
+            <div class="attached header">
+              <h6>Header</h6>
+            </div>
+            <div class="attached grouped box">
+              <p>Box</p>
+            </div>
+            <div class="attached grouped box">
+              <p>Box</p>
+            </div>
+            <div class="attached primary message">
+              <h3 class="header">Welcome</h3>
+              <p>message...</p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="attached negative header">
+              <h6>Header</h6>
+            </div>
+            <div class="attached box">
+              <p>Box</p>
+            </div>
+            <div class="attached secondary message">
+              <h3 class="header">Welcome</h3>
+              <p>message...</p>
+            </div>
+          </div>
+        </div>
+        <pre>&lt;div class="container"&gt;
+  &lt;div class="attached header"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached grouped box"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached grouped box"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached primary message"&gt;
+  ...
+  &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class="attached primary message"&gt;
-...
-&lt;/div&gt;
-&lt;div class="attached header"&gt;
-...
-&lt;/div&gt;
-&lt;div class="attached box"&gt;
-...
-&lt;/div&gt;
-&lt;div class="attached secondary message"&gt;
-...
+
+&lt;div class="container"&gt;
+  &lt;div class="attached header"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached box"&gt;
+  ...
+  &lt;/div&gt;
+  &lt;div class="attached secondary message"&gt;
+  ...
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
       </section>
     </div>
