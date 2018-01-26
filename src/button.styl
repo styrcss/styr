@@ -26,9 +26,9 @@ input[type="submit"].button
   border 1px solid rgba(27, 31, 35, 0.2)
   btn-style(#fbfbfc, $basic-colour)
   &.flat,
-  &.line
+  &.lined
     color darken($basic-text-colour, 46%)
-  &.line
+  &.lined
     box-shadow 0 0.18rem 0.11rem -0.186rem darken($line-colour, 72%)
     &.disabled
       box-shadow 0 0.22rem 0.11rem -0.22em darken($line-colour, 72%)
@@ -36,13 +36,13 @@ input[type="submit"].button
     box-shadow none
   &:hover,
   &.flat:hover,
-  &.line:hover
+  &.lined:hover
     cursor pointer
     color darken($basic-text-colour, 46%)
     border 1px solid rgba(13, 31, 35, 0.35)
     text-decoration none
-  &.line:hover,
-  &.flat:hover
+  &.flat:hover,
+  &.lined:hover
     background-color lighten($basic-colour, 6%)
 
 
@@ -58,7 +58,7 @@ input[type="submit"].primary.button
     color darken($primary-text-colour, 36%)
     btn-style(#f0f3f6, #e2eaf4)
   &.flat,
-  &.line
+  &.lined
     color darken($primary-colour, 58%)
     &:hover
       background-color lighten($primary-colour, 28%)
@@ -77,7 +77,7 @@ input[type="submit"].secondary.button
     color darken($secondary-text-colour, 22%)
     btn-style(#e4e9ec, #d4dadd)
   &.flat,
-  &.line
+  &.lined
     color darken($secondary-colour, 58%)
     &:hover
       background-color lighten($secondary-colour, 9%)
@@ -96,7 +96,7 @@ input[type="submit"].negative.button
     color darken($negative-text-colour, 18%)
     btn-style(lighten($negative-colour, 41%), darken($negative-colour, 3%))
   &.flat,
-  &.line
+  &.lined
     color darken($negative-colour, 55%)
     &:hover
       background-color lighten($negative-colour, 13%)
@@ -115,7 +115,7 @@ input[type="submit"].positive.button
     color darken($positive-text-colour, 46%)
     btn-style(lighten($positive-colour, 28%), darken($positive-colour, 5%))
   &.flat,
-  &.line
+  &.lined
     color darken($positive-text-colour, 42%)
     &:hover
       background-color lighten($positive-colour, 21%)
@@ -130,9 +130,9 @@ input[type="submit"].flat.button
   &:hover
     background-image none
 
-a.line.button,
-button.line.button,
-input[type="submit"].line.button
+a.lined.button,
+button.lined.button,
+input[type="submit"].lined.button
   background none
   background-image none
   &:hover
