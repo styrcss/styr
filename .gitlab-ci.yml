@@ -5,7 +5,7 @@ stages:
 
 check:
   stage: check
-  image: node:7.8.0
+  image: node:8.9.0
   services:
   variables:
     NODE_ENV: development
@@ -24,7 +24,7 @@ check:
 
 build:
   stage: build
-  image: node:7.8.0
+  image: node:8.9.0
   services:
   variables:
     NODE_ENV: production
@@ -49,7 +49,7 @@ build:
 
 pages:
   stage: pages
-  image: node:7.8.0
+  image: node:8.9.0
   services:
   variables:
     NODE_ENV: production
