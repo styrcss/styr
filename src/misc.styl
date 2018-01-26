@@ -25,6 +25,25 @@ button::-moz-focus-inner
   border 0 !important
   outline 0 !important
 
+select,
+select option
+  outline 0 !important
+
+select:-moz-focusring
+  color transparent
+  text-shadow none !important
+
+@-moz-document url-prefix()
+  select
+    color transparent
+    text-shadow 0 0 0 $black0
+    outline 0
+    &:active,
+    &:focus
+      color transparent !important
+      text-shadow 0 0 0 $black0 !important
+      outline 0 !important
+
 
 // link
 a
