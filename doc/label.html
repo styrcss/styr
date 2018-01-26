@@ -45,7 +45,28 @@
       <h2 class="title">Label</h2>
 
       <section>
-        <h3 class="title">label</h3>
+        <form class="form">
+          <select id="change_nav">
+            <option value="standard">Standard Label</option>
+            <option value="lined">Lined Label</option>
+            <option value="rounded">Rounded Label</option>
+            <option value="rounded_lined">Rounded + Lined Label</option>
+          </select>
+          <script>
+var nav = document.querySelector('#change_nav');
+nav.addEventListener('change', function(e) {
+  var s = e.target
+    , v = s[s.selectedIndex].value
+    ;
+  var url = window.location.href;
+  window.location.href = url.replace(/#[A-z0-9\-]*$/, '') + '#' + v;
+});
+          </script>
+        </form>
+      </section>
+
+      <section>
+        <h3 id="standard" class="title">Standard Label</h3>
         <div class="flat box">
           <label class="label">Basic</label>
           <label class="primary label">Primary</label>
@@ -61,23 +82,23 @@
       </section>
 
       <section>
-        <h3 class="title">line label</h3>
+        <h3 id="lined" class="title">Lined Label</h3>
         <div class="flat box">
-          <label class="line label">Basic</label>
-          <label class="primary line label">Primary</label>
-          <label class="secondary line label">Secondary</label>
-          <span class="negative line label">Negative</span>
-          <span class="positive line label">Positive</span>
+          <label class="lined label">Basic</label>
+          <label class="primary lined label">Primary</label>
+          <label class="secondary lined label">Secondary</label>
+          <span class="negative lined label">Negative</span>
+          <span class="positive lined label">Positive</span>
         </div>
-        <pre>&lt;label class="line label"&gt;Basic&lt;/label&gt;
-&lt;label class="primary line label"&gt;Primary&lt;/label&gt;
-&lt;label class="secondary line label"&gt;Secondary&lt;/label&gt;
-&lt;span class="negative line label"&gt;Negative&lt;/span&gt;
-&lt;span class="positive line label"&gt;Positive&lt;/span&gt;</pre>
+        <pre>&lt;label class="lined label"&gt;Basic&lt;/label&gt;
+&lt;label class="primary lined label"&gt;Primary&lt;/label&gt;
+&lt;label class="secondary lined label"&gt;Secondary&lt;/label&gt;
+&lt;span class="negative lined label"&gt;Negative&lt;/span&gt;
+&lt;span class="positive lined label"&gt;Positive&lt;/span&gt;</pre>
       </section>
 
       <section>
-        <h3 class="title">rounded label</h3>
+        <h3 id="rounded" class="title">Rounded Label</h3>
         <div class="flat box">
           <label class="rounded label">Basic</label>
           <label class="primary rounded label">Primary</label>
@@ -90,6 +111,22 @@
 &lt;label class="secondary rounded label"&gt;Secondary&lt;/label&gt;
 &lt;span class="negative rounded label"&gt;Negative&lt;/span&gt;
 &lt;span class="positive rounded label"&gt;Positive&lt;/span&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="rounded_lined" class="title">Rounded Lined Label</h3>
+        <div class="flat box">
+          <label class="rounded lined label">Basic</label>
+          <label class="primary rounded lined label">Primary</label>
+          <label class="secondary rounded lined label">Secondary</label>
+          <span class="negative rounded lined label">Negative</span>
+          <span class="positive rounded lined label">Positive</span>
+        </div>
+        <pre>&lt;label class="rounded lined label"&gt;Basic&lt;/label&gt;
+&lt;label class="primary rounded lined label"&gt;Primary&lt;/label&gt;
+&lt;label class="secondary rounded lined label"&gt;Secondary&lt;/label&gt;
+&lt;span class="negative rounded lined label"&gt;Negative&lt;/span&gt;
+&lt;span class="positive rounded lined label"&gt;Positive&lt;/span&gt;</pre>
       </section>
     </div>
   </div>

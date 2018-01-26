@@ -49,7 +49,7 @@ div.attached.positive.footer
   background lighten($positive-colour, 20%)
   color darken($positive-colour, 60%)
 
-div.attached.header + div.attached.box:not(.group)
+div.attached.header + div.attached.box:not(.grouped)
   border-radius 0 0 0.133rem 0.133rem
   box-shadow 0 0.19rem 0.08rem -0.19rem darken($gray0, 62%) !important
 
@@ -61,7 +61,7 @@ div.attached.message + div.box
   margin-top 1.11rem + 0.18rem
 
 // footer message
-div.group.box + div.attached.message,
+div.grouped.box + div.attached.message,
 div.attached.box + div.attached.message
   margin-top -0.155rem
   margin-bottom 1.11rem
@@ -76,7 +76,7 @@ div.box
     background #ffffff
     box-shadow none !important
     border 1px solid darken($gray0, 9%)
-  &.group,
+  &.grouped,
   &.attached
     margin 0
     box-shadow none !important

@@ -45,10 +45,48 @@
       <h2 class="title">Menu</h2>
 
       <section>
-        <h3 class="title">Nested right menu</h3>
+        <form class="form">
+          <select id="change_nav">
+            <option value="standard">Standard Menu</option>
+            <option value="right">Right Menu</option>
+            <option value="right_input">Input Item in Right Menu</option>
+            <option value="vertical">Vertical Menu</option>
+            <option value="vertical_bordered">Vertical Bordered Menu</option>
+            <option value="tabbed">Tabbed Menu</option>
+          </select>
+          <script>
+var nav = document.querySelector('#change_nav');
+nav.addEventListener('change', function(e) {
+  var s = e.target
+    , v = s[s.selectedIndex].value
+    ;
+  var url = window.location.href;
+  window.location.href = url.replace(/#[A-z0-9\-]*$/, '') + '#' + v;
+});
+          </script>
+        </form>
+      </section>
+
+      <section>
+        <h3 id="standard" class="title">Standard Menu</h3>
         <div class="flat box">
           <div class="menu">
-            <a class="item active">Top</a>
+            <a class="active item">Item 0</a>
+            <a class="item">Item 1</a>
+            <a class="item">Item 2</a>
+          </div>
+        </div>
+        <pre>&lt;div class="menu"&gt;
+  &lt;a class="item"&gt;Item 0&lt;/a&gt;
+  ...
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="right" class="title">Right Menu</h3>
+        <div class="flat box">
+          <div class="menu">
+            <a class="active item">Top</a>
             <a class="item">Page1</a>
             <a class="item">Page2</a>
             <div class="right menu">
@@ -58,14 +96,21 @@
           </div>
         </div>
         <pre>&lt;div class="menu"&gt;
+  &lt;a class="active item"&gt;Top&lt;/a&gt;
+  ...
+  &lt;div class="right menu"&gt;
+    &lt;a class="item"&gt;Preferences&lt;/a&gt;
+    ...
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
       </section>
 
       <section>
-        <h3 class="title">Input form</h3>
+        <h3 id="right_input" class="title">Input Item in Right Menu</h3>
         <div class="flat box">
           <div class="menu">
-            <a class="item active">Top</a>
+            <a class="active item">Top</a>
             <a class="item">Page1</a>
             <a class="item">Page2</a>
             <div class="right menu">
@@ -75,42 +120,45 @@
           </div>
         </div>
         <pre>&lt;div class="menu"&gt;
+  ...
 &lt;/div&gt;</pre>
       </section>
 
       <section>
-        <h3 class="title">vertical menu</h3>
+        <h3 id="vertical" class="title">Vertical Menu</h3>
         <div class="flat box">
           <div class="vertical menu">
             <a class="item">Page0</a>
-            <a class="item active">Page1</a>
+            <a class="active item">Page1</a>
             <a class="item">Page2</a>
             <a class="item">Page3</a>
           </div>
         </div>
         <pre>&lt;div class="vertical menu"&gt;
+  ...
 &lt;/div&gt;</pre>
       </section>
 
       <section>
-        <h3 class="title">vertical, bordered</h3>
+        <h3 id="vertical_bordered" class="title">Vertical + Bordered Menu</h3>
         <div class="flat box">
           <div class="vertical bordered menu">
             <a class="item">Page0</a>
-            <a class="item active">Page1</a>
+            <a class="active item">Page1</a>
             <a class="item">Page2</a>
             <a class="item">Page3</a>
           </div>
         </div>
         <pre>&lt;div class="vertical bordered menu"&gt;
+  ...
 &lt;/div&gt;</pre>
       </section>
 
       <section>
-        <h3 class="title">Tabe Menu</h3>
+        <h3 id="tabbed" class="title">Tabbed Menu</h3>
         <div class="flat box">
-          <div class="tab menu">
-            <a class="item active">Top</a>
+          <div class="tabbed menu">
+            <a class="active item">Top</a>
             <a class="item">Page1</a>
             <a class="item">Page2</a>
             <div class="right menu">
@@ -118,18 +166,37 @@
               <a class="item">Login</a>
             </div>
           </div>
-          <div class="tab menu">
+          <div class="tabbed menu">
             <a class="item">Top</a>
             <a class="item">Page1</a>
-            <a class="item active">Page2</a>
+            <a class="active item">Page2</a>
             <div class="right menu">
               <a class="item">Preferences</a>
               <a class="item">Login</a>
             </div>
           </div>
         </div>
-        <pre>&lt;div class="tab menu"&gt;
-&lt;/div&gt;</pre>
+        <pre>&lt;div class="tabbed menu"&gt;
+  &lt;a class="active item"&gt;Top&lt;/a&gt;
+  &lt;a class="item"&gt;Page1&lt;/a&gt;
+  &lt;a class="item"&gt;Page2&lt;/a&gt;
+  &lt;div class="right menu"&gt;
+    &lt;a class="item"&gt;Preferences&lt;/a&gt;
+    &lt;a class="item"&gt;Login&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="tabbed menu"&gt;
+  &lt;a class="item"&gt;Top&lt;/a&gt;
+  &lt;a class="item"&gt;Page1&lt;/a&gt;
+  &lt;a class="active item"&gt;Page2&lt;/a&gt;
+  &lt;div class="right menu"&gt;
+    &lt;a class="item"&gt;Preferences&lt;/a&gt;
+    &lt;a class="button item"&gt;Login&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+...
+</pre>
       </section>
     </div>
   </div>
