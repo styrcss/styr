@@ -45,6 +45,31 @@
       <h2 class="title">Button</h2>
 
       <section>
+        <form class="form">
+          <select id="change_nav">
+            <option value="standard">Standard Button</option>
+            <option value="flat">Flat Button</option>
+            <option value="lined">Lined Button</option>
+            <option value="flat_lined">Flat + Lined Button</option>
+            <option value="disabled">Disabled Button</option>
+            <option value="disabled_lined">Disabled + Lined Button</option>
+            <option value="disabled_flat">Disabled + Flat Button</option>
+            <option value="disabled_flat_lined">Disabled + Flat + Lined Button</option>
+          </select>
+          <script>
+var nav = document.querySelector('#change_nav');
+nav.addEventListener('change', function(e) {
+  var s = e.target
+    , v = s[s.selectedIndex].value
+    ;
+  var url = window.location.href;
+  window.location.href = url.replace(/#[A-z0-9\-]*$/, '') + '#' + v;
+});
+          </script>
+        </form>
+      </section>
+
+      <section>
         <h3 id="standard" class="title">Standard</h3>
         <div class="flat box">
           <button class="button">Basic</button>
@@ -122,6 +147,22 @@
 &lt;button class="secondary disabled button"&gt;&lt;button&gt;
 &lt;button class="negative disabled button"&gt;&lt;button&gt;
 &lt;button class="positive disabled button"&gt;&lt;button&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="disabled" class="title">Disabled Lined Button</h3>
+        <div class="flat box">
+          <button class="disabled lined button">Basic</button>
+          <button class="primary disabled lined button">Primary</button>
+          <button class="secondary disabled lined button">Secondary</button>
+          <button class="negative disabled lined button">Negative</button>
+          <button class="positive disabled lined button">Positive</button>
+        </div>
+        <pre>&lt;button class="disabled lined button"&gt;&lt;button&gt;
+&lt;button class="primary disabled lined button"&gt;&lt;button&gt;
+&lt;button class="secondary disabled lined button"&gt;&lt;button&gt;
+&lt;button class="negative disabled lined button"&gt;&lt;button&gt;
+&lt;button class="positive disabled lined button"&gt;&lt;button&gt;</pre>
       </section>
 
       <section>
