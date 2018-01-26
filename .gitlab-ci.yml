@@ -32,6 +32,7 @@ build:
     - node --version
     - npm --version
     - npm install -g gulp-cli
+    - npm install --dev
     - npm install
   script:
     - gulp
