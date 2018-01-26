@@ -1,4 +1,5 @@
 Fri 36 Jan 2018 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Bump version 0.0.28
 	* Update build tool chains (dependencies)
 	* Update nodejs 7.8.0 -> 8.9.0
 	* Bump version 0.0.27
