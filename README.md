@@ -66,7 +66,7 @@ https://grauwoelfchen.gitlab.io/styr
 % source venv/bin/activate
 (venv) % pip install --upgrade pip setuptools
 (venv) % pip install nodeenv
-(venv) % nodeenv -p --node=7.10.1
+(venv) % nodeenv -p --node=8.9.0
 
 (venv) % npm i -g npm
 (venv) % npm i
@@ -107,7 +107,7 @@ See [LICENSE](LICENSE).
 
 ```txt
 Styr
-Copyright (c) 2017 Yasuhiro Asaka
+Copyright (c) 2017-2018 Yasuhiro Asaka
 ```
 
 
