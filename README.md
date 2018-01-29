@@ -8,12 +8,12 @@
 https://gitlab.com/grauwoelfchen/styr/raw/master/doc/img/screenshot.png)
 
 ```txt
-  ()
-  /\_|_        ,_
- /  \|  |   | /  |
-/(__/|_/ \_/|/   |_/
-           /|
-           \|
+ ____  _
+/ ___|| |_ _   _ _ __
+\___ \| __| | | | '__|
+ ___) | |_| |_| | |
+|____/ \__|\__, |_|
+           |___/
 
 Styr; STYlish css libRary
 ```
@@ -39,16 +39,25 @@ https://gitlab.com/grauwoelfchen/styr
 
 See `doc/index.html`
 
-* Box
-* Breadcrumb
-* Button
-* Form
-* Grid
-* Label
-* Menu
-* Message
-* Table
-* Typography
+### Styles
+
+* [Box](https://grauwoelfchen.gitlab.io/styr/box.html)
+* [Breadcrumb](https://grauwoelfchen.gitlab.io/styr/breadcrumb.html)
+* [Button](https://grauwoelfchen.gitlab.io/styr/button.html)
+* [Form](https://grauwoelfchen.gitlab.io/styr/form.html)
+* [Grid](https://grauwoelfchen.gitlab.io/styr/grid.html)
+* [Label](https://grauwoelfchen.gitlab.io/styr/label.html)
+* [Menu](https://grauwoelfchen.gitlab.io/styr/menu.html)
+* [Message](https://grauwoelfchen.gitlab.io/styr/message.html)
+* [Pagination](https://grauwoelfchen.gitlab.io/styr/pagination.html)
+* [Table](https://grauwoelfchen.gitlab.io/styr/table.html)
+* [Text](https://grauwoelfchen.gitlab.io/styr/text.html)
+* [Typography](https://grauwoelfchen.gitlab.io/styr/typography.html)
+
+
+### Modules
+
+* [Sidebar](https://grauwoelfchen.gitlab.io/styr/sidebar.html)
 
 
 ## Documentation
@@ -57,6 +66,10 @@ https://grauwoelfchen.gitlab.io/styr
 
 
 ## Development
+
+### Requirements
+
+* Node.js `8.9.0`
 
 ### Setup
 
@@ -75,7 +88,7 @@ https://grauwoelfchen.gitlab.io/styr
 ### Document
 
 ```zsh
-: local document
+: open local document
 % xdg-open doc/index.html
 ```
 
