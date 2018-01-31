@@ -1,4 +1,7 @@
-Fri 36 Jan 2018 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+Thu 1 Feb 2018 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	* Add grouped button style
+
+Fri 26 Jan 2018 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.29
 	* Fix disabled flat lined button shadow
 	* Rename group to grouped (box)

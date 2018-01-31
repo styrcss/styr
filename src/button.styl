@@ -6,6 +6,21 @@ btn-style(c1, c2)
   background-image linear-gradient(-180deg, c1 0%, c2 91%)
   box-shadow 0 0.18rem 0.11rem -0.186rem darken(c2, 62%)
 
+grouping(c)
+  margin-left 0
+  margin-right -0.33rem
+  border-radius 0
+  &:not(.flat):not(.lined)
+    box-shadow 0.18rem 0.18rem 0.18rem -0.18rem darken($basic-colour, 62%)
+  &:first-child
+    border-radius 0.16em 0 0 0.16em
+  &:not(.flat):not(.lined):first-child
+    box-shadow 0.18rem 0.18rem 0.18rem -0.18rem darken($basic-colour, 62%)
+  &:last-child
+    margin-right 0
+    border-radius 0 0.16em 0.16em 0
+  &:not(.flat):not(.lined):last-child
+    box-shadow 0 0.18rem 0.18rem -0.18rem darken($basic-colour, 62%)
 
 $basic-text-colour = #3d4448
 a.button,
@@ -25,6 +40,8 @@ input[type="submit"].button
   opacity 0.94
   border 1px solid rgba(27, 31, 35, 0.2)
   btn-style(#fbfbfc, $basic-colour)
+  &.grouped
+    grouping($basic-colour)
   &.flat,
   &.lined
     color darken($basic-text-colour, 46%)
@@ -51,6 +68,8 @@ input[type="submit"].primary.button
   border-color darken($primary-colour, 14%)
   color $primary-text-colour
   btn-style(#f0f3f6, $primary-colour)
+  &.grouped
+    grouping($primary-colour)
   &:hover
     border-color darken($primary-colour, 21%)
     color darken($primary-text-colour, 36%)
@@ -70,6 +89,8 @@ input[type="submit"].secondary.button
   border 1px solid darken($secondary-colour, 18%)
   color $secondary-text-colour
   btn-style(#e9edf0, darken($secondary-colour, 3%))
+  &.grouped
+    grouping($secondary-colour)
   &:hover
     border 1px solid darken($secondary-colour, 26%)
     color darken($secondary-text-colour, 22%)
@@ -89,6 +110,8 @@ input[type="submit"].negative.button
   border 1px solid lighten($negative-text-colour, 41%)
   color darken($negative-text-colour, 3%)
   btn-style(lighten($negative-colour, 33%), $negative-colour)
+  &.grouped
+    grouping($negative-colour)
   &:hover
     border 1px solid lighten($negative-text-colour, 29%)
     color darken($negative-text-colour, 18%)
@@ -108,6 +131,8 @@ input[type="submit"].positive.button
   border 1px solid darken($positive-text-colour, 2%)
   color darken($positive-text-colour, 38%)
   btn-style(lighten($positive-colour, 16%), $positive-colour)
+  &.grouped
+    grouping($positive-colour)
   &:hover
     border 1px solid darken($positive-text-colour, 8%)
     color darken($positive-text-colour, 46%)

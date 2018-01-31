@@ -51,10 +51,16 @@
             <option value="flat">Flat Button</option>
             <option value="lined">Lined Button</option>
             <option value="flat_lined">Flat + Lined Button</option>
+            <option value="grouped_buttons">Grouped Buttons</option>
+            <option value="grouped_flat_buttons">Grouped + Flat Buttons</option>
+            <option value="grouped_flat_lined_buttons">Grouped + Flat + Lined Buttons</option>
             <option value="disabled">Disabled Button</option>
             <option value="disabled_lined">Disabled + Lined Button</option>
             <option value="disabled_flat">Disabled + Flat Button</option>
             <option value="disabled_flat_lined">Disabled + Flat + Lined Button</option>
+            <option value="disabled_grouped_buttons">Disabled + Grouped + Buttons</option>
+            <option value="disabled_grouped_flat_buttons">Disabled + Grouped + Flat + Buttons</option>
+            <option value="disabled_grouped_flat_lined_buttons">Disabled + Grouped + Flat + Lined Buttons</option>
           </select>
           <script>
 var nav = document.querySelector('#change_nav');
@@ -134,6 +140,63 @@ nav.addEventListener('change', function(e) {
       </section>
 
       <section>
+        <h3 id="grouped_buttons" class="title">Grouped Buttons</h3>
+        <div class="flat box">
+          <div class="container">
+            <button class="grouped button">Basic</button>
+            <button class="grouped primary button">Primary</button>
+            <button class="grouped secondary button">Secondary</button>
+            <button class="grouped negative button">Negative</button>
+            <button class="grouped positive button">Positive</button>
+          </div>
+        </div>
+        <pre>&lt;div class="container"&gt;
+  &lt;button class="grouped button"&gt;Basic&lt;button&gt;
+  &lt;button class="grouped button"&gt;Basic&lt;button&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="grouped_flat_buttons" class="title">Grouped + Flat Buttons</h3>
+        <div class="flat box">
+          <div class="container">
+            <button class="grouped flat button">Basic</button>
+            <button class="grouped flat primary button">Primary</button>
+            <button class="grouped flat secondary button">Secondary</button>
+            <button class="grouped flat negative button">Negative</button>
+            <button class="grouped flat positive button">Positive</button>
+          </div>
+        </div>
+        <pre>&lt;div class="container"&gt;
+  &lt;button class="grouped flat button"&gt;Basic&lt;button&gt;
+  &lt;button class="grouped flat primary button"&gt;Primary&lt;button&gt;
+  &lt;button class="grouped flat secondary button"&gt;Secondary&lt;button&gt;
+  &lt;button class="grouped flat negative button"&gt;Negative&lt;button&gt;
+  &lt;button class="grouped flat positive button"&gt;Positive&lt;button&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="grouped_flat_lined_buttons" class="title">Grouped + Flat + Lined + Buttons</h3>
+        <div class="flat box">
+          <div class="container">
+            <button class="grouped flat lined button">Basic</button>
+            <button class="grouped primary flat lined button">Primary</button>
+            <button class="grouped secondary flat lined button">Secondary</button>
+            <button class="grouped negative flat lined button">Negative</button>
+            <button class="grouped positive flat lined button">Positive</button>
+          </div>
+        </div>
+        <pre>&lt;div class="container"&gt;
+  &lt;button class="grouped flat lined button"&gt;Basic&lt;button&gt;
+  &lt;button class="grouped primary flat lined button"&gt;Primary&lt;button&gt;
+  &lt;button class="grouped secondary flat lined button"&gt;Secondary&lt;button&gt;
+  &lt;button class="grouped negative flat lined button"&gt;Negative&lt;button&gt;
+  &lt;button class="grouped positive flat lined button"&gt;Positive&lt;button&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
         <h3 id="disabled" class="title">Disabled Button</h3>
         <div class="flat box">
           <button class="disabled button">Basic</button>
@@ -150,7 +213,7 @@ nav.addEventListener('change', function(e) {
       </section>
 
       <section>
-        <h3 id="disabled" class="title">Disabled Lined Button</h3>
+        <h3 id="disabled_lined" class="title">Disabled Lined Button</h3>
         <div class="flat box">
           <button class="disabled lined button">Basic</button>
           <button class="primary disabled lined button">Primary</button>
@@ -195,6 +258,66 @@ nav.addEventListener('change', function(e) {
 &lt;button class="secondary disabled flat lined button"&gt;&lt;button&gt;
 &lt;button class="negative disabled flat lined button"&gt;&lt;button&gt;
 &lt;button class="positive disabled flat lined button"&gt;&lt;button&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="disabled_grouped_buttons" class="title">Disabled + Grouped Buttons</h3>
+        <div class="flat box">
+          <div class="container">
+            <button class="disabled grouped button">Basic</button>
+            <button class="disabled grouped primary button">Primary</button>
+            <button class="disabled grouped secondary button">Secondary</button>
+            <button class="disabled grouped negative button">Negative</button>
+            <button class="disabled grouped positive button">Positive</button>
+          </div>
+        </div>
+        <pre>&lt;div class="container"&gt;
+  &lt;button class="disabled grouped button"&gt;Basic&lt;button&gt;
+  &lt;button class="disabled grouped primary button"&gt;Primary&lt;button&gt;
+  &lt;button class="disabled grouped secondary button"&gt;Secondary&lt;button&gt;
+  &lt;button class="disabled grouped negative button"&gt;Negative&lt;button&gt;
+  &lt;button class="disabled grouped positive button"&gt;Positive&lt;button&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="disabled_grouped_flat_buttons" class="title">Disabled + Grouped + Flat + Buttons</h3>
+        <div class="flat box">
+          <div class="container">
+            <button class="disabled grouped flat button">Basic</button>
+            <button class="disabled grouped primary flat button">Primary</button>
+            <button class="disabled grouped secondary flat button">Secondary</button>
+            <button class="disabled grouped negative flat button">Negative</button>
+            <button class="disabled grouped positive flat button">Positive</button>
+          </div>
+        </div>
+        <pre>&lt;div class="container"&gt;
+  &lt;button class="disabled grouped flat button"&gt;Basic&lt;button&gt;
+  &lt;button class="disabled grouped primary flat button"&gt;Primary&lt;button&gt;
+  &lt;button class="disabled grouped secondary flat button"&gt;Secondary&lt;button&gt;
+  &lt;button class="disabled grouped negative flat button"&gt;Negative&lt;button&gt;
+  &lt;button class="disabled grouped positive flat button"&gt;Positive&lt;button&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 id="disabled_grouped_flat_lined_buttons" class="title">Disabled + Grouped + Flat + Lined + Buttons</h3>
+        <div class="flat box">
+          <div class="container">
+            <button class="disabled grouped flat lined button">Basic</button>
+            <button class="disabled primary grouped flat lined button">Primary</button>
+            <button class="disabled secondary grouped flat lined button">Secondary</button>
+            <button class="disabled negative grouped flat lined button">Negative</button>
+            <button class="disabled positive grouped flat lined button">Positive</button>
+          </div>
+        </div>
+        <pre>&lt;div class="container"&gt;
+  &lt;button class="disabled grouped flat lined button"&gt;Basic&lt;button&gt;
+  &lt;button class="disabled grouped primary flat lined button"&gt;Primary&lt;button&gt;
+  &lt;button class="disabled grouped secondary flat lined button"&gt;Secondary&lt;button&gt;
+  &lt;button class="disabled grouped negative flat lined button"&gt;Negative&lt;button&gt;
+  &lt;button class="disabled grouped positive flat lined button"&gt;Positive&lt;button&gt;
+&lt;/div&gt;</pre>
       </section>
     </div>
   </div>

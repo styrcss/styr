@@ -33,8 +33,12 @@ ul li {
   line-height: 1.59rem;
 }
 
+.section-container {
+  margin: 1.88em 0;
+}
+
 .container {
-  margin: 2.22rem 0;
+  margin: 1.12em 0;
 }
 
 .title {
