@@ -28,8 +28,8 @@
       <a class="item" href="typography.html">Typography</a>
       <hr>
       <h6 class="item">Modules</h6>
-      <a class="item active" href="sidebar.html">Sidebar</a>
-      <a class="item" href="dropdown.html">Dropdown</a>
+      <a class="item" href="sidebar.html">Sidebar</a>
+      <a class="item active" href="dropdown.html">Dropdown</a>
       <div class="bottom item">
         <div class="primary message">
           <h4 class="header">Styr</h4>
@@ -42,42 +42,44 @@
       <div class="breadcrumb">
         <a class="item" href="index.html">Home</a>
         <span class="divider">/</span>
-        <span class="item active" href="sidebar.html">Sidebar</span>
+        <span class="item active" href="dropdown.html">Dropdown</span>
       </div>
+      <h2 class="title">Dropdown</h2>
 
-      <h2 class="title">Sidebar</h2>
-      <pre>&lt;div class="sidebar-container"&gt;
-  &lt;div class="sidebar"&gt;
-    &lt;a class="item" href="/foo"&gt;Foo&lt;/a&gt;
-    &lt;a class="active item" href="/bar"&gt;Bar&lt;/a&gt;
+      <section>
+        <h2 class="title">Action + Dropdown</h2>
+        <p class="description">Expand dropdown menu.</p>
+        <div class="flat box">
+          <div class="dropdown-container">
+            <a class="action" href="#">Comment</a>
+            <input id="dropdown_checkbox" type="checkbox">
+            <label for="dropdown_checkbox"></label>
+            <div class="dropdown">
+              <a class="item" href="#foo">
+                <h6>Foo Note</h6>
+                <span>This is a secret documentation about a robot...</span>
+              </a>
+              <a class="item" href="#bar">
+                <h6>Bar Story</h6>
+                <span>This is a secret documentation about a robot...</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <pre>&lt;div class="dropdown-container"&gt;
+  &lt;a class="action" href="#"&gt;Comment&lt;/a&gt;
+  &lt;input id="[id_name]" type="checkbox"&gt;
+  &lt;label for="[id_name]"&gt;&lt;/label&gt;
+  &lt;div class="dropdown"&gt;
+    &lt;a class="item" href="#foo"&gt;
+      &lt;h6&gt;Foo Note&lt;/h6&gt;
+      &lt;span&gt;This is a ...&lt;/span&gt;
+    &lt;/a&gt;
     ...
   &lt;/div&gt;
-  &lt;div class="content"&gt;
-  ...
-  &lt;/div&gt;
 &lt;/div&gt;</pre>
-    </div>
+      </section>
 
-    <div class="sidebar">
-      <div class="item">
-      </div>
-      <h6 class="item">Styles</h6>
-      <a class="item" href="box.html">Box</a>
-      <a class="item" href="breadcrumb.html">Breadcrumb</a>
-      <a class="item" href="button.html">Button</a>
-      <a class="item" href="form.html">Form</a>
-      <a class="item" href="grid.html">Grid</a>
-      <a class="item" href="label.html">Label</a>
-      <a class="item" href="menu.html">Menu</a>
-      <a class="item" href="message.html">Message</a>
-      <a class="item" href="pagination.html">Pagination</a>
-      <a class="item" href="table.html">Table</a>
-      <a class="item" href="text.html">Text</a>
-      <a class="item" href="typography.html">Typography</a>
-      <hr>
-      <h6 class="item">Modules</h6>
-      <a class="item active" href="sidebar.html">Sidebar</a>
-      <a class="item" href="dropdown.html">Dropdown</a>
     </div>
   </div>
 </body>

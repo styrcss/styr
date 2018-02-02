@@ -1,0 +1,97 @@
+@require './_colour.styl'
+
+$basic-text-colour = #3d4448
+.dropdown-container
+  position relative
+  display inline-block
+
+  input[type="checkbox"]
+    display none
+    &:checked ~ .dropdown
+      display block
+
+  .action
+    opacity 0.94
+    border-radius 0.16rem 0 0 0.16rem
+    border 1px solid rgba(27, 31, 35, 0.2)
+    color $basic-text-colour
+    padding 0.31rem 0.88rem
+    display inline-block
+    text-decoration none
+    background-color #fbfbfc
+    font-size 0.82em
+    font-weight 300
+    line-height 1.37em
+    &:hover
+      text-decoration none
+      cursor pointer
+      color darken($basic-text-colour, 46%)
+      border 1px solid rgba(13, 31, 35, 0.35)
+  label
+    opacity 0.94
+    margin 0
+    cursor pointer
+    float right
+    display inline-block
+    margin-left -0.07rem
+    box-sizing border-box
+    display inline-block
+    border-radius 0 0.16rem 0.16rem 0
+    border 1px solid rgba(27, 31, 35, 0.2)
+    padding 0.885rem 0.24rem 0.805rem 0.24rem
+    font-size 0.82em
+    font-weight 300
+    line-height 0.98em
+    min-width 1.88rem
+    user-select none
+    -moz-user-select none
+    -ms-user-select none
+    -webkit-user-select none
+    -webkit-touch-callout none
+    background transparent
+    background-color #fbfbfc
+    background-position right center
+    background-size 2.89ex
+    // unicode filled down triangle sign
+    background-image url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSdibGFjaycgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0JyB3aWR0aD0nMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PC9zdmc+")
+    background-repeat no-repeat
+    background-position-x 49.7%
+    &:hover
+      text-decoration none
+      cursor pointer
+      color darken($basic-text-colour, 46%)
+      border 1px solid rgba(13, 31, 35, 0.35)
+
+  .dropdown
+    clear both
+    position absolute
+    margin-top 0.19em
+    background-color $white0
+    display none
+    min-width 18em
+    width 100%
+    border-radius 0.16rem
+    border 1px solid lighten($line-colour, 58%)
+    box-shadow 0 0.1rem 0.32rem darken($gray0, 9%)
+    .item
+      display block
+      position relative
+      background-color $white2
+      cursor pointer
+      padding 0.51rem 0.99rem 0.88rem 1.01rem
+      font-size 0.96em
+      font-weight 300
+      line-height 1.18em
+      margin 0
+      color $basic-text-colour
+      &:not(:last-child)
+        border-bottom 1px solid darken($gray0, 9%)
+      &:hover
+        text-decoration none
+        color darken($black2, 9%)
+        background-color darken($gray0, 3%)
+    a.item
+      text-decoration none
+
+  ul.dropdown
+    list-style none
