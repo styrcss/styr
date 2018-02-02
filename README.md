@@ -41,22 +41,23 @@ See `doc/index.html`
 
 ### Styles
 
-* [Box](https://grauwoelfchen.gitlab.io/styr/box.html)
-* [Breadcrumb](https://grauwoelfchen.gitlab.io/styr/breadcrumb.html)
 * [Button](https://grauwoelfchen.gitlab.io/styr/button.html)
 * [Form](https://grauwoelfchen.gitlab.io/styr/form.html)
 * [Grid](https://grauwoelfchen.gitlab.io/styr/grid.html)
 * [Label](https://grauwoelfchen.gitlab.io/styr/label.html)
-* [Menu](https://grauwoelfchen.gitlab.io/styr/menu.html)
-* [Message](https://grauwoelfchen.gitlab.io/styr/message.html)
-* [Pagination](https://grauwoelfchen.gitlab.io/styr/pagination.html)
 * [Table](https://grauwoelfchen.gitlab.io/styr/table.html)
 * [Text](https://grauwoelfchen.gitlab.io/styr/text.html)
 * [Typography](https://grauwoelfchen.gitlab.io/styr/typography.html)
 
 
-### Modules
+### Components
 
+* [Box](https://grauwoelfchen.gitlab.io/styr/box.html)
+* [Breadcrumb](https://grauwoelfchen.gitlab.io/styr/breadcrumb.html)
+* [Menu](https://grauwoelfchen.gitlab.io/styr/menu.html)
+* [Message](https://grauwoelfchen.gitlab.io/styr/message.html)
+* [Pagination](https://grauwoelfchen.gitlab.io/styr/pagination.html)
+* [Dropdown](https://grauwoelfchen.gitlab.io/styr/dropdown.html)
 * [Sidebar](https://grauwoelfchen.gitlab.io/styr/sidebar.html)
 
 
