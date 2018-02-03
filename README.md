@@ -56,6 +56,7 @@ See `doc/index.html`
 * [Breadcrumb](https://grauwoelfchen.gitlab.io/styr/breadcrumb.html)
 * [Menu](https://grauwoelfchen.gitlab.io/styr/menu.html)
 * [Message](https://grauwoelfchen.gitlab.io/styr/message.html)
+* [Modal](https://grauwoelfchen.gitlab.io/styr/modal.html)
 * [Pagination](https://grauwoelfchen.gitlab.io/styr/pagination.html)
 * [Dropdown](https://grauwoelfchen.gitlab.io/styr/dropdown.html)
 * [Sidebar](https://grauwoelfchen.gitlab.io/styr/sidebar.html)
