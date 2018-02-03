@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styr</title>
+  <link rel="stylesheet" href="css/styr.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Open+Sans:300" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <h2 class="item">Documents</h2>
+      <a class="item" href="index.html">Home</a>
+      <hr>
+      <h6 class="item">Styles</h6>
+      <a class="item" href="button.html">Button</a>
+      <a class="item" href="form.html">Form</a>
+      <a class="item" href="grid.html">Grid</a>
+      <a class="item" href="label.html">Label</a>
+      <a class="item" href="table.html">Table</a>
+      <a class="item" href="text.html">Text</a>
+      <a class="item" href="typography.html">Typography</a>
+      <hr>
+      <h6 class="item">Components</h6>
+      <a class="item" href="box.html">Box</a>
+      <a class="item" href="breadcrumb.html">Breadcrumb</a>
+      <a class="item" href="dropdown.html">Dropdown</a>
+      <a class="item" href="menu.html">Menu</a>
+      <a class="item" href="message.html">Message</a>
+      <a class="item active" href="modal.html">Modal</a>
+      <a class="item" href="pagination.html">Pagination</a>
+      <a class="item" href="sidebar.html">Sidebar</a>
+      <div class="bottom item">
+        <div class="primary message">
+          <h4 class="header">Styr</h4>
+          <p><a class="link" href="https://gitlab.com/grauwoelfchen/styr">gitlab.com:grauwoelfchen/styr</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="breadcrumb">
+        <a class="item" href="index.html">Home</a>
+        <span class="divider">/</span>
+        <span class="item active" href="dropdown.html">Dropdown</span>
+      </div>
+      <h2 class="title">Modal</h2>
+
+      <section>
+        <h3 class="title">Modal Popup Window</h3>
+        <p class="description">Click a button below.</p>
+        <div class="flat box">
+          <a class="secondary flat button" href="#modal_message">Message for You!</a>
+          <div id="modal_message" class="modal-container">
+            <div class="modal">
+              <a class="close button" href="#">&times;</a>
+              <div class="modal-content">
+                <h5 class="header">Welcome!</h5>
+                <p class="description">You have successfully signed up!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+&lt;a class="button" href="#modal_message"&gt;Message for You!&lt;/a&gt;
+&lt;div id="modal_message" class="modal-container"&gt;
+  &lt;div class="modal"&gt;
+    &lt;a class="close button" href="#"&gt;&amp;times;&lt;/a&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;h5 class="header"&gt;&lt;/h5&gt;
+      &lt;p class="description"&gt;You have successfully signed up!&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+      <section>
+        <h3 class="title">Form + Modal Popup Window</h3>
+        <p class="description">You can embed anything, for example like a form.</p>
+        <div class="flat box">
+          <a class="primary flat button" href="#modal_form">Signup</a>
+          <div id="modal_form" class="modal-container">
+            <div class="modal">
+              <a class="close button" href="#">&times;</a>
+              <div class="modal-content">
+                <form class="form">
+                  <div class="field">
+                    <label for="name_0" class="label">Name</label>
+                    <input type="text" id="name_0" name="name" placeholder="Name">
+                  </div>
+                  <div class="field">
+                    <label for="code_0" class="label">Code-Name</label>
+                    <input type="text" id="code_0" name="code" placeholder="Code-Name">
+                  </div>
+                  <div class="field">
+                    <div class="checkbox">
+                      <input tabindex=0 id="robot_check_0" type="checkbox" checked="checked">
+                      <label for="robot_check_0" class="label">To tell the truth, I'm a robot</label>
+                    </div>
+                  </div>
+                  <button class="negative flat button" type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre>
+&lt;a class="button" href="#modal_form"&gt;&lt;/a&gt;
+&lt;div id="modal_form" class="modal-container"&gt;
+  &lt;div class="modal"&gt;
+    &lt;a class="close button" href="#"&gt;&amp;times;&lt;/a&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>

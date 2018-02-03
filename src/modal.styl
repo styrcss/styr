@@ -1,0 +1,54 @@
+@require './_colour.styl'
+
+.modal-container
+  visibility hidden
+  opacity 0
+  position fixed
+  top 0
+  bottom 0
+  left 0
+  right 0
+  background rgba(0, 0, 0, 0.7)
+  transition opacity 300ms
+  z-index 2147483647
+  &:target
+    visibility visible
+    opacity 1.0
+
+  .modal
+    margin-top 9rem
+    margin-left auto
+    margin-right auto
+    position relative
+    width 30%
+    min-width 28%
+    height auto
+
+    .close.button
+      position absolute
+      display block
+      top 0.11rem
+      right 0.89rem
+      border 0
+      border-radius 0
+      box-shadow none
+      background transparent
+      font-size 1.66em
+      font-weight bold
+      color lighten($black0, 28%)
+      transition all 250ms all
+      margin 0.55rem 0 0 0
+      padding 0.12rem 0.86rem
+      z-index 2147483647
+      &:hover
+        color darken($black2, 3%)
+
+    .modal-content
+      position absolute
+      top 0.11rem
+      width 100%
+      height auto
+      padding 3.18rem 1.6rem 2.12rem 1.6rem
+      background $white1
+      border-radius 0.18rem
+      transition all 3.82s ease-in-out
