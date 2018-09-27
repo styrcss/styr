@@ -15,7 +15,7 @@ https://gitlab.com/grauwoelfchen/styr/raw/master/doc/img/screenshot.png)
 |____/ \__|\__, |_|
            |___/
 
-Styr; STYlish css libRary
+Styr; STYlish css framewoRk
 ```
 
 ## Repository
