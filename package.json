@@ -14,8 +14,8 @@
     "url": "https://gitlab.com/grauwoelfchen/styr.git"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint gulpfile.js",
-    "build": "./node_modules/.bin/gulp build"
+    "lint": "npm exec eslint gulpfile.js",
+    "build": "npm exec gulp build"
   },
   "dependencies": {
     "normalize.css": "7.0.0"
