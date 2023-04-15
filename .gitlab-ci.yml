@@ -5,7 +5,7 @@ stages:
 
 lint:
   stage: vet
-  image: node:8.9.0
+  image: node:18.15.0
   services:
   variables:
     NODE_ENV: development
@@ -24,7 +24,7 @@ lint:
 
 build:
   stage: build
-  image: node:8.9.0
+  image: node:18.15.0
   services:
   variables:
     NODE_ENV: production
@@ -49,7 +49,7 @@ build:
 
 pages:
   stage: pages
-  image: node:8.9.0
+  image: node:18.15.0
   services:
   variables:
     NODE_ENV: production

@@ -71,21 +71,11 @@ https://grauwoelfchen.gitlab.io/styr
 
 ### Requirements
 
-* Node.js `8.9.0`
+* Node.js `>= 18.15.0`
 
 ### Setup
 
-```zsh
-: e.g. use nodeenv
-% python3.5 -m venv venv
-% source venv/bin/activate
-(venv) % pip install --upgrade pip setuptools
-(venv) % pip install nodeenv
-(venv) % nodeenv -p --node=8.9.0
-
-(venv) % npm i -g npm
-(venv) % npm i
-```
+Use [nodenv](https://github.com/nodenv/nodenv) etc. and see `.node-version`.
 
 ### Document
 
@@ -105,9 +95,10 @@ https://grauwoelfchen.gitlab.io/styr
 ### Build
 
 ```zsh
-: build assets
 % npm install -g gulp-cli
-% gulp
+
+% gulp build
+% NODE_ENV=production gulp build
 ```
 
 

@@ -1,84 +1,104 @@
 'use strict';
 
-var gulp = require('gulp')
-  , concat = require('gulp-concat-css')
-  , clean = require('gulp-clean')
-  , copy = require('gulp-copy')
-  , minify = require('gulp-clean-css')
-  , rename = require('gulp-rename')
-  , run = require('run-sequence')
-  , smap = require('gulp-sourcemaps')
-  , stylus = require('gulp-stylus')
-  ;
+const { dest, series, src, watch } = require('gulp');
+
+const _concat = require('gulp-concat-css')
+    , _clean = require('gulp-clean')
+    , copy = require('gulp-copy')
+    , minify = require('gulp-clean-css')
+    , rename = require('gulp-rename')
+    , smap = require('gulp-sourcemaps')
+    , stylus = require('gulp-stylus')
+    ;
 
 // extract normalize.css into reset.css
-gulp.task('concat', function() {
-  return gulp.src('src/reset.styl')
-  .pipe(stylus())
-  .pipe(concat('_reset.css')) // NOTE: filename order
-  .pipe(gulp.dest('tmp/builds'));
-});
+const concat = function() {
+  return src('src/reset.styl')
+    .pipe(stylus())
+    .pipe(_concat('_reset.css')) // NOTE: filename order
+    .pipe(dest('tmp/builds'));
+};
 
-// build stylus files into tmp/builds
-gulp.task('build', ['concat'], function() {
-  return gulp.src(['src/**/*.styl', '!src/reset.styl'])
-  .pipe(smap.init())
-  .pipe(stylus())
-  .pipe(smap.write())
-  .pipe(gulp.dest('tmp/builds'));
-});
+// compile stylus files and put them into tmp/builds
+const compile = function() {
+  return src(['src/**/*.styl', '!src/reset.styl'])
+    .pipe(smap.init())
+    .pipe(stylus())
+    .pipe(smap.write())
+    .pipe(dest('tmp/builds'));
+};
 
 // merge all files into tmp/builds as dst/styr.css
-gulp.task('merge', ['build'], function() {
-  return gulp.src('tmp/builds/*.css')
-  .pipe(concat('styr.css'))
-  .pipe(gulp.dest('tmp/'));
-});
+const merge = function() {
+  return src('tmp/builds/*.css')
+    .pipe(_concat('styr.css'))
+    .pipe(dest('tmp/'));
+};
 
 // copy tmp/styr.css into dst
-gulp.task('distribute', ['merge'], function() {
-  return gulp.src('tmp/styr.css')
-  .pipe(copy('dst', {prefix: 2}));
-});
+const distribute = function() {
+  return src('tmp/styr.css')
+    .pipe(copy('dst', {prefix: 2}));
+};
 
 // minify styr.css as styr.min.css
-gulp.task('compress', ['distribute'], function() {
-  return gulp.src('dst/styr.css')
+const compress = function() {
+  return src('dst/styr.css')
   .pipe(minify())
   .pipe(rename('styr.min.css'))
-  .pipe(gulp.dest('dst'));
-});
+  .pipe(dest('dst'));
+};
+
+const build = series(
+  concat
+, compile
+, merge
+, distribute
+, function(cb) {
+    cb();
+  }
+);
+
+exports.build = function(cb) {
+  const nodeEnv = process.env.NODE_ENV || 'development';
+  console.log('» gulp:', nodeEnv);
+
+  var tasks = [clean, build];
+  if (nodeEnv === 'production') {
+    tasks.push(compress);
+  }
+
+  return series(...tasks)(cb);
+};
 
 // remove all files into {dst|tmp}
-gulp.task('clean', function() {
-  return gulp.src([
+const clean = function() {
+  return src([
     'dst/*'
   , 'tmp/builds/*'
   , 'tmp/*'
   ], {
     read: false
   })
-  .pipe(clean());
-});
-
-// -- [development tasks]
-
-var paths = { // watch targets
-  styl: [
-    'src/*.styl'
-  ]
+  .pipe(_clean());
 };
 
-gulp.task('watch', function() {
-  gulp.watch('gulpfile.js', ['default']);
-  gulp.watch(paths.styl, ['compress']);
-});
+exports.clean = clean;
 
-// -- [main tasks]
+exports.watch = function() {
+  // watch targets
+  const paths = {
+    gulp: ['gulpfile.js']
+  , styl: ['src/*.styl']
+  };
 
-gulp.task('default', function() {
-  var nodeEnv = process.env.NODE_ENV || 'production';
-  console.log('» gulp:', nodeEnv);
+  watch(paths.gulp, series(build, function(cb) {
+    cb();
+  }));
 
-  return run('clean', 'compress');
-});
+  watch(paths.styl, series(build, compress, function(cb) {
+    cb();
+  }));
+}
+
+exports.default = build;
