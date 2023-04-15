@@ -12,9 +12,9 @@ lint:
   before_script:
     - node --version
     - npm --version
-    - npm install -g eslint
+    - npm install
   script:
-    - eslint gulpfile.js
+    - npm run lint
   cache:
     untracked: true
     paths:
@@ -31,11 +31,9 @@ build:
   before_script:
     - node --version
     - npm --version
-    - npm install -g gulp-cli
-    - npm install --dev
     - npm install
   script:
-    - gulp
+    - npm run build
   cache:
     untracked: true
     paths:
@@ -64,4 +62,4 @@ pages:
     paths:
       - public
   only:
-    - master
+    - trunk
