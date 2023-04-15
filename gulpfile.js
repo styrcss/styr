@@ -2,7 +2,7 @@
 
 const { dest, series, src, watch } = require('gulp');
 
-const _concat = require('gulp-concat-css')
+const _concat = require('gulp-concat')
     , _clean = require('gulp-clean')
     , copy = require('gulp-copy')
     , minify = require('gulp-clean-css')
@@ -13,7 +13,10 @@ const _concat = require('gulp-concat-css')
 
 // extract normalize.css into reset.css
 const concat = function() {
-  return src('src/reset.styl')
+  return src([
+      'node_modules/normalize.css/normalize.css'
+    , 'src/reset.styl'
+    ])
     .pipe(stylus())
     .pipe(_concat('_reset.css')) // NOTE: filename order
     .pipe(dest('tmp/builds'));
