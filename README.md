@@ -103,7 +103,6 @@ See [LICENSE](LICENSE).
 Styr
 Copyright (c) 2017-2023 Yasuhiro Яша Asaka
 ```
-```
 
 [pipeline]: https://gitlab.com/styrcss/styr/badges/trunk/pipeline.svg
 [commit]: https://gitlab.com/styrcss/styr/commits/trunk
