@@ -22,12 +22,12 @@ lint:
   except:
     - tags
 
-build:
+build-debug:
   stage: build
   image: node:18.15.0
   services:
   variables:
-    NODE_ENV: production
+    NODE_ENV: development
   before_script:
     - node --version
     - npm --version
@@ -45,12 +45,35 @@ build:
   except:
     - tags
 
-pages:
-  stage: pages
+build-release:
+  stage: build
   image: node:18.15.0
   services:
   variables:
     NODE_ENV: production
+  before_script:
+    - node --version
+    - npm --version
+    - NODE_ENV="development" npm install
+  script:
+    - npm run build
+  cache:
+    untracked: true
+    paths:
+      - node_modules
+  artifacts:
+    untracked: true
+    paths:
+      - dst
+  except:
+    - tags
+
+pages:
+  stage: pages
+  image: node:18.15.0
+  services:
+  needs:
+    - "build-release"
   before_script:
     - mkdir -p public/css
     - rm doc/css/styr.css
