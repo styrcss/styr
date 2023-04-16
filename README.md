@@ -1,26 +1,24 @@
 # Styr
 
-`/stɪ́əɾ/`
-
 [![pipeline status][pipeline]][commit] [![npm version][version]][npm]
 
-[![Screenshot](doc/img/screenshot-thumb.png)](
-https://gitlab.com/grauwoelfchen/styr/raw/trunk/doc/img/screenshot.png)
-
-```txt
- ____  _
-/ ___|| |_ _   _ _ __
-\___ \| __| | | | '__|
- ___) | |_| |_| | |
-|____/ \__|\__, |_|
-           |___/
+`/stɪ́əɾ/`
 
 Styr; STYlish css framewoRk
-```
 
-## Repository
+[![Screenshot](doc/img/screenshot-thumb.png)](
+https://gitlab.com/styrcss/styr/raw/trunk/doc/img/screenshot.png)
 
-https://gitlab.com/grauwoelfchen/styr
+
+## Repositories
+
+* (main) https://gitlab.com/styrcss/styr
+* https://github.com/styrcss/styr
+
+
+## Requirements
+
+* Node.js (>= `v18.15.0`)
 
 
 ## Dependencies
@@ -31,74 +29,64 @@ https://gitlab.com/grauwoelfchen/styr
 ## Install
 
 ```zsh
-% npm install --save styr
+% npm install styr --save
 ```
-
 
 ## Features
 
-See `doc/index.html`
+See https://styr.yasha.rs/
 
 ### Styles
 
-* [Button](https://grauwoelfchen.gitlab.io/styr/button.html)
-* [Form](https://grauwoelfchen.gitlab.io/styr/form.html)
-* [Grid](https://grauwoelfchen.gitlab.io/styr/grid.html)
-* [Label](https://grauwoelfchen.gitlab.io/styr/label.html)
-* [Table](https://grauwoelfchen.gitlab.io/styr/table.html)
-* [Text](https://grauwoelfchen.gitlab.io/styr/text.html)
-* [Typography](https://grauwoelfchen.gitlab.io/styr/typography.html)
-
+* [Button](https://styr.yasha.rs/button.html)
+* [Form](https://styr.yasha.rs/form.html)
+* [Grid](https://styr.yasha.rs/grid.html)
+* [Label](https://styr.yasha.rs/label.html)
+* [Table](https://styr.yasha.rs/table.html)
+* [Text](https://styr.yasha.rs/text.html)
+* [Typography](https://styr.yasha.rs/typography.html)
 
 ### Components
 
-* [Box](https://grauwoelfchen.gitlab.io/styr/box.html)
-* [Breadcrumb](https://grauwoelfchen.gitlab.io/styr/breadcrumb.html)
-* [Menu](https://grauwoelfchen.gitlab.io/styr/menu.html)
-* [Message](https://grauwoelfchen.gitlab.io/styr/message.html)
-* [Modal](https://grauwoelfchen.gitlab.io/styr/modal.html)
-* [Pagination](https://grauwoelfchen.gitlab.io/styr/pagination.html)
-* [Dropdown](https://grauwoelfchen.gitlab.io/styr/dropdown.html)
-* [Sidebar](https://grauwoelfchen.gitlab.io/styr/sidebar.html)
-
-
-## Documentation
-
-https://grauwoelfchen.gitlab.io/styr
+* [Box](https://styr.yasha.rs/box.html)
+* [Breadcrumb](https://styr.yasha.rs/breadcrumb.html)
+* [Menu](https://styr.yasha.rs/menu.html)
+* [Message](https://styr.yasha.rs/message.html)
+* [Modal](https://styr.yasha.rs/modal.html)
+* [Pagination](https://styr.yasha.rs/pagination.html)
+* [Dropdown](https://styr.yasha.rs/dropdown.html)
+* [Sidebar](https://styr.yasha.rs/sidebar.html)
 
 
 ## Development
-
-### Requirements
-
-* Node.js `>= 18.15.0`
 
 ### Setup
 
 Use [nodenv](https://github.com/nodenv/nodenv) etc. and see `.node-version`.
 
-### Document
-
 ```zsh
-: open local document
-% xdg-open doc/index.html
+% npm install
 ```
 
 ### Lint
 
 ```zsh
-: check gulpfile.js
-% npm install -g eslint
-% eslint gulpfile.js
+# check gulpfile.js
+% npm run lint
 ```
 
 ### Build
 
 ```zsh
-% npm install -g gulp-cli
+% npm run build
+% NODE_ENV=production npm run build
+```
 
-% gulp build
-% NODE_ENV=production gulp build
+### Documentation
+
+```zsh
+: open local document
+% xdg-open doc/index.html
 ```
 
 
@@ -113,11 +101,11 @@ See [LICENSE](LICENSE).
 
 ```txt
 Styr
-Copyright (c) 2017-2018 Yasuhiro Asaka
+Copyright (c) 2017-2023 Yasuhiro Яша Asaka
+```
 ```
 
-
-[pipeline]: https://gitlab.com/grauwoelfchen/styr/badges/trunk/pipeline.svg
-[commit]: https://gitlab.com/grauwoelfchen/styr/commits/trunk
+[pipeline]: https://gitlab.com/styrcss/styr/badges/trunk/pipeline.svg
+[commit]: https://gitlab.com/styrcss/styr/commits/trunk
 [version]: https://img.shields.io/npm/v/styr.svg
 [npm]: https://www.npmjs.com/package/styr
