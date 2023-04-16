@@ -1,3 +1,15 @@
+Sun 16 Feb 2023 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	Fix documentation website links (Moved to https://styr.yasha.rs)
+
+Sat 15 Feb 2023 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
+	Update build tools and dependencies
+
+	* Update Node.js (.node-version) to >= v18.15.0
+	* Update Gulp and Gulp plugins (rewrite gulpfile.js)
+
+	Transfer repository (grauwoelfchen/styr) to styrcss/styr on GitLab.com and
+		GitHub both.
+
 Sun 4 Feb 2018 Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>
 	* Bump version 0.0.32
 	* Create modal popup window component
