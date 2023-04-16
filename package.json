@@ -5,13 +5,13 @@
   "main": "dst/styr.min.css",
   "author": "Yasuhiro Asaka <yasuhiro.asaka@grauwoelfchen.net>",
   "license": "MIT",
-  "homepage": "https://gitlab.com/grauwoelfchen/styr",
+  "homepage": "https://gitlab.com/styrcss/styr",
   "keybords": [
     "css"
   ],
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/grauwoelfchen/styr.git"
+    "url": "https://gitlab.com/styrcss/styr.git"
   },
   "scripts": {
     "lint": "npx eslint gulpfile.js",
